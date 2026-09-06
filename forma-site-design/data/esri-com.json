@@ -1,0 +1,229 @@
+{
+  "slug": "esri-com",
+  "input": "esri.com/en-us/arcgis/products/arcgis-urban",
+  "domain": "esri.com",
+  "name": "Esri",
+  "final_url": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-urban",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:08+00:00",
+  "pages": [
+    {
+      "url": "https://esri.com/en-us/arcgis/products/arcgis-urban",
+      "final_url": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/overview?rsource=https%3A%2F%2Fwww.esri.com%2Fen-us%2Farcgis%2Fproducts%2Farcgis-urban",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Urban Planning, Design & Development Software | ArcGIS Urban",
+      "meta_description": "Urban planning, design & development software for enhanced collaboration & decision-making. Optimize cities, analyze data & create sustainable environments with ArcGIS Urban.",
+      "og_title": "Urban Planning, Design & Development Software | ArcGIS Urban",
+      "og_description": "Urban planning, design & development software for enhanced collaboration & decision-making. Optimize cities, analyze data & create sustainable environments with ArcGIS Urban.",
+      "canonical": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/overview",
+      "h1": [
+        "ArcGIS Urban"
+      ],
+      "h2": [
+        "Transforming urban planning and design",
+        "Urban planning made simple",
+        "What you can do with ArcGIS Urban",
+        "3D scenario modeling",
+        "Data-driven analysis",
+        "Project e-submission",
+        "Collaborative urban planning",
+        "Extendable planning system",
+        "How it works",
+        "Inside a European urban development project",
+        "Modernizing a historic Hawaiian community",
+        "Envisioning housing in DC’s historic districts",
+        "Digital twin boosts planning in Maryland County",
+        "Digital twin technology drives city center renewal",
+        "A new vision for a popular Atlanta suburb",
+        "This app is included with ArcGIS user types",
+        "Purchasing options for ArcGIS",
+        "Get help and technical support"
+      ],
+      "h3": [
+        "Foundation for your digital planning twin",
+        "System of record and insight for zoning",
+        "Visualizations of design proposals",
+        "Assessment of development impacts",
+        "Esri hosted software as a service",
+        "Self-hosted geospatial infrastructure",
+        "Talk to someone on our sales team",
+        "Chat online",
+        "Contact the sales team"
+      ],
+      "word_count": 1121,
+      "ctas": [
+        "Sign up for a free trial"
+      ],
+      "price_signals": [
+        "free trial"
+      ]
+    },
+    {
+      "url": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/trial",
+      "final_url": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/trial",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "ArcGIS Urban | Free 21-Day Trial",
+      "meta_description": "Start a free 21-day trial of ArcGIS Urban. Enhance collaboration and tackle urban challenges with 3D visualizations and analytics for zoning, land use, and development scenarios.",
+      "og_title": "ArcGIS Urban | Free 21-Day Trial",
+      "og_description": "Start a free 21-day trial of ArcGIS Urban. Enhance collaboration and tackle urban challenges with 3D visualizations and analytics for zoning, land use, and development scenarios.",
+      "canonical": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/trial",
+      "h1": [
+        "ArcGIS Urban trial"
+      ],
+      "h2": [
+        "Discover ArcGIS Urban today",
+        "What’s included in your free trial",
+        "ArcGIS access for noncommercial use",
+        "Purchasing options for ArcGIS",
+        "Get help and technical support"
+      ],
+      "h3": [
+        "User type licenses",
+        "Learning resources",
+        "Access to Esri staff",
+        "Esri hosted software as a service",
+        "Self-hosted geospatial infrastructure",
+        "Talk to someone on our sales team",
+        "Chat online",
+        "Contact the sales team"
+      ],
+      "word_count": 263,
+      "ctas": [
+        "Sign up now",
+        "Existing ArcGIS users sign up here"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/overview",
+      "final_url": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/overview",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Urban Planning, Design & Development Software | ArcGIS Urban",
+      "meta_description": "Urban planning, design & development software for enhanced collaboration & decision-making. Optimize cities, analyze data & create sustainable environments with ArcGIS Urban.",
+      "og_title": "Urban Planning, Design & Development Software | ArcGIS Urban",
+      "og_description": "Urban planning, design & development software for enhanced collaboration & decision-making. Optimize cities, analyze data & create sustainable environments with ArcGIS Urban.",
+      "canonical": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/overview",
+      "h1": [
+        "ArcGIS Urban"
+      ],
+      "h2": [
+        "Transforming urban planning and design",
+        "Urban planning made simple",
+        "What you can do with ArcGIS Urban",
+        "3D scenario modeling",
+        "Data-driven analysis",
+        "Project e-submission",
+        "Collaborative urban planning",
+        "Extendable planning system",
+        "How it works",
+        "Inside a European urban development project",
+        "Modernizing a historic Hawaiian community",
+        "Envisioning housing in DC’s historic districts",
+        "Digital twin boosts planning in Maryland County",
+        "Digital twin technology drives city center renewal",
+        "A new vision for a popular Atlanta suburb",
+        "This app is included with ArcGIS user types",
+        "Purchasing options for ArcGIS",
+        "Get help and technical support"
+      ],
+      "h3": [
+        "Foundation for your digital planning twin",
+        "System of record and insight for zoning",
+        "Visualizations of design proposals",
+        "Assessment of development impacts",
+        "Esri hosted software as a service",
+        "Self-hosted geospatial infrastructure",
+        "Talk to someone on our sales team",
+        "Chat online",
+        "Contact the sales team"
+      ],
+      "word_count": 1121,
+      "ctas": [
+        "Sign up for a free trial"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/features/project-esubmission",
+      "final_url": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/features/project-esubmission",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "City Project E-submission & Review | Current Planning",
+      "meta_description": "Gain a citywide view of development projects for comprehensive city project review and informed current planning with ArcGIS Urban.",
+      "og_title": "City Project E-submission & Review | Current Planning",
+      "og_description": "Gain a citywide view of development projects for comprehensive city project review and informed current planning with ArcGIS Urban.",
+      "canonical": "https://www.esri.com/en-us/arcgis/products/arcgis-urban/features/project-esubmission",
+      "h1": [
+        "Project e-Submission"
+      ],
+      "h2": [
+        "Streamline the project review process",
+        "What you can do with ArcGIS Urban",
+        "Who can benefit from ArcGIS Urban",
+        "Purchasing options for ArcGIS",
+        "Get help and technical support"
+      ],
+      "h3": [
+        "Sketch and upload 3D models",
+        "Review proposals with interactive tools",
+        "Track project status and versions",
+        "Current planning",
+        "Current planners",
+        "Architects and developers",
+        "Permit advisors",
+        "Esri hosted software as a service",
+        "Self-hosted geospatial infrastructure",
+        "Talk to someone on our sales team",
+        "Chat online",
+        "Contact the sales team"
+      ],
+      "word_count": 344,
+      "ctas": [],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {
+    "partners": [
+      "https://www.esri.com/en-us/about/partners/overview",
+      "https://www.esri.com/en-us/about/partners/find-partner",
+      "https://www.esri.com/en-us/about/partners/become-partner",
+      "https://www.esri.com/en-us/lg/partners/location-intelligence-for-telecommunications",
+      "https://www.esri.com/en-us/landing-page/partners/esri-arcgis-indoors-with-ibm-tririga",
+      "https://www.esri.com/en-us/about/partners/our-partners/startups",
+      "https://www.esri.com/en-us/capabilities/real-time/partners/data",
+      "https://www.esri.com/en-us/arcgis/products/arcgis-monitor/partners",
+      "https://www.esri.com/en-us/capabilities/real-time/partners/service",
+      "https://www.esri.com/en-us/landing-page/lp/partners/sap-sales-connect",
+      "https://www.esri.com/en-us/about/partners/our-partners/partner-network",
+      "https://www.esri.com/en-us/about/partners/our-partners/strategic-alliances",
+      "https://www.esri.com/en-us/capabilities/real-time/partners/cloud-iot-platforms",
+      "https://www.esri.com/en-us/about/partners/our-partners/strategic-alliances/aws",
+      "https://www.esri.com/en-us/about/partners/our-partners/strategic-alliances/salesforce"
+    ]
+  },
+  "named_competitors": [],
+  "sitemap_urls_seen": 3000,
+  "notes": [
+    "scoped to /en-us/arcgis/products/arcgis-urban subtree",
+    "no pricing page: probed /pricing=404, /plans=404, /pricing-plans=404, /price=404"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404,
+    "/pricing": 404,
+    "/plans": 404,
+    "/pricing-plans": 404,
+    "/price": 404
+  },
+  "candidates_found": 7,
+  "headings_found": 88
+}

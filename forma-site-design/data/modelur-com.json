@@ -1,0 +1,178 @@
+{
+  "slug": "modelur-com",
+  "input": "modelur.com",
+  "domain": "modelur.com",
+  "name": "Modelur",
+  "final_url": "https://modelur.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:07+00:00",
+  "pages": [
+    {
+      "url": "https://modelur.com/",
+      "final_url": "https://modelur.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Urban Design Software - Modelur",
+      "meta_description": "Early-stage urban design and feasibility study software that helps you quickly iterate different development alternatives and calculates key urban parameters in real-time.",
+      "og_title": "Urban Design Software - Modelur",
+      "og_description": "Early-stage urban design and feasibility study software that helps you quickly iterate different development alternatives and calculates key urban parameters in real-time.",
+      "canonical": "https://modelur.com/",
+      "h1": [
+        "Fast and Accurate 3D Massing and Feasibility Studies",
+        "SketchUp Supercharged",
+        "Better Early Stage Decisions and Super-Fast Iterations",
+        "Why choose Modelur?",
+        "Get Inspired: Modelur in Practice"
+      ],
+      "h2": [
+        "SketchUp Supercharged",
+        "What Architects Say About Modelur?",
+        "What's new?",
+        "Get Modelur - Your Urban Massing Assistant",
+        "Get Modelur - Your Urban Massing Assistant",
+        "Agilicity",
+        "Resources",
+        "Modelur",
+        "Legal",
+        "Contact"
+      ],
+      "h3": [
+        "The most easy-to-use SketchUp Extension for",
+        "Enhance Your Existing Workflow",
+        "Control Your Data",
+        "Guarantee Swift Adoption",
+        "Increase Your Efficiency",
+        "Create a Higher Quality Design",
+        "Make Your Clients Happier",
+        "Enhance Your Existing Workflow",
+        "Control Your Data",
+        "Guarantee Swift Adoption",
+        "Increase your efficiency",
+        "Create a Higher Quality Design",
+        "Make Your Clients Happier",
+        "Step #1 Set Design Requirements",
+        "Step #2 Generate new Development with a click of a Button",
+        "Step #3 Bring All Your Ideas to Life",
+        "Step #4 Synchronize Your Data With Excel Spreadsheets",
+        "Step 1: Set Design Requirements",
+        "Step 2: Generate new Development with a click of a Button",
+        "Step 3: Bring All Your Ideas to Life",
+        "Step 4: Synchronize Your Data With Excel",
+        "OpenStreetMap Import",
+        "GIS Import/Export",
+        "Live Compliance Warnings",
+        "OpenStreetMap Import",
+        "GIS Import/Export",
+        "Live Compliance Warnings",
+        "Uppsala Business Park & Parklife Trnava by Mandaworks",
+        "Beijing Micropolis & Nature as Laverage by MLA+",
+        "Growing Together by City of Kitchener"
+      ],
+      "word_count": 1776,
+      "ctas": [
+        "Start Free"
+      ],
+      "price_signals": [
+        "no credit card"
+      ]
+    },
+    {
+      "url": "https://modelur.com/pricing/",
+      "final_url": "https://modelur.com/pricing/",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Pricing - Modelur",
+      "meta_description": "BUY WITH",
+      "og_title": "Pricing - Modelur",
+      "og_description": "BUY WITH",
+      "canonical": "https://modelur.com/pricing/",
+      "h1": [
+        "Modelur Plans & Pricing"
+      ],
+      "h2": [
+        "Free",
+        "Monthly",
+        "Quarterly",
+        "Annual",
+        "FAQ",
+        "Agilicity",
+        "Resources",
+        "Modelur",
+        "Legal",
+        "Contact"
+      ],
+      "h3": [
+        "All Modelur Plans are Flexible, Multi-User Floating Licenses",
+        "Do you have a question or need a written quote?"
+      ],
+      "word_count": 1132,
+      "ctas": [
+        "Start Free",
+        "Buy Now",
+        "contact us",
+        "Contact us!"
+      ],
+      "price_signals": [
+        "€ 0",
+        "€ 149 PER SEAT",
+        "€ 98 PER SEAT",
+        "€ 294",
+        "€ 74 PER SEAT",
+        "€ 888 / year",
+        "€708/seat",
+        "€649/seat",
+        "€619/seat",
+        "free plan"
+      ]
+    },
+    {
+      "url": "https://modelur.com/features/",
+      "final_url": "https://modelur.com/features/",
+      "page_type": "features",
+      "status": 200,
+      "error": "",
+      "title": "Parametric Urban Design Software Key Features - Modelur",
+      "meta_description": "Here is what makesModelur, a parametric urban design software best-of-breed: Parametric Buildings, GIS interoperability, Real-time Calculations, and more...",
+      "og_title": "Parametric Urban Design Software Key Features - Modelur",
+      "og_description": "Here is what makesModelur, a parametric urban design software best-of-breed: Parametric Buildings, GIS interoperability, Real-time Calculations, and more...",
+      "canonical": "https://modelur.com/features/",
+      "h1": [
+        "Simple Features, Powerful Outcome",
+        "Parametric Buildings",
+        "Interactive, Data-driven Design",
+        "Real-Time Calculations",
+        "Powerful Imports and Exports"
+      ],
+      "h2": [
+        "Agilicity",
+        "Resources",
+        "Modelur",
+        "Legal",
+        "Contact"
+      ],
+      "h3": [
+        "Here’s why large and small architecture and design firms love Modelur, and you will too"
+      ],
+      "word_count": 789,
+      "ctas": [
+        "Start Free",
+        "Start for Free"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 110,
+  "notes": [],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404
+  },
+  "candidates_found": 3,
+  "headings_found": 69
+}

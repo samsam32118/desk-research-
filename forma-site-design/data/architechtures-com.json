@@ -1,0 +1,157 @@
+{
+  "slug": "architechtures-com",
+  "input": "architechtures.com",
+  "domain": "architechtures.com",
+  "name": "Architechtures",
+  "final_url": "https://architechtures.com/en",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:54+00:00",
+  "pages": [
+    {
+      "url": "https://architechtures.com/",
+      "final_url": "https://architechtures.com/en",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Architechtures - AI Architecture Generator. Building Design",
+      "meta_description": "AI Architecture Generator. Reduces architectural design time. Discover the power of Artificial Intelligence in Architecture",
+      "og_title": "Architechtures - AI Architecture Generator. Building Design",
+      "og_description": "AI Architecture Generator. Reduces architectural design time. Discover the power of Artificial Intelligence in Architecture",
+      "canonical": "https://architechtures.com/en",
+      "h1": [
+        "AI-Powered Building Design",
+        "AI Architecture Generator in Real-Time",
+        "How It Works",
+        "Generate optimal building designs in real-time",
+        "Coming Soon…"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 1779,
+      "ctas": [
+        "Contact Sales",
+        "Free Trial",
+        "7 Days Free Trial",
+        "Contact Us"
+      ],
+      "price_signals": [
+        "contact sales",
+        "free trial"
+      ]
+    },
+    {
+      "url": "https://architechtures.com/en/pricing",
+      "final_url": "https://architechtures.com/en/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Pricing - Architechtures - AI Architecture Software",
+      "meta_description": "Try free Architechtures, AI Architecture Software. Prices and plans to design better buildings faster",
+      "og_title": "Pricing - Architechtures - AI Architecture Software",
+      "og_description": "Try free Architechtures, AI Architecture Software. Prices and plans to design better buildings faster",
+      "canonical": "https://architechtures.com/en/pricing",
+      "h1": [
+        "Design Faster and Smarter",
+        "Educational & Training Centers",
+        "FAQ's",
+        "Do you have more questions?"
+      ],
+      "h2": [],
+      "h3": [
+        "What do I need to use Architechtures?",
+        "Can the platform do any design?",
+        "How does the 7-day free trial work?",
+        "How does the AI-assisted mode work?",
+        "What happens if I use up all my monthly minutes in AI-assisted mode?",
+        "If I stop paying my Paid subscription fee, do I lose my account and my designs?",
+        "What is Viewer mode? Do I need to subscribe to a plan to view a design shared with me?",
+        "How can you share Designs, and what's the difference between sharing in View mode or Edit mode?",
+        "What are Design Downloadables?",
+        "What happens if my typologies are not avaliable on the platform?",
+        "I haven't used my account for a long time, can I lose it?"
+      ],
+      "word_count": 613,
+      "ctas": [
+        "Contact Sales",
+        "Free Trial",
+        "7 Days Free Trial",
+        "Contact Us"
+      ],
+      "price_signals": [
+        "$ 49",
+        "$ 588",
+        "$ 294",
+        "$ 3,528",
+        "contact sales",
+        "custom pricing",
+        "free trial"
+      ]
+    },
+    {
+      "url": "https://architechtures.com/en",
+      "final_url": "https://architechtures.com/en",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Architechtures - AI Architecture Generator. Building Design",
+      "meta_description": "AI Architecture Generator. Reduces architectural design time. Discover the power of Artificial Intelligence in Architecture",
+      "og_title": "Architechtures - AI Architecture Generator. Building Design",
+      "og_description": "AI Architecture Generator. Reduces architectural design time. Discover the power of Artificial Intelligence in Architecture",
+      "canonical": "https://architechtures.com/en",
+      "h1": [
+        "AI-Powered Building Design",
+        "AI Architecture Generator in Real-Time",
+        "How It Works",
+        "Generate optimal building designs in real-time",
+        "Coming Soon…"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 1779,
+      "ctas": [
+        "Contact Sales",
+        "Free Trial",
+        "7 Days Free Trial",
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://architechtures.com/en/about-us",
+      "final_url": "https://architechtures.com/en/about-us",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "About Us - Architechtures",
+      "meta_description": "",
+      "og_title": "About Us - Architechtures",
+      "og_description": "",
+      "canonical": "https://architechtures.com/en/about-us",
+      "h1": [
+        "About Us",
+        "Contact Us"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 345,
+      "ctas": [
+        "Contact Sales",
+        "Free Trial",
+        "Contact Us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 136,
+  "notes": [],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 0,
+    "/competitors": 404,
+    "/vs": 404
+  },
+  "candidates_found": 3,
+  "headings_found": 27
+}

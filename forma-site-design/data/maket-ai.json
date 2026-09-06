@@ -1,0 +1,206 @@
+{
+  "slug": "maket-ai",
+  "input": "maket.ai",
+  "domain": "maket.ai",
+  "name": "Maket",
+  "final_url": "https://www.maket.ai/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:58+00:00",
+  "pages": [
+    {
+      "url": "https://maket.ai/",
+      "final_url": "https://www.maket.ai/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "AI Home Design Studio: Plan & Visualize in Minutes | Maket",
+      "meta_description": "Maket is an AI home design studio: generate floor plans, edit by chat, and visualize your space in minutes. Start free today.",
+      "og_title": "AI Home Design Studio: Plan & Visualize in Minutes | Maket",
+      "og_description": "Maket is an AI home design studio: generate floor plans, edit by chat, and visualize your space in minutes. Start free today.",
+      "canonical": "https://www.maket.ai/",
+      "h1": [
+        "The AI Home Design Studio",
+        "The AI Home Design Studio",
+        "The AI Home Design Studio",
+        "The AI Home Design Studio",
+        "hello@maket.ai"
+      ],
+      "h2": [
+        "The future of home design",
+        "Anyone can design a home",
+        "Your questions, answered"
+      ],
+      "h3": [
+        "What is Maket and how does it work?",
+        "What is home design AI?",
+        "Is Maket an AI floor plan generator?",
+        "Can I upload an existing floor plan?",
+        "Do I need architecture experience?"
+      ],
+      "word_count": 637,
+      "ctas": [
+        "Sign up→→",
+        "Get started for free"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.maket.ai/pricing",
+      "final_url": "https://www.maket.ai/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Maket Pricing & Plans: Start Free",
+      "meta_description": "Compare Maket's plans and see how credits work. Start free with 50 credits a month, then upgrade as your projects grow. No card needed.",
+      "og_title": "Maket Pricing & Plans: Start Free",
+      "og_description": "Compare Maket's plans and see how credits work. Start free with 50 credits a month, then upgrade as your projects grow. No card needed.",
+      "canonical": "https://www.maket.ai/pricing",
+      "h1": [
+        "Plans Built for Every Project Size",
+        "Plans Built for Every Project Size",
+        "hello@maket.ai",
+        "hello@maket.ai",
+        "hello@maket.ai"
+      ],
+      "h2": [
+        "How pricing works",
+        "How pricing works",
+        "How your credits work",
+        "How your credits work"
+      ],
+      "h3": [
+        "Free",
+        "Homeowner",
+        "Pro",
+        "Scale",
+        "How much does Maket cost?",
+        "Is Maket Free? What’s included in the Free plan?",
+        "What’s included in the Homeowner Plan?",
+        "What’s included in the Pro Plan?",
+        "What’s included in the Scale Plan?",
+        "Does Maket offer a free trial?",
+        "How do Maket credits work?",
+        "How much can I create with 300 credits?",
+        "What’s the difference between monthly and annual billing?",
+        "Can I change or cancel my plan?",
+        "Can I use top-ups without a paid subscription?",
+        "What happens to top-up credits if I cancel?",
+        "What happens when I upgrade my plan?",
+        "What’s the difference between AI-assisted and human-validated plan uploads?"
+      ],
+      "word_count": 1208,
+      "ctas": [
+        "Sign up→→",
+        "Talk to sales",
+        "Get started for free"
+      ],
+      "price_signals": [
+        "$0 / month",
+        "$20 / month",
+        "$100 / month",
+        "$20/month",
+        "$100/month",
+        "talk to sales",
+        "custom pricing",
+        "free plan",
+        "free trial",
+        "no credit card"
+      ]
+    },
+    {
+      "url": "https://www.maket.ai/features",
+      "final_url": "https://www.maket.ai/features",
+      "page_type": "features",
+      "status": 200,
+      "error": "",
+      "title": "AI Home Design App: Create, Edit & Visualize | Maket",
+      "meta_description": "See how Maket's AI home design tools generate floor plans, edit them by chat, and render your space in minutes. Start free.",
+      "og_title": "AI Home Design App: Create, Edit & Visualize | Maket",
+      "og_description": "See how Maket's AI home design tools generate floor plans, edit them by chat, and render your space in minutes. Start free.",
+      "canonical": "https://www.maket.ai/features",
+      "h1": [
+        "Design, iterate, and explore on one canvas",
+        "Design, iterate, and explore on one canvas",
+        "Design, iterate, and explore on one canvas",
+        "hello@maket.ai",
+        "hello@maket.ai"
+      ],
+      "h2": [
+        "One workspace. Every space.",
+        "Your questions, answered"
+      ],
+      "h3": [
+        "Create floor plan",
+        "Design and iterate",
+        "Generate renders",
+        "Create floor plan",
+        "Design and iterate",
+        "Generate renders",
+        "Floor plans",
+        "Renovations",
+        "Interiors",
+        "Home exteriors",
+        "Kitchens",
+        "Rooms",
+        "Room decorator",
+        "Living rooms",
+        "Bedrooms",
+        "Architecture",
+        "Can AI really generate floor plans?",
+        "Which AI is best for floor plan design?",
+        "Which AI is best for floor plan design?",
+        "Do I still need an architect?",
+        "What types of floor plans can Maket generate?",
+        "Is Maket free?"
+      ],
+      "word_count": 836,
+      "ctas": [
+        "Sign up→→",
+        "Get started for free"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.maket.ai/about",
+      "final_url": "https://www.maket.ai/about",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "About Us | Maket",
+      "meta_description": "Discover Maket’s mission to democratize architecture with AI-powered tools that help homeowners and professionals design better homes.",
+      "og_title": "About Us | Maket",
+      "og_description": "Discover Maket’s mission to democratize architecture with AI-powered tools that help homeowners and professionals design better homes.",
+      "canonical": "https://www.maket.ai/about",
+      "h1": [
+        "We believe every home should have access to great architecture.",
+        "hello@maket.ai",
+        "hello@maket.ai",
+        "hello@maket.ai"
+      ],
+      "h2": [
+        "Our values",
+        "Our values",
+        "Our values"
+      ],
+      "h3": [],
+      "word_count": 468,
+      "ctas": [
+        "Sign up→→",
+        "Get started for free"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 126,
+  "notes": [],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404
+  },
+  "candidates_found": 3,
+  "headings_found": 76
+}

@@ -1,0 +1,130 @@
+{
+  "slug": "aprao-com",
+  "input": "aprao.com",
+  "domain": "aprao.com",
+  "name": "Aprao",
+  "final_url": "https://www.aprao.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:18+00:00",
+  "pages": [
+    {
+      "url": "https://aprao.com/",
+      "final_url": "https://www.aprao.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Aprao Property Development Appraisal Software",
+      "meta_description": "Streamline your development appraisals with Aprao. Create accurate reports, collaborate seamlessly, and leverage advanced financial modeling tools—all backed by enterprise-grade security. Start your free trial today.",
+      "og_title": "Aprao Property Development Appraisal Software",
+      "og_description": "Streamline your development appraisals with Aprao. Create accurate reports, collaborate seamlessly, and leverage advanced financial modeling tools—all backed by enterprise-grade security. Start your free trial today.",
+      "canonical": "https://www.aprao.com",
+      "h1": [
+        "Assess every real estate deal with confidence"
+      ],
+      "h2": [
+        "AI, Valuations and What RICS's New Standards Actually Mean",
+        "Built for the way you work",
+        "Everything you need to run your numbers with confidence",
+        "The financial-modelling engine for the AI era",
+        "Enterprise-grade security, by default",
+        "What our customers say",
+        "Frequently asked questions",
+        "Try Aprao free for 7 days"
+      ],
+      "h3": [
+        "Aprao powers over 3,000 real estate projects every month",
+        "Escape spreadsheet risk",
+        "Win trust with professional reports",
+        "Answers in minutes, not days",
+        "Development pro-formas",
+        "Residual land value",
+        "Cashflow forecasting",
+        "Sensitivity analysis",
+        "Professional reporting",
+        "Development finance",
+        "Project management",
+        "Team collaboration",
+        "Multi-platform access",
+        "For developers",
+        "For professionals"
+      ],
+      "word_count": 929,
+      "ctas": [
+        "Start free trial",
+        "Book a demo"
+      ],
+      "price_signals": [
+        "free trial"
+      ]
+    },
+    {
+      "url": "https://www.aprao.com/pricing",
+      "final_url": "https://www.aprao.com/#Pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Aprao Property Development Appraisal Software",
+      "meta_description": "Streamline your development appraisals with Aprao. Create accurate reports, collaborate seamlessly, and leverage advanced financial modeling tools—all backed by enterprise-grade security. Start your free trial today.",
+      "og_title": "Aprao Property Development Appraisal Software",
+      "og_description": "Streamline your development appraisals with Aprao. Create accurate reports, collaborate seamlessly, and leverage advanced financial modeling tools—all backed by enterprise-grade security. Start your free trial today.",
+      "canonical": "https://www.aprao.com",
+      "h1": [
+        "Assess every real estate deal with confidence"
+      ],
+      "h2": [
+        "AI, Valuations and What RICS's New Standards Actually Mean",
+        "Built for the way you work",
+        "Everything you need to run your numbers with confidence",
+        "The financial-modelling engine for the AI era",
+        "Enterprise-grade security, by default",
+        "What our customers say",
+        "Frequently asked questions",
+        "Try Aprao free for 7 days"
+      ],
+      "h3": [
+        "Aprao powers over 3,000 real estate projects every month",
+        "Escape spreadsheet risk",
+        "Win trust with professional reports",
+        "Answers in minutes, not days",
+        "Development pro-formas",
+        "Residual land value",
+        "Cashflow forecasting",
+        "Sensitivity analysis",
+        "Professional reporting",
+        "Development finance",
+        "Project management",
+        "Team collaboration",
+        "Multi-platform access",
+        "For developers",
+        "For professionals"
+      ],
+      "word_count": 929,
+      "ctas": [
+        "Start free trial",
+        "Book a demo"
+      ],
+      "price_signals": [
+        "free trial"
+      ]
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 415,
+  "notes": [
+    "no nav or sitemap candidates; trying common paths",
+    "https://www.aprao.com/products -> HTTP 404",
+    "https://www.aprao.com/platform -> HTTP 404",
+    "https://www.aprao.com/solutions -> HTTP 404",
+    "https://www.aprao.com/features -> HTTP 404",
+    "https://www.aprao.com/about -> HTTP 404"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404
+  },
+  "candidates_found": 6,
+  "headings_found": 48
+}

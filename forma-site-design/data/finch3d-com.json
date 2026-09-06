@@ -1,0 +1,119 @@
+{
+  "slug": "finch3d-com",
+  "input": "finch3d.com",
+  "domain": "finch3d.com",
+  "name": "Finch3d",
+  "final_url": "https://www.finch3d.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:50+00:00",
+  "pages": [
+    {
+      "url": "https://finch3d.com/",
+      "final_url": "https://www.finch3d.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Finch - AI for how the world builds",
+      "meta_description": "Optimize building design with AI and graph technology. Get immediate feedback on performance, detect errors and find optimal solutions.",
+      "og_title": "Finch - AI for how the world builds",
+      "og_description": "Optimize building design with AI and graph technology. Get immediate feedback on performance, detect errors and find optimal solutions.",
+      "canonical": "https://www.finch3d.com",
+      "h1": [
+        "AI for how the world builds"
+      ],
+      "h2": [
+        "AI-native platform for building design",
+        "Encode design systems",
+        "Explore more",
+        "Test thousands of design options to understand trade-offs with real-time data",
+        "Refine with precision",
+        "Deliver faster",
+        "For any typology",
+        "Used by AEC professionals worldwide"
+      ],
+      "h3": [
+        "Master plan",
+        "Residential",
+        "High-rise",
+        "Office",
+        "Built by architects, for the way AEC professionals actually design and make decisions.",
+        "Finch enables teams to generate building designs with precision, explore at scale, and deliver projects faster with real-time data."
+      ],
+      "word_count": 308,
+      "ctas": [
+        "Get started",
+        "Book a demo"
+      ],
+      "price_signals": [],
+      "recovered_via": "scan + WebFetch (site renders client-side)"
+    },
+    {
+      "url": "https://www.finch3d.com/pricing",
+      "final_url": "https://www.finch3d.com/get-started",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Get started",
+      "meta_description": "",
+      "og_title": "Get started",
+      "og_description": "",
+      "canonical": "https://www.finch3d.com/get-started",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "word_count": 192,
+      "ctas": [
+        "Get started",
+        "Create account",
+        "14 day free trial",
+        "Book a demo"
+      ],
+      "price_signals": [
+        "€79",
+        "€14,500",
+        "€14.50",
+        "free trial",
+        "billed annually",
+        "billed monthly"
+      ]
+    },
+    {
+      "url": "https://www.finch3d.com/product",
+      "final_url": "https://www.finch3d.com/product",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Product",
+      "meta_description": "Optimize building design with AI and graph technology. From manual drafting to real-time building design with live data.",
+      "og_title": "Product",
+      "og_description": "Optimize building design with AI and graph technology. From manual drafting to real-time building design with live data.",
+      "canonical": "https://www.finch3d.com/product",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "word_count": 422,
+      "ctas": [
+        "Get started",
+        "Book a demo"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 9,
+  "notes": [
+    "found pricing page by probing: https://www.finch3d.com/pricing",
+    "no headings extracted: site is JS-rendered, parked, or blocking bots -- fall back to WebFetch for this domain, or treat copy as unavailable",
+    "site renders client-side; copy recovered verbatim via WebFetch"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404,
+    "/pricing": 200
+  },
+  "candidates_found": 2,
+  "headings_found": 15
+}

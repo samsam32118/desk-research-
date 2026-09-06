@@ -1,0 +1,1855 @@
+{
+  "anchor": {
+    "id": "forma",
+    "name": "Autodesk Forma Site Design",
+    "domain": "autodesk.com"
+  },
+  "market_definition": "Software that compresses the earliest phase of a building project - the weeks between acquiring a site and committing to a scheme - into hours. The companies call it site design, site planning, feasibility, volume studies, massing, or early-phase design, and the choice of noun is itself the positioning. Running through the market is one disagreement: whether the early study exists to establish how a place will perform - sun, wind, noise, density, carbon - or to establish whether the deal makes money. Autodesk Forma Site Design is the clearest statement of the first position; Aprao, Deepblocks and TestFit are the clearest statements of the second. A second, quieter split runs underneath: who owns the context data the answer depends on.",
+  "generated_at": "2026-09-06",
+  "companies": [
+    {
+      "id": "forma",
+      "name": "Autodesk Forma Site Design",
+      "domain": "autodesk.com",
+      "level": 0,
+      "discovered_via": "anchor (user-supplied URL)",
+      "category": "early-phase site design and analysis",
+      "segment": "AEC firms, mid-to-large",
+      "hq": "US (Autodesk, San Francisco)",
+      "one_liner": "Data-driven software for site design and analysis, part of the early-phase tools for Forma",
+      "positioning": "Sells the early phase as a place where environmental performance is decided, not just geometry: wind, sun, daylight, carbon read in seconds, then handed to Revit.",
+      "icp": "Architects and designers inside the Autodesk estate; the blog's own words are 'architects and designers'",
+      "pricing_model": "per-seat subscription, published; also bundled in the AEC Collection",
+      "price_signal": "approx. $185/mo or $1,445/yr standalone (third-party reported; page unreadable)",
+      "key_claims": [
+        "Designing with wind: what a children's science museum taught us",
+        "Schematic design in multifamily projects: when decisions-and mistakes-scale",
+        "How does Forma Site Design work with Revit and other tools?"
+      ],
+      "parent": ""
+    },
+    {
+      "id": "testfit",
+      "name": "TestFit",
+      "domain": "testfit.io",
+      "level": 1,
+      "discovered_via": "search: 'Spacemaker alternatives'; named repeatedly against Forma",
+      "category": "real estate feasibility",
+      "segment": "developer deal teams, US",
+      "hq": "US (Dallas)",
+      "one_liner": "Real Estate Feasibility Platform",
+      "positioning": "Puts the deal, not the drawing, at the centre: site plans exist to serve a pro forma.",
+      "icp": "'Built for the Deal Team' - developers, architects and contractors",
+      "pricing_model": "per-seat published tiers, free tier",
+      "price_signal": "$0/mo entry; $200-$300 tiers; $10,000 figure on pricing",
+      "key_claims": [
+        "Automate Site Plans. Accelerate Decisions.",
+        "A New Real Estate Feasibility Workflow",
+        "Minimize Earthwork Cost with Automatic Cut and Fill"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "giraffe",
+      "name": "Giraffe",
+      "domain": "giraffe.build",
+      "level": 1,
+      "discovered_via": "search: 'Autodesk Forma alternatives'",
+      "category": "real estate decision platform",
+      "segment": "developers, planners, local government",
+      "hq": "Australia (Sydney)",
+      "one_liner": "The Orchestration Layer for AI-Driven Real Estate",
+      "positioning": "Reframes the category away from a design tool and towards an enterprise decision system that absorbs the consultants.",
+      "icp": "'developers, planners, designers, and analysts who want to move fast'; also 'For Local Governments & Municipalities'",
+      "pricing_model": "contact sales",
+      "price_signal": "no published figure; 'no credit card' trial",
+      "key_claims": [
+        "Build beautiful cities",
+        "Giraffe integrates fragmented workflows into a single structured decision system.",
+        "AI is changing the economics of doing real estate."
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "snaptrude",
+      "name": "Snaptrude",
+      "domain": "snaptrude.com",
+      "level": 1,
+      "discovered_via": "search: 'conceptual design software wind noise daylight'",
+      "category": "AI BIM for architects",
+      "segment": "architecture practices",
+      "hq": "India / US",
+      "one_liner": "The AI-Powered BIM software for Architects",
+      "positioning": "The one competitor that promises the whole arc - brief to BIM - in a single model, rather than handing off at concept.",
+      "icp": "Architects; 'Driven by Architects Powered by AI'",
+      "pricing_model": "per-seat published, free tier",
+      "price_signal": "$0; $60/month; $100/month",
+      "key_claims": [
+        "From brief to BIM, in one connected model",
+        "10 AI agents for zoning, site analysis, massing, floor plans & more",
+        "Concept to BIM-ready models in your browser"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "dbf",
+      "name": "Digital Blue Foam",
+      "domain": "digitalbluefoam.com",
+      "level": 1,
+      "discovered_via": "search: 'generative site planning massing feasibility'",
+      "category": "spatial reasoning AI",
+      "segment": "cities, governments, asset owners",
+      "hq": "Singapore",
+      "one_liner": "Your spatial reasoning layer for every asset decision.",
+      "positioning": "Has climbed out of the design-tool category entirely into an AI reasoning layer sold to institutions.",
+      "icp": "'cities, governments and asset owners'",
+      "pricing_model": "contact sales",
+      "price_signal": "talk to sales only",
+      "key_claims": [
+        "One engine, every spatial decision",
+        "Ask a real spatial question Get a defensible answer",
+        "Anyone can call an LLM The spatial memory beneath it is the moat"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "hypar",
+      "name": "Hypar",
+      "domain": "hypar.io",
+      "level": 1,
+      "discovered_via": "search: 'early stage design platform comparison'",
+      "category": "space planning",
+      "segment": "architecture firms",
+      "hq": "US",
+      "one_liner": "Space planning software for building buy-in",
+      "positioning": "Narrowest promise in the level-1 set, and the most explicit about the human problem: agreement, not optimisation.",
+      "icp": "Project teams and their clients; 'Studio tier for firms standardizing on Hypar'",
+      "pricing_model": "per-seat published",
+      "price_signal": "$100 per user per month",
+      "key_claims": [
+        "Hypar is space planning software for building buy-in: early-phase architectural space planning in the browser.",
+        "Plan buildings your client and team can agree on faster.",
+        "Import site and Revit data, edit with automatic measurement, export to Revit."
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "finch",
+      "name": "Finch",
+      "domain": "finch3d.com",
+      "level": 1,
+      "discovered_via": "search: 'comparing early-stage feasibility tools 2026'",
+      "category": "AI-native building design",
+      "segment": "AEC professionals, Europe",
+      "hq": "Sweden (Stockholm)",
+      "one_liner": "AI for how the world builds",
+      "positioning": "Sells breadth of exploration - thousands of options with live trade-off data - rather than a finished answer.",
+      "icp": "'Built by architects, for the way AEC professionals actually design and make decisions.'",
+      "pricing_model": "published tiers",
+      "price_signal": "EUR 79 entry; EUR 14,500 upper tier",
+      "key_claims": [
+        "AI-native platform for building design",
+        "Test thousands of design options to understand trade-offs with real-time data",
+        "Encode design systems"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "bentley",
+      "name": "Bentley OpenSite+",
+      "domain": "bentley.com",
+      "level": 1,
+      "discovered_via": "search: 'site design software' - direct name-match competitor",
+      "category": "civil site design",
+      "segment": "civil engineers, land development",
+      "hq": "US (Exton, PA)",
+      "one_liner": "OpenSite+: AI-Powered Site Design Software",
+      "positioning": "Owns the literal phrase 'site design software' from the civil-engineering end, where the deliverable is grading and construction documents.",
+      "icp": "Engineers and drafters on commercial, industrial and residential sites",
+      "pricing_model": "enterprise / quote",
+      "price_signal": "no accessible pricing",
+      "key_claims": [
+        "OpenSite+: AI-Powered Site Design Software",
+        "The First AI-driven Civil Engineering Software for Site Design",
+        "Civil WorkSuite: Site Design Software"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "archistar",
+      "name": "Archistar",
+      "domain": "archistar.ai",
+      "level": 1,
+      "discovered_via": "search: 'Giraffe competitors'",
+      "category": "AI plan review and permitting",
+      "segment": "local governments",
+      "hq": "Australia (Sydney)",
+      "one_liner": "Fast-track building permits with AI plan review",
+      "positioning": "Started in site feasibility and has repositioned onto the regulator's side of the table - permitting, not proposing.",
+      "icp": "'local governments'; 'Trusted by Los Angeles and Austin'",
+      "pricing_model": "published tiers",
+      "price_signal": "$95, $345/mo, $595",
+      "key_claims": [
+        "AI PreCheck is trusted by 30-plus cities and local governments worldwide",
+        "Trusted by Los Angeles and Austin to cut permit approval times by up to 55%",
+        "Standardized assessment in minutes"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "architechtures",
+      "name": "Architechtures",
+      "domain": "architechtures.com",
+      "level": 2,
+      "discovered_via": "search: 'generative residential buildings'",
+      "category": "AI building generator",
+      "segment": "residential architects",
+      "hq": "Spain (Madrid)",
+      "one_liner": "AI-Powered Building Design",
+      "positioning": "Generation speed is the whole pitch; site context barely features.",
+      "icp": "Architects doing residential buildings",
+      "pricing_model": "published tiers",
+      "price_signal": "$49 / $294 / $588 / $3,528",
+      "key_claims": [
+        "AI Architecture Generator in Real-Time",
+        "Generate optimal building designs in real-time",
+        "Reduces architectural design time"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "maket",
+      "name": "Maket",
+      "domain": "maket.ai",
+      "level": 2,
+      "discovered_via": "search: 'TestFit alternatives'",
+      "category": "AI home design",
+      "segment": "homeowners and small practices",
+      "hq": "Canada",
+      "one_liner": "The AI Home Design Studio",
+      "positioning": "The consumer end of the category - 'Anyone can design a home' is the opposite of a professional site tool.",
+      "icp": "'Anyone can design a home'",
+      "pricing_model": "freemium published",
+      "price_signal": "$0 / $20 / $100 per month",
+      "key_claims": [
+        "The future of home design",
+        "Anyone can design a home",
+        "generate floor plans, edit by chat, and visualize your space in minutes"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "zenerate",
+      "name": "Zenerate",
+      "domain": "zenerate.ai",
+      "level": 2,
+      "discovered_via": "search: 'TestFit alternatives'",
+      "category": "AI feasibility studies",
+      "segment": "land developers",
+      "hq": "US",
+      "one_liner": "AI Feasibility Study Tool for Land Development",
+      "positioning": "Same wedge as TestFit, narrower: feasibility studies delivered as an output, in minutes.",
+      "icp": "Land development teams; built by 'architects, AI developers, designers, computational designers'",
+      "pricing_model": "subscription, figures not published",
+      "price_signal": "free trial; 'Subscription Plans' with no figures",
+      "key_claims": [
+        "AI-Powered Feasibility Studies Delivered in Minutes",
+        "Instantly generate optimized site plans, floor plans, and parking layouts with pro forma insights for faster land development.",
+        "Ready to See It on Your Own Site?"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "arkdesign",
+      "name": "ArkDesign.AI",
+      "domain": "arkdesign.ai",
+      "level": 2,
+      "discovered_via": "search: 'TestFit alternatives'",
+      "category": "AI feasibility for multifamily",
+      "segment": "architects and developers, multifamily",
+      "hq": "US",
+      "one_liner": "AI-Powered Design & Feasibility Studies for Multi-Family & Mixed-Use Projects",
+      "positioning": "Leads with the developer's outcome in three words and never softens it.",
+      "icp": "'A tool for architects and real estate developers'",
+      "pricing_model": "not published",
+      "price_signal": "no pricing page found",
+      "key_claims": [
+        "Generate More Profit",
+        "Up to code",
+        "How industry leaders are using ARK"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "deepblocks",
+      "name": "Deepblocks",
+      "domain": "deepblocks.com",
+      "level": 2,
+      "discovered_via": "search: 'site feasibility land development software'",
+      "category": "AI site selection and feasibility",
+      "segment": "real estate developers, US cities",
+      "hq": "US (Miami)",
+      "one_liner": "AI-driven site selection and feasibility",
+      "positioning": "The most financially explicit site in the corpus: real deals, real return percentages, on the homepage.",
+      "icp": "Developers and underwriters",
+      "pricing_model": "published tiers",
+      "price_signal": "$55.55/mo; $499/mo; $1,999/mo; $3,999/mo",
+      "key_claims": [
+        "...yielding an 8.44% return on cost.",
+        "...a variance scenario reaching a 42% return on cost.",
+        "connect the feasibility study to your existing pro forma"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "landtech",
+      "name": "LandTech",
+      "domain": "land.tech",
+      "level": 2,
+      "discovered_via": "search: 'site feasibility land development software'",
+      "category": "land sourcing and appraisal",
+      "segment": "UK land and development teams",
+      "hq": "UK (London)",
+      "one_liner": "Faster & Smarter Land Decisions for Developers",
+      "positioning": "Owns the step before design entirely - find the land, prove it works, then someone else draws it.",
+      "icp": "'Built for every type of land professional'; 'UK developers'",
+      "pricing_model": "published",
+      "price_signal": "GBP 150 / month",
+      "key_claims": [
+        "All Your Land Decisions, Powered by One Intelligent Platform.",
+        "An ecosystem built for the full development journey.",
+        "Identify high-demand locations and build profitable, compliant schemes with confidence"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "modelur",
+      "name": "Modelur (AgiliCity)",
+      "domain": "modelur.com",
+      "level": 2,
+      "discovered_via": "search: 'urban planning platform competitors'",
+      "category": "early-stage urban design",
+      "segment": "architects and urban designers",
+      "hq": "Slovenia",
+      "one_liner": "Fast and Accurate 3D Massing and Feasibility Studies",
+      "positioning": "Positions as a plugin, not a platform: 'SketchUp Supercharged'.",
+      "icp": "Architects doing urban massing",
+      "pricing_model": "published per-seat, free tier",
+      "price_signal": "EUR 0 / EUR 74 per seat / EUR 149 per seat",
+      "key_claims": [
+        "SketchUp Supercharged",
+        "Better Early Stage Decisions and Super-Fast Iterations",
+        "calculates key urban parameters in real-time"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "hektar",
+      "name": "Hektar",
+      "domain": "hektar.ai",
+      "level": 2,
+      "discovered_via": "search: 'Spacemaker alternatives'",
+      "category": "volume studies and site feasibility",
+      "segment": "Nordic developers, architects, municipalities",
+      "hq": "Sweden",
+      "one_liner": "Volume Studies & Site Feasibility in Minutes",
+      "positioning": "Regionally anchored and openly so - the Nordics are named in the meta description.",
+      "icp": "'developers, architects, and municipalities across the Nordics'",
+      "pricing_model": "contact sales",
+      "price_signal": "talk to sales",
+      "key_claims": [
+        "Explore your site. Volume studies in minutes.",
+        "Hektar generates volume studies, density scenarios and KPIs for raw land in minutes.",
+        "A Number Without Context Is Just a Number"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "cove",
+      "name": "cove.tool (cove.inc)",
+      "domain": "cove.inc",
+      "level": 2,
+      "discovered_via": "adjacent: early-stage building performance analysis",
+      "category": "building performance analysis",
+      "segment": "architects and engineers",
+      "hq": "US (Atlanta)",
+      "one_liner": "No copy available - site returns an HTTP 202 bot challenge",
+      "positioning": "Not plotted: no first-party copy could be read, so any position would be invented.",
+      "icp": "unknown from copy",
+      "pricing_model": "unknown",
+      "price_signal": "unknown",
+      "key_claims": [],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "esri",
+      "name": "Esri ArcGIS Urban",
+      "domain": "esri.com",
+      "level": 2,
+      "discovered_via": "adjacent: urban planning / GIS incumbent",
+      "category": "urban planning and design",
+      "segment": "cities and planning departments",
+      "hq": "US (Redlands)",
+      "one_liner": "Urban Planning, Design & Development Software",
+      "positioning": "The GIS incumbent: context data is the product, design is a feature on top of it.",
+      "icp": "Cities; planners and development review teams",
+      "pricing_model": "enterprise / quote",
+      "price_signal": "free trial only",
+      "key_claims": [
+        "Transforming urban planning and design",
+        "3D scenario modeling",
+        "Project e-submission"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "urbansim",
+      "name": "UrbanSim",
+      "domain": "urbansim.com",
+      "level": 2,
+      "discovered_via": "search: 'Giraffe competitors'",
+      "category": "urban simulation",
+      "segment": "cities and regional agencies",
+      "hq": "US (Berkeley)",
+      "one_liner": "Smarter Urban Development with AI",
+      "positioning": "Simulation and forecasting for public agencies, a scale above any single site.",
+      "icp": "'cities and developers'",
+      "pricing_model": "not published",
+      "price_signal": "no pricing page",
+      "key_claims": [
+        "PLAN DIFFERENTLY",
+        "PLAN INTELLIGENTLY",
+        "helps cities and developers to build smarter and more sustainable cities, and reduce costs"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "sketchup",
+      "name": "SketchUp (Trimble)",
+      "domain": "sketchup.com",
+      "level": 2,
+      "discovered_via": "adjacent incumbent: named top alternative on directories",
+      "category": "3D design",
+      "segment": "architects, designers, builders",
+      "hq": "US (Trimble)",
+      "one_liner": "Bring your vision to life",
+      "positioning": "The general-purpose modeller these tools are measured against, and the substrate Modelur plugs into.",
+      "icp": "'architects, designers, and builders'",
+      "pricing_model": "published per-seat",
+      "price_signal": "$10.75 / $30 / $33.25 / $40",
+      "key_claims": [
+        "Design in 3D, from concept to construction",
+        "Revolutionize the way you create",
+        "Connected tools. Seamless workflow."
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "vectorworks",
+      "name": "Vectorworks Landmark",
+      "domain": "vectorworks.net",
+      "level": 2,
+      "discovered_via": "adjacent: landscape/site design incumbent",
+      "category": "landscape design",
+      "segment": "landscape architects",
+      "hq": "US (Columbia, MD)",
+      "one_liner": "THE ULTIMATE LANDSCAPE DESIGN SOFTWARE",
+      "positioning": "The other reading of 'site design': planting, irrigation and documentation, all the way to drawings.",
+      "icp": "Landscape architects",
+      "pricing_model": "perpetual/subscription, quote",
+      "price_signal": "free trial; 'Buy Now'",
+      "key_claims": [
+        "Landscape design software for every project phase",
+        "Work Smarter with 3D Landscape BIM Software",
+        "transform your design, presentation, irrigation, and documentation workflows"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "aprao",
+      "name": "Aprao",
+      "domain": "aprao.com",
+      "level": 2,
+      "discovered_via": "search: 'development site finder software'",
+      "category": "development appraisal",
+      "segment": "property developers and lenders",
+      "hq": "UK (London)",
+      "one_liner": "Assess every real estate deal with confidence",
+      "positioning": "Pure finance: no geometry at all, which makes it the clean money-end pole of this market.",
+      "icp": "Developers, valuers and lenders",
+      "pricing_model": "subscription, figures not published",
+      "price_signal": "free trial; no figures on pricing page",
+      "key_claims": [
+        "The financial-modelling engine for the AI era",
+        "Everything you need to run your numbers with confidence",
+        "Enterprise-grade security, by default"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "landchecker",
+      "name": "Landchecker",
+      "domain": "landchecker.com.au",
+      "level": 2,
+      "discovered_via": "search: 'development site finder software'",
+      "category": "property and land data",
+      "segment": "Australian property professionals",
+      "hq": "Australia (Melbourne)",
+      "one_liner": "Australian property data in one place - for faster, insight-driven decisions",
+      "positioning": "Data utility, single country, priced like a subscription service rather than a design tool.",
+      "icp": "'thousands of businesses'; Australian property professionals",
+      "pricing_model": "published tiers",
+      "price_signal": "$0 / $200 / $240 / $2,400 per year",
+      "key_claims": [
+        "The complete property intelligence platform",
+        "Planning Zones, Overlays and Layers",
+        "Permits and Development Applications"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "urbanfootprint",
+      "name": "UrbanFootprint",
+      "domain": "urbanfootprint.com",
+      "level": 2,
+      "discovered_via": "adjacent: urban/land-use analytics",
+      "category": "resilience decision intelligence",
+      "segment": "utilities, government, finance",
+      "hq": "US (Berkeley)",
+      "one_liner": "The Resilient Decision Intelligence Platform",
+      "positioning": "Has left design behind for risk and climate analytics sold to institutions.",
+      "icp": "Utilities, public agencies and financial institutions",
+      "pricing_model": "enterprise / quote",
+      "price_signal": "pricing page with no figures",
+      "key_claims": [
+        "Resilience Insights for where to",
+        "Climate Risk & Sustainability",
+        "Assess risk and make data-driven decisions"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "geopogo",
+      "name": "Geopogo",
+      "domain": "geopogo.com",
+      "level": 2,
+      "discovered_via": "search: 'Giraffe competitors'",
+      "category": "AI for architecture",
+      "segment": "architects using Revit",
+      "hq": "US",
+      "one_liner": "AI for Architecture: Claude to Revit & 3D City Models",
+      "positioning": "Sells the connective tissue - AI into Revit, and city context out - rather than a design environment.",
+      "icp": "Architects working in Revit, Unreal, Blender, SketchUp",
+      "pricing_model": "not readable",
+      "price_signal": "site renders client-side; no pricing readable",
+      "key_claims": [
+        "Design and edit Revit models with Claude AI - and download real-world 3D city models in seconds."
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "skema",
+      "name": "Skema",
+      "domain": "skema.ai",
+      "level": 2,
+      "discovered_via": "adjacent: precedent-driven early design",
+      "category": "generative design for AEC",
+      "segment": "architects and engineers",
+      "hq": "US",
+      "one_liner": "Generative Design for AEC",
+      "positioning": "Argues from the handoff problem: the value is carrying design intent into BIM, not generating options.",
+      "icp": "Architects and engineers",
+      "pricing_model": "published tiers",
+      "price_signal": "$199 / month; $750 / month",
+      "key_claims": [
+        "Design Intent Doesn't Survive the Handoff",
+        "Put Your Proven Designs Back to Work !",
+        "Your New BIM Workflow"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "civilsai",
+      "name": "Civils.ai",
+      "domain": "civils.ai",
+      "level": 2,
+      "discovered_via": "adjacent: AI for civil/site engineering",
+      "category": "AI quantity takeoff",
+      "segment": "groundworks contractors",
+      "hq": "Singapore / UK",
+      "one_liner": "AI Quantity Takeoffs & Checks for Contractors",
+      "positioning": "Downstream of everyone else: the site after it has been designed, priced for the contractor.",
+      "icp": "'groundworks contractors'",
+      "pricing_model": "published tiers",
+      "price_signal": "$90 / month; $270 / month",
+      "key_claims": [
+        "Accurate AI Takeoffs & Checks before your project breaks ground.",
+        "Cut takeoff time by up to 90%",
+        "Estimate your ROI in seconds."
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "transoft",
+      "name": "Transoft Solutions",
+      "domain": "transoftsolutions.com",
+      "level": 2,
+      "discovered_via": "adjacent: civil site design tooling",
+      "category": "transportation design software",
+      "segment": "transportation professionals",
+      "hq": "Canada (Vancouver)",
+      "one_liner": "Innovative Solutions for Transportation Professionals",
+      "positioning": "Adjacent discipline - movement and safety on the site rather than what gets built on it.",
+      "icp": "'transportation professionals'",
+      "pricing_model": "quote",
+      "price_signal": "no pricing page",
+      "key_claims": [
+        "Empowering Transportation Professionals Since 1991",
+        "help professionals plan, design, and operate safe transportation systems"
+      ],
+      "parent": "autodesk.com"
+    },
+    {
+      "id": "rhino",
+      "name": "Rhino (McNeel)",
+      "domain": "rhino3d.com",
+      "level": 2,
+      "discovered_via": "adjacent incumbent: Grasshopper is the parametric baseline these tools displace",
+      "category": "3D modelling",
+      "segment": "designers and computational designers",
+      "hq": "US (Seattle)",
+      "one_liner": "Rhino - Design, Model, Present, Analyze, Realize",
+      "positioning": "The open modelling substrate; every generative claim in this market is implicitly a claim against a Grasshopper script.",
+      "icp": "Designers and computational designers",
+      "pricing_model": "perpetual licence",
+      "price_signal": "no price captured in scan",
+      "key_claims": [
+        "Rhino 8",
+        "Design, Model, Present, Analyze, Realize..."
+      ],
+      "parent": "autodesk.com"
+    }
+  ],
+  "matrices": [
+    {
+      "id": "wedge",
+      "title": "The wedge: what the early decision is for",
+      "why_it_matters": "Everyone here shortens the same phase. They disagree about what that phase is deciding - how the building performs, or whether the deal works.",
+      "x": {
+        "label": "What the early study optimises",
+        "low": "environmental and design performance",
+        "high": "financial return on the deal"
+      },
+      "y": {
+        "label": "Scope of the promise",
+        "low": "one early study",
+        "high": "end-to-end decision platform"
+      },
+      "quadrants": {
+        "tl": "Design platforms",
+        "tr": "Deal operating systems",
+        "bl": "Performance point tools",
+        "br": "Feasibility calculators"
+      },
+      "points": [
+        {
+          "company": "forma",
+          "x": 1.5,
+          "y": 5.0,
+          "evidence": "H2 on blogs.autodesk.com/forma: 'Designing with wind: what a children's science museum taught us'; also 'Total Carbon Analysis in Forma Building Design'"
+        },
+        {
+          "company": "testfit",
+          "x": 8.0,
+          "y": 6.0,
+          "evidence": "meta on testfit.io: 'Optimize for the best site layout instantly with TestFit's site planning AI to meet both your pro forma and design intent.'"
+        },
+        {
+          "company": "giraffe",
+          "x": 7.0,
+          "y": 9.5,
+          "evidence": "H2 on giraffe.build: 'AI is changing the economics of doing real estate.'; title: 'The Orchestration Layer for AI-Driven Real Estate'"
+        },
+        {
+          "company": "snaptrude",
+          "x": 2.5,
+          "y": 7.0,
+          "evidence": "H1 on snaptrude.com: 'From brief to BIM, in one connected model'"
+        },
+        {
+          "company": "dbf",
+          "x": 5.5,
+          "y": 8.0,
+          "evidence": "meta on digitalbluefoam.com: 'ranked spatial scenarios scored on spatial ROI, infrastructure and liveability'"
+        },
+        {
+          "company": "hypar",
+          "x": 2.0,
+          "y": 3.0,
+          "evidence": "hypar.io/llms.txt: 'space planning software for building buy-in: early-phase architectural space planning in the browser'"
+        },
+        {
+          "company": "finch",
+          "x": 2.5,
+          "y": 6.0,
+          "evidence": "H2 on finch3d.com: 'Test thousands of design options to understand trade-offs with real-time data'"
+        },
+        {
+          "company": "bentley",
+          "x": 3.5,
+          "y": 7.0,
+          "evidence": "meta title, bentley.com/software/civil-worksuite/: 'Civil WorkSuite: Site Design Software' (title only; body copy unreadable)"
+        },
+        {
+          "company": "archistar",
+          "x": 6.5,
+          "y": 6.0,
+          "evidence": "meta on archistar.ai: 'Trusted by Los Angeles and Austin to cut permit approval times by up to 55%.'"
+        },
+        {
+          "company": "architechtures",
+          "x": 4.0,
+          "y": 3.0,
+          "evidence": "H1 on architechtures.com: 'Generate optimal building designs in real-time'"
+        },
+        {
+          "company": "maket",
+          "x": 1.5,
+          "y": 3.8,
+          "evidence": "H1 on maket.ai: 'The AI Home Design Studio'; H2: 'The future of home design' - a studio, not a single study"
+        },
+        {
+          "company": "zenerate",
+          "x": 8.5,
+          "y": 4.0,
+          "evidence": "meta on zenerate.ai: 'Generate site plans, floor plans, parking layouts, and pro formas to make faster and smarter land development decisions.'"
+        },
+        {
+          "company": "arkdesign",
+          "x": 8.0,
+          "y": 3.5,
+          "evidence": "H2 on arkdesign.ai: 'Generate More Profit'"
+        },
+        {
+          "company": "deepblocks",
+          "x": 9.5,
+          "y": 5.0,
+          "evidence": "H3 on deepblocks.com: 'a variance scenario reaching a 42% return on cost'"
+        },
+        {
+          "company": "landtech",
+          "x": 9.0,
+          "y": 8.5,
+          "evidence": "H1 on land.tech: 'All Your Land Decisions, Powered by One Intelligent Platform.'; H3: 'build profitable, compliant schemes'"
+        },
+        {
+          "company": "modelur",
+          "x": 3.5,
+          "y": 2.5,
+          "evidence": "meta on modelur.com: 'calculates key urban parameters in real-time'; H2: 'SketchUp Supercharged'"
+        },
+        {
+          "company": "hektar",
+          "x": 6.0,
+          "y": 3.0,
+          "evidence": "meta on hektar.ai: 'generates volume studies, density scenarios and KPIs for raw land in minutes'"
+        },
+        {
+          "company": "esri",
+          "x": 3.0,
+          "y": 8.5,
+          "evidence": "meta on esri.com ArcGIS Urban: 'Optimize cities, analyze data & create sustainable environments'"
+        },
+        {
+          "company": "urbansim",
+          "x": 3.5,
+          "y": 6.0,
+          "evidence": "meta on urbansim.com: 'helps cities and developers to build smarter and more sustainable cities, and reduce costs'"
+        },
+        {
+          "company": "sketchup",
+          "x": 2.0,
+          "y": 6.5,
+          "evidence": "meta on sketchup.com: 'Design in 3D, from concept to construction'"
+        },
+        {
+          "company": "vectorworks",
+          "x": 1.5,
+          "y": 6.0,
+          "evidence": "meta on vectorworks.net/landmark: 'transform your design, presentation, irrigation, and documentation workflows'"
+        },
+        {
+          "company": "aprao",
+          "x": 10.0,
+          "y": 4.0,
+          "evidence": "H1 on aprao.com: 'Assess every real estate deal with confidence'; H2: 'The financial-modelling engine for the AI era'"
+        },
+        {
+          "company": "landchecker",
+          "x": 7.5,
+          "y": 6.5,
+          "evidence": "H2 on landchecker.com.au: 'The complete property intelligence platform'"
+        },
+        {
+          "company": "urbanfootprint",
+          "x": 4.5,
+          "y": 7.5,
+          "evidence": "meta on urbanfootprint.com: 'Assess risk and make data-driven decisions with the most powerful urban, climate, and community resilience decision intelligence platform.'"
+        },
+        {
+          "company": "geopogo",
+          "x": 2.8,
+          "y": 2.0,
+          "evidence": "meta on geopogo.com: 'Design and edit Revit models with Claude AI - and download real-world 3D city models in seconds.'"
+        },
+        {
+          "company": "skema",
+          "x": 3.0,
+          "y": 5.0,
+          "evidence": "H1 on skema.ai: 'Generative Design for AEC'; H2: 'Design Intent Doesn't Survive the Handoff'"
+        },
+        {
+          "company": "civilsai",
+          "x": 7.0,
+          "y": 3.0,
+          "evidence": "H2 on civils.ai: 'Estimate your ROI in seconds.'; meta: 'Cut takeoff time by up to 90%'"
+        },
+        {
+          "company": "transoft",
+          "x": 3.4,
+          "y": 6.1,
+          "evidence": "meta on transoftsolutions.com: 'help professionals plan, design, and operate safe transportation systems'"
+        },
+        {
+          "company": "rhino",
+          "x": 2.0,
+          "y": 5.0,
+          "evidence": "meta on rhino3d.com: 'Rhinoceros 3D: Design, Model, Present, Analyze, Realize...'"
+        }
+      ],
+      "reading": "The market splits cleanly on what the early study is for, and the anchor sits at the far performance end: Forma is one of only two sites in thirty that mention wind at all, and the only one selling that as the reason to decide early. The right-hand column - Aprao, Deepblocks, Zenerate, ArkDesign, LandTech - argues the opposite, that the early study is an underwriting exercise. Top-left, design-led platforms with real breadth, is thin: Snaptrude and SketchUp are there, Forma is on its edge, and it is the quadrant Autodesk is best equipped to own. The crowded corner is bottom-right, single-purpose feasibility calculators, where five companies are selling nearly the same sentence."
+    },
+    {
+      "id": "buyer",
+      "title": "Who the copy says it is for",
+      "why_it_matters": "The same software gets sold to a lone architect, a deal team, or a city. That choice sets the price, the proof and the sales motion.",
+      "x": {
+        "label": "Institutional weight of the buyer",
+        "low": "an individual practitioner",
+        "high": "an institution: enterprise, city, agency"
+      },
+      "y": {
+        "label": "Breadth of the discipline addressed",
+        "low": "one discipline's work",
+        "high": "design, finance and planning together"
+      },
+      "quadrants": {
+        "tl": "Cross-discipline for small teams",
+        "tr": "Institutional platforms",
+        "bl": "Practitioner tools",
+        "br": "Departmental tools"
+      },
+      "points": [
+        {
+          "company": "forma",
+          "x": 5.0,
+          "y": 4.0,
+          "evidence": "meta on blogs.autodesk.com/forma: 'Autodesk's blog for architects and designers - covering early-stage design workflows'"
+        },
+        {
+          "company": "testfit",
+          "x": 6.0,
+          "y": 7.5,
+          "evidence": "H2 on testfit.io: 'Built for the Deal Team'"
+        },
+        {
+          "company": "giraffe",
+          "x": 9.0,
+          "y": 9.5,
+          "evidence": "H3 on giraffe.build: 'For Local Governments & Municipalities'; 'Enterprise Decision System'; meta: 'across feasibility, planning, design and finance'"
+        },
+        {
+          "company": "snaptrude",
+          "x": 4.0,
+          "y": 4.0,
+          "evidence": "title on snaptrude.com: 'The AI-Powered BIM software for Architects'"
+        },
+        {
+          "company": "dbf",
+          "x": 9.5,
+          "y": 7.0,
+          "evidence": "meta on digitalbluefoam.com: 'spatial reasoning AI for cities, governments and asset owners'"
+        },
+        {
+          "company": "hypar",
+          "x": 4.0,
+          "y": 3.0,
+          "evidence": "hypar.io/llms.txt: 'Studio tier for firms standardizing on Hypar'"
+        },
+        {
+          "company": "finch",
+          "x": 5.0,
+          "y": 4.0,
+          "evidence": "H3 on finch3d.com: 'Built by architects, for the way AEC professionals actually design and make decisions.'"
+        },
+        {
+          "company": "bentley",
+          "x": 8.0,
+          "y": 5.0,
+          "evidence": "meta title, bentley.com/software/opensite-plus/: 'OpenSite+: AI-Powered Site Design Software | Bentley Systems' (title only)"
+        },
+        {
+          "company": "archistar",
+          "x": 9.5,
+          "y": 5.0,
+          "evidence": "meta on archistar.ai: 'AI plan review and permitting software for local governments.'"
+        },
+        {
+          "company": "architechtures",
+          "x": 3.0,
+          "y": 3.0,
+          "evidence": "meta on architechtures.com: 'AI Architecture Generator. Reduces architectural design time.'"
+        },
+        {
+          "company": "maket",
+          "x": 1.0,
+          "y": 2.0,
+          "evidence": "H2 on maket.ai: 'Anyone can design a home'"
+        },
+        {
+          "company": "zenerate",
+          "x": 4.0,
+          "y": 6.5,
+          "evidence": "H2 on zenerate.ai: 'site plans, floor plans, and parking layouts with pro forma insights for faster land development'"
+        },
+        {
+          "company": "arkdesign",
+          "x": 3.5,
+          "y": 6.0,
+          "evidence": "meta on arkdesign.ai: 'A tool for architects and real estate developers.'"
+        },
+        {
+          "company": "deepblocks",
+          "x": 5.0,
+          "y": 7.5,
+          "evidence": "H3 on deepblocks.com: 'with program, cost, revenue, and return assumptions already organized for deeper underwriting'"
+        },
+        {
+          "company": "landtech",
+          "x": 7.0,
+          "y": 8.5,
+          "evidence": "H2 on land.tech: 'Built for every type of land professional .'; meta: 'planning, constraints, data and insight into one powerful platform'"
+        },
+        {
+          "company": "modelur",
+          "x": 2.0,
+          "y": 2.5,
+          "evidence": "H2 on modelur.com: 'What Architects Say About Modelur?'"
+        },
+        {
+          "company": "hektar",
+          "x": 4.0,
+          "y": 5.5,
+          "evidence": "meta on hektar.ai: 'Used by developers, architects, and municipalities across the Nordics.'"
+        },
+        {
+          "company": "esri",
+          "x": 9.5,
+          "y": 7.0,
+          "evidence": "H2 on esri.com: 'Collaborative urban planning'; 'Project e-submission'"
+        },
+        {
+          "company": "urbansim",
+          "x": 9.0,
+          "y": 6.0,
+          "evidence": "meta on urbansim.com: 'helps cities and developers to build smarter and more sustainable cities'"
+        },
+        {
+          "company": "sketchup",
+          "x": 4.0,
+          "y": 3.0,
+          "evidence": "meta on sketchup.com: 'intuitive tools for architects, designers, and builders'"
+        },
+        {
+          "company": "vectorworks",
+          "x": 4.0,
+          "y": 4.5,
+          "evidence": "meta on vectorworks.net/landmark: 'design, presentation, irrigation, and documentation workflows'"
+        },
+        {
+          "company": "aprao",
+          "x": 6.0,
+          "y": 3.5,
+          "evidence": "H2 on aprao.com: 'Enterprise-grade security, by default'"
+        },
+        {
+          "company": "landchecker",
+          "x": 5.5,
+          "y": 5.0,
+          "evidence": "meta on landchecker.com.au: 'Trusted by thousands of businesses every day.'"
+        },
+        {
+          "company": "urbanfootprint",
+          "x": 9.0,
+          "y": 6.5,
+          "evidence": "H2 on urbanfootprint.com: 'Empower decision making with actionable insight across industries and use cases'"
+        },
+        {
+          "company": "geopogo",
+          "x": 2.5,
+          "y": 3.0,
+          "evidence": "meta on geopogo.com: 'AI-powered architecture tools for Revit, Unreal Engine, Blender, SketchUp & more'"
+        },
+        {
+          "company": "skema",
+          "x": 6.0,
+          "y": 4.5,
+          "evidence": "H2 on skema.ai: 'What the Industry Is Saying.'; H1: 'Generative Design for AEC'"
+        },
+        {
+          "company": "civilsai",
+          "x": 5.0,
+          "y": 3.5,
+          "evidence": "meta on civils.ai: 'AI quantity takeoffs for groundworks contractors'"
+        },
+        {
+          "company": "transoft",
+          "x": 7.5,
+          "y": 4.0,
+          "evidence": "H1 on transoftsolutions.com: 'Innovative Solutions for Transportation Professionals'"
+        },
+        {
+          "company": "rhino",
+          "x": 2.0,
+          "y": 3.5,
+          "evidence": "meta on rhino3d.com: 'Rhinoceros 3D: Design, Model, Present, Analyze, Realize...'"
+        }
+      ],
+      "reading": "Two separate businesses are visible here. Bottom-left holds practitioner tools sold one seat at a time - Maket, Modelur, Rhino, Geopogo, Architechtures - and top-right holds institutional platforms: Esri, Archistar, Giraffe, UrbanFootprint, Digital Blue Foam, all naming cities or agencies in their meta descriptions. Forma sits in the middle of both axes, and that is the honest reading: its copy names 'architects and designers', a discipline and a practitioner, while its commercial reality is a firm-wide Autodesk agreement. Nobody in the corpus is selling cross-discipline breadth to individual practitioners, which is probably a real constraint rather than white space - the finance and planning halves are bought by different people."
+    },
+    {
+      "id": "handoff",
+      "title": "Where the work stops, and how much the machine does",
+      "why_it_matters": "Early-phase tools all end somewhere. The vendor that carries further downstream competes with BIM; the one that stops at concept has to survive the handoff.",
+      "x": {
+        "label": "How far the work is carried",
+        "low": "stops at concept or feasibility",
+        "high": "through to BIM and construction documents"
+      },
+      "y": {
+        "label": "How much the software decides",
+        "low": "assists you while you model",
+        "high": "generates the scheme for you"
+      },
+      "quadrants": {
+        "tl": "Generators",
+        "tr": "Automated production",
+        "bl": "Modelling environments",
+        "br": "Documentation suites"
+      },
+      "points": [
+        {
+          "company": "forma",
+          "x": 4.0,
+          "y": 6.0,
+          "evidence": "H2 on blogs.autodesk.com/forma: 'How does Forma Site Design work with Revit and other tools?'; 'Smarter Generative...'"
+        },
+        {
+          "company": "testfit",
+          "x": 3.0,
+          "y": 9.0,
+          "evidence": "H1 on testfit.io: 'Automate Site Plans. Accelerate Decisions.'"
+        },
+        {
+          "company": "giraffe",
+          "x": 3.5,
+          "y": 7.0,
+          "evidence": "H2 on giraffe.build: 'Giraffe is the unifying platform to systematically automate tasks across your entire workflow.'"
+        },
+        {
+          "company": "snaptrude",
+          "x": 8.5,
+          "y": 7.0,
+          "evidence": "meta on snaptrude.com: 'Concept to BIM-ready models in your browser.'; '10 AI agents'"
+        },
+        {
+          "company": "dbf",
+          "x": 2.5,
+          "y": 8.0,
+          "evidence": "H2 on digitalbluefoam.com: 'Ask a real spatial question Get a defensible answer'"
+        },
+        {
+          "company": "hypar",
+          "x": 5.0,
+          "y": 5.0,
+          "evidence": "meta on hypar.io: 'Import site and Revit data, edit with automatic measurement, export to Revit.'"
+        },
+        {
+          "company": "finch",
+          "x": 6.0,
+          "y": 8.5,
+          "evidence": "H2 on finch3d.com: 'Test thousands of design options...'; 'Refine with precision'; 'Deliver faster'"
+        },
+        {
+          "company": "bentley",
+          "x": 9.0,
+          "y": 7.0,
+          "evidence": "meta title, blog.bentley.com: 'The First AI-driven Civil Engineering Software for Site Design' (title only)"
+        },
+        {
+          "company": "archistar",
+          "x": 4.0,
+          "y": 7.0,
+          "evidence": "H2 on archistar.ai: 'Standardized assessment in minutes'"
+        },
+        {
+          "company": "architechtures",
+          "x": 4.0,
+          "y": 9.0,
+          "evidence": "H1 on architechtures.com: 'Generate optimal building designs in real-time'"
+        },
+        {
+          "company": "maket",
+          "x": 2.0,
+          "y": 8.5,
+          "evidence": "meta on maket.ai: 'generate floor plans, edit by chat, and visualize your space in minutes'"
+        },
+        {
+          "company": "zenerate",
+          "x": 3.0,
+          "y": 9.0,
+          "evidence": "H2 on zenerate.ai: 'Instantly generate optimized site plans, floor plans, and parking layouts'"
+        },
+        {
+          "company": "arkdesign",
+          "x": 4.5,
+          "y": 8.5,
+          "evidence": "H1 on arkdesign.ai: 'AI-Powered Design & Feasibility Studies'; H2: 'Up to code'"
+        },
+        {
+          "company": "deepblocks",
+          "x": 1.5,
+          "y": 6.0,
+          "evidence": "H3 on deepblocks.com: 'Developer exports each model's assumptions and outputs as a CSV'"
+        },
+        {
+          "company": "landtech",
+          "x": 1.5,
+          "y": 5.0,
+          "evidence": "H2 on land.tech: 'Meet the LandTech AI Assistant.'"
+        },
+        {
+          "company": "modelur",
+          "x": 2.5,
+          "y": 4.0,
+          "evidence": "H1 on modelur.com: 'Fast and Accurate 3D Massing and Feasibility Studies'; H2: 'SketchUp Supercharged'"
+        },
+        {
+          "company": "hektar",
+          "x": 2.0,
+          "y": 7.5,
+          "evidence": "H1 on hektar.ai: 'Explore your site. Volume studies in minutes.'"
+        },
+        {
+          "company": "esri",
+          "x": 4.0,
+          "y": 4.0,
+          "evidence": "H2 on esri.com: '3D scenario modeling'; 'Data-driven analysis'"
+        },
+        {
+          "company": "urbansim",
+          "x": 2.0,
+          "y": 5.0,
+          "evidence": "H2 on urbansim.com: 'PLAN INTELLIGENTLY'"
+        },
+        {
+          "company": "sketchup",
+          "x": 7.5,
+          "y": 1.5,
+          "evidence": "meta on sketchup.com: 'Design in 3D, from concept to construction, with intuitive tools'"
+        },
+        {
+          "company": "vectorworks",
+          "x": 9.5,
+          "y": 2.0,
+          "evidence": "meta on vectorworks.net/landmark: 'your design, presentation, irrigation, and documentation workflows'"
+        },
+        {
+          "company": "aprao",
+          "x": 1.0,
+          "y": 4.0,
+          "evidence": "H2 on aprao.com: 'Everything you need to run your numbers with confidence'"
+        },
+        {
+          "company": "landchecker",
+          "x": 1.0,
+          "y": 2.0,
+          "evidence": "H2 on landchecker.com.au: 'Title Searches'; 'Property Reports'"
+        },
+        {
+          "company": "urbanfootprint",
+          "x": 1.5,
+          "y": 3.0,
+          "evidence": "H2 on urbanfootprint.com: 'Explore Resilience Insights and bring data to life with our intuitive and scalable web-based application'"
+        },
+        {
+          "company": "geopogo",
+          "x": 6.0,
+          "y": 6.0,
+          "evidence": "meta on geopogo.com: 'Design and edit Revit models with Claude AI'"
+        },
+        {
+          "company": "skema",
+          "x": 7.0,
+          "y": 7.5,
+          "evidence": "H2 on skema.ai: 'Your New BIM Workflow'; 'Design Intent Doesn't Survive the Handoff'"
+        },
+        {
+          "company": "civilsai",
+          "x": 6.0,
+          "y": 7.0,
+          "evidence": "H1 on civils.ai: 'Accurate AI Takeoffs & Checks before your project breaks ground.'"
+        },
+        {
+          "company": "transoft",
+          "x": 7.0,
+          "y": 3.0,
+          "evidence": "meta on transoftsolutions.com: 'plan, design, and operate safe transportation systems'"
+        },
+        {
+          "company": "rhino",
+          "x": 6.0,
+          "y": 1.0,
+          "evidence": "H1 on rhino3d.com: 'Rhino 8'; meta: 'Design, Model, Present, Analyze, Realize...'"
+        }
+      ],
+      "reading": "The generators cluster hard in the top-left: TestFit, Zenerate, Architechtures, ArkDesign, Maket and Hektar all promise a scheme in minutes and all stop before documentation. The bottom-right - carry it all the way, but you do the drawing - is the incumbents' ground, Vectorworks, SketchUp and Rhino. Only three sites claim both automation and downstream delivery: Snaptrude, Skema and Bentley, and they are the ones that make the handoff itself the argument ('Design Intent Doesn't Survive the Handoff'). Forma sits mid-left, generating analysis rather than geometry and explicitly handing to Revit - which is a deliberate position inside a suite, not a gap, but it does mean Snaptrude is attacking the exact seam Autodesk chose to leave open."
+    },
+    {
+      "id": "proof",
+      "title": "How they argue: evidence versus vocabulary",
+      "why_it_matters": "In a young category, vendors either prove the claim with named customers and numbers, or they win by naming the category themselves. Few do both.",
+      "x": {
+        "label": "Proof on the page",
+        "low": "adjectives and capability lists",
+        "high": "named customers, cities, percentages"
+      },
+      "y": {
+        "label": "Category stance",
+        "low": "uses the market's existing words",
+        "high": "coins its own noun for what it is"
+      },
+      "quadrants": {
+        "tl": "Category creators",
+        "tr": "Proven category creators",
+        "bl": "Conventional tools",
+        "br": "Proven conventional tools"
+      },
+      "points": [
+        {
+          "company": "forma",
+          "x": 6.5,
+          "y": 4.0,
+          "evidence": "H2 on blogs.autodesk.com/forma: 'Forma Site Design wins Architectural Record 2025 Architectural Products of the Year!'"
+        },
+        {
+          "company": "testfit",
+          "x": 8.0,
+          "y": 3.0,
+          "evidence": "H2 on testfit.io: 'Users Win Deals with TestFit'; 'As seen in'; title: 'Real Estate Feasibility Platform'"
+        },
+        {
+          "company": "giraffe",
+          "x": 3.5,
+          "y": 9.5,
+          "evidence": "title on giraffe.build: 'The Orchestration Layer for AI-Driven Real Estate'; H3: 'Enterprise Decision System'"
+        },
+        {
+          "company": "snaptrude",
+          "x": 5.0,
+          "y": 2.0,
+          "evidence": "title on snaptrude.com: 'The AI-Powered BIM software for Architects'"
+        },
+        {
+          "company": "dbf",
+          "x": 4.5,
+          "y": 9.0,
+          "evidence": "H1 on digitalbluefoam.com: 'Your spatial reasoning layer for every asset decision.'; H2: 'The spatial memory beneath it is the moat'"
+        },
+        {
+          "company": "hypar",
+          "x": 4.0,
+          "y": 6.0,
+          "evidence": "title on hypar.io: 'Hypar | Space Planning Software for Building Buy-In'"
+        },
+        {
+          "company": "finch",
+          "x": 3.5,
+          "y": 6.0,
+          "evidence": "H2 on finch3d.com: 'Used by AEC professionals worldwide'; 'AI-native platform for building design'"
+        },
+        {
+          "company": "bentley",
+          "x": 4.0,
+          "y": 1.5,
+          "evidence": "meta title: 'OpenSite+: AI-Powered Site Design Software | Bentley Systems' (title only)"
+        },
+        {
+          "company": "archistar",
+          "x": 9.5,
+          "y": 5.5,
+          "evidence": "H2 on archistar.ai: 'AI PreCheck is trusted by 30-plus cities and local governments worldwide'; meta: 'cut permit approval times by up to 55%'"
+        },
+        {
+          "company": "architechtures",
+          "x": 3.0,
+          "y": 4.0,
+          "evidence": "H1 on architechtures.com: 'AI Architecture Generator in Real-Time'"
+        },
+        {
+          "company": "maket",
+          "x": 3.0,
+          "y": 5.0,
+          "evidence": "H1 on maket.ai: 'The AI Home Design Studio'"
+        },
+        {
+          "company": "zenerate",
+          "x": 3.5,
+          "y": 2.0,
+          "evidence": "title on zenerate.ai: 'AI Feasibility Study Tool for Land Development'"
+        },
+        {
+          "company": "arkdesign",
+          "x": 6.5,
+          "y": 3.0,
+          "evidence": "H2 on arkdesign.ai: 'How industry leaders are using ARK'; named: 'Fariba Makooi, Principal | Fischer+Makooi Architects'"
+        },
+        {
+          "company": "deepblocks",
+          "x": 8.5,
+          "y": 4.0,
+          "evidence": "H3 on deepblocks.com: 'Existing market for sale, in a prime Little Havana corner... yielding an 8.44% return on cost.'"
+        },
+        {
+          "company": "landtech",
+          "x": 5.0,
+          "y": 4.0,
+          "evidence": "H2 on land.tech: 'Helping teams move faster, with confidence .'; H1: 'One Intelligent Platform'"
+        },
+        {
+          "company": "modelur",
+          "x": 5.5,
+          "y": 3.0,
+          "evidence": "H2 on modelur.com: 'What Architects Say About Modelur?'; title: 'Urban Design Software - Modelur'"
+        },
+        {
+          "company": "hektar",
+          "x": 5.5,
+          "y": 4.0,
+          "evidence": "meta on hektar.ai: 'Used by developers, architects, and municipalities across the Nordics.'"
+        },
+        {
+          "company": "esri",
+          "x": 5.0,
+          "y": 2.0,
+          "evidence": "title on esri.com: 'Urban Planning, Design & Development Software | ArcGIS Urban'"
+        },
+        {
+          "company": "urbansim",
+          "x": 5.0,
+          "y": 3.0,
+          "evidence": "about page on urbansim.com carries the stat blocks '80M' and '10,000'"
+        },
+        {
+          "company": "sketchup",
+          "x": 6.0,
+          "y": 2.0,
+          "evidence": "H2 on sketchup.com: 'See what customers are saying'; 'Empowering the people building our world'"
+        },
+        {
+          "company": "vectorworks",
+          "x": 3.5,
+          "y": 2.5,
+          "evidence": "H1 on vectorworks.net: 'THE ULTIMATE LANDSCAPE DESIGN SOFTWARE'"
+        },
+        {
+          "company": "aprao",
+          "x": 5.5,
+          "y": 4.5,
+          "evidence": "H2 on aprao.com: 'What our customers say'; 'The financial-modelling engine for the AI era'"
+        },
+        {
+          "company": "landchecker",
+          "x": 8.0,
+          "y": 4.0,
+          "evidence": "meta on landchecker.com.au: 'Trusted by thousands of businesses every day.'"
+        },
+        {
+          "company": "urbanfootprint",
+          "x": 3.5,
+          "y": 8.5,
+          "evidence": "title on urbanfootprint.com: 'The Resilient Decision Intelligence Platform'"
+        },
+        {
+          "company": "geopogo",
+          "x": 3.0,
+          "y": 6.0,
+          "evidence": "title on geopogo.com: 'Geopogo - AI for Architecture: Claude to Revit & 3D City Models'"
+        },
+        {
+          "company": "skema",
+          "x": 4.5,
+          "y": 6.0,
+          "evidence": "H2 on skema.ai: 'What the Industry Is Saying.'; H1: 'Generative Design for AEC'"
+        },
+        {
+          "company": "civilsai",
+          "x": 8.0,
+          "y": 3.0,
+          "evidence": "meta on civils.ai: 'Cut takeoff time by up to 90%'; H2: 'What our clients say.'"
+        },
+        {
+          "company": "transoft",
+          "x": 6.0,
+          "y": 3.0,
+          "evidence": "H2 on transoftsolutions.com: 'Empowering Transportation Professionals Since 1991'"
+        },
+        {
+          "company": "rhino",
+          "x": 4.5,
+          "y": 2.0,
+          "evidence": "H1 on rhino3d.com: 'Rhino 8'"
+        }
+      ],
+      "reading": "Only one company occupies the top right - a category it named, backed by proof anyone can check - and it is Archistar, whose coined noun is a feature name ('AI PreCheck') rather than a claim on the market. The three companies that have genuinely renamed the category, Giraffe ('orchestration layer'), Digital Blue Foam ('spatial reasoning layer') and UrbanFootprint ('decision intelligence'), all argue with adjectives; the four with hard numbers on the page - Archistar, Deepblocks, Landchecker, Civils.ai - describe themselves in the market's ordinary words. Forma is the interesting middle case: it holds the strongest single proof point in the corpus, Architectural Record's 2025 product of the year, and it is spending that credibility on a category name it has just walked away from, having renamed from Forma to Forma Site Design and moved towards the market's vocabulary."
+    },
+    {
+      "id": "commercial",
+      "title": "How they ask to be bought",
+      "why_it_matters": "A published price is a claim that the buyer can decide alone. Hiding it is a claim that the sale needs a conversation - and in this market the two map onto very different products.",
+      "x": {
+        "label": "Price transparency",
+        "low": "contact sales only",
+        "high": "full price published"
+      },
+      "y": {
+        "label": "Entry price point",
+        "low": "free or low tens per month",
+        "high": "thousands, enterprise agreement"
+      },
+      "quadrants": {
+        "tl": "Enterprise, quote-led",
+        "tr": "Published enterprise pricing",
+        "bl": "Free and self-serve",
+        "br": "Self-serve professional tools"
+      },
+      "points": [
+        {
+          "company": "forma",
+          "x": 8.0,
+          "y": 6.0,
+          "evidence": "meta title on autodesk.com/products/forma-site-design/free-trial: 'Try Autodesk Forma Site Design | A Free 30-Day Trial' - Autodesk publishes list prices, though the page itself was unreadable from here"
+        },
+        {
+          "company": "testfit",
+          "x": 8.0,
+          "y": 7.0,
+          "evidence": "pricing page on testfit.io carries '$0 /mo', '$ 200', '$ 300' and a '$10,000' figure"
+        },
+        {
+          "company": "giraffe",
+          "x": 2.0,
+          "y": 6.0,
+          "evidence": "pricing page on giraffe.build offers only 'contact sales' and 'no credit card'"
+        },
+        {
+          "company": "snaptrude",
+          "x": 9.0,
+          "y": 2.5,
+          "evidence": "pricing page on snaptrude.com: '$0', '$60 /month', '$100 /month'"
+        },
+        {
+          "company": "dbf",
+          "x": 1.0,
+          "y": 8.0,
+          "evidence": "pricing page on digitalbluefoam.com offers only 'contact sales' / 'talk to sales'"
+        },
+        {
+          "company": "hypar",
+          "x": 9.0,
+          "y": 4.0,
+          "evidence": "hypar.io/llms.txt: 'plans and pricing, $100 per user per month, Studio tier for firms standardizing on Hypar'"
+        },
+        {
+          "company": "finch",
+          "x": 7.0,
+          "y": 8.0,
+          "evidence": "pricing page on finch3d.com: 'EUR 79' and 'EUR 14,500'"
+        },
+        {
+          "company": "bentley",
+          "x": 1.0,
+          "y": 8.0,
+          "evidence": "no pricing reachable: every www.bentley.com path redirects to a sign-in gate from here"
+        },
+        {
+          "company": "archistar",
+          "x": 8.0,
+          "y": 5.0,
+          "evidence": "pricing page on archistar.ai: '$95', '$345/mo', '$595'"
+        },
+        {
+          "company": "architechtures",
+          "x": 9.0,
+          "y": 4.0,
+          "evidence": "pricing page on architechtures.com: '$ 49', '$ 294', '$ 588', '$ 3,528'"
+        },
+        {
+          "company": "maket",
+          "x": 9.5,
+          "y": 1.0,
+          "evidence": "pricing page on maket.ai: '$0 / month', '$20 / month', '$100 / month'"
+        },
+        {
+          "company": "zenerate",
+          "x": 3.0,
+          "y": 6.0,
+          "evidence": "pricing page on zenerate.ai shows 'Subscription Plans' and a free trial but no figures"
+        },
+        {
+          "company": "arkdesign",
+          "x": 1.0,
+          "y": 5.0,
+          "evidence": "no pricing page found on arkdesign.ai; the CTA is 'Get Certified and be Featured in Our Gallery'"
+        },
+        {
+          "company": "deepblocks",
+          "x": 8.5,
+          "y": 6.0,
+          "evidence": "pricing page on deepblocks.com: '$ 55.55 per month', '$499/mo', '$1,999/mo', '$3,999/mo'"
+        },
+        {
+          "company": "landtech",
+          "x": 8.0,
+          "y": 5.0,
+          "evidence": "pricing page on land.tech: 'GBP 150 / month'"
+        },
+        {
+          "company": "modelur",
+          "x": 9.2,
+          "y": 3.5,
+          "evidence": "pricing page on modelur.com: 'EUR 0', 'EUR 74 PER SEAT', 'EUR 149 PER SEAT'"
+        },
+        {
+          "company": "hektar",
+          "x": 2.0,
+          "y": 5.0,
+          "evidence": "pricing page on hektar.ai offers only 'talk to sales'"
+        },
+        {
+          "company": "esri",
+          "x": 3.0,
+          "y": 7.0,
+          "evidence": "esri.com ArcGIS Urban pages offer a free trial; no figure on the product pages scanned"
+        },
+        {
+          "company": "urbansim",
+          "x": 1.0,
+          "y": 6.0,
+          "evidence": "no pricing page on urbansim.com (probed and absent)"
+        },
+        {
+          "company": "sketchup",
+          "x": 9.5,
+          "y": 2.0,
+          "evidence": "pricing page on sketchup.com: '$10.75', '$30', '$33.25', '$40'"
+        },
+        {
+          "company": "vectorworks",
+          "x": 3.0,
+          "y": 5.0,
+          "evidence": "vectorworks.net shows 'Free Trial' and 'Buy Now' CTAs but no figure on the pages scanned"
+        },
+        {
+          "company": "aprao",
+          "x": 3.0,
+          "y": 4.0,
+          "evidence": "pricing page on aprao.com offers a free trial; no figures on the page"
+        },
+        {
+          "company": "landchecker",
+          "x": 8.8,
+          "y": 4.2,
+          "evidence": "pricing page on landchecker.com.au: '$0', '$200', '$240', '$2,400/year'"
+        },
+        {
+          "company": "urbanfootprint",
+          "x": 2.0,
+          "y": 7.0,
+          "evidence": "pricing page on urbanfootprint.com carries no figures"
+        },
+        {
+          "company": "skema",
+          "x": 8.5,
+          "y": 5.0,
+          "evidence": "pricing page on skema.ai: '$199 / month', '$750 / month'"
+        },
+        {
+          "company": "civilsai",
+          "x": 8.5,
+          "y": 4.0,
+          "evidence": "pricing page on civils.ai: '$ 90 / month', '$ 270 / month'"
+        },
+        {
+          "company": "transoft",
+          "x": 1.0,
+          "y": 6.0,
+          "evidence": "no pricing page on transoftsolutions.com (probed and absent)"
+        }
+      ],
+      "reading": "The diagonal here is real and it is the market's fault line: the cheap tools publish (Maket, SketchUp, Modelur, Snaptrude, Landchecker at the bottom right) and the expensive ones do not (Bentley, Digital Blue Foam, UrbanFootprint, Esri, UrbanSim, top left). Four companies break the line and they are the ones worth watching - Finch, TestFit, Deepblocks and Forma all publish a price and still ask for real money. Forma's position is a genuine advantage in a market where the direct alternatives at its price point mostly want a sales call; the two companies most often named against it, Giraffe and Hektar, both hide their pricing entirely. Rhino and Geopogo are off this chart: neither published a figure the scan could read, and inventing one would be guessing."
+    },
+    {
+      "id": "evidence",
+      "title": "What the software knows before you start",
+      "why_it_matters": "An early-phase answer is only as good as the context behind it. Some vendors ship the world's data with the tool; others expect you to bring the site.",
+      "x": {
+        "label": "Built-in context data",
+        "low": "you bring the site and the geometry",
+        "high": "parcels, zoning and GIS layers included"
+      },
+      "y": {
+        "label": "Scale it addresses",
+        "low": "a single site",
+        "high": "a city or a portfolio"
+      },
+      "quadrants": {
+        "tl": "City-scale modelling",
+        "tr": "Data platforms",
+        "bl": "Site modelling tools",
+        "br": "Site intelligence tools"
+      },
+      "points": [
+        {
+          "company": "forma",
+          "x": 6.5,
+          "y": 3.5,
+          "evidence": "H2 on blogs.autodesk.com/forma product page: 'Bases' and 'Proposal layers' among 'Forma Site Design's tools'; zoning appears once in the blog copy"
+        },
+        {
+          "company": "testfit",
+          "x": 6.0,
+          "y": 3.0,
+          "evidence": "'parcel' appears in testfit.io copy; H2: 'Minimize Earthwork Cost with Automatic Cut and Fill'"
+        },
+        {
+          "company": "giraffe",
+          "x": 9.0,
+          "y": 8.0,
+          "evidence": "H3 on giraffe.build: 'Combine thousands of spatial layers, workflows, and apps into a repeatable decision process'"
+        },
+        {
+          "company": "snaptrude",
+          "x": 5.0,
+          "y": 2.5,
+          "evidence": "meta on snaptrude.com: '10 AI agents for zoning, site analysis, massing, floor plans & more'"
+        },
+        {
+          "company": "dbf",
+          "x": 8.5,
+          "y": 9.0,
+          "evidence": "H2 on digitalbluefoam.com: 'Anyone can call an LLM The spatial memory beneath it is the moat'; 'One reasoning Any scale'"
+        },
+        {
+          "company": "hypar",
+          "x": 4.0,
+          "y": 2.0,
+          "evidence": "meta on hypar.io: 'Import site and Revit data, edit with automatic measurement'"
+        },
+        {
+          "company": "finch",
+          "x": 2.0,
+          "y": 5.0,
+          "evidence": "H3 on finch3d.com: 'Master plan' among typologies; no context-data claim in the copy"
+        },
+        {
+          "company": "archistar",
+          "x": 7.0,
+          "y": 7.0,
+          "evidence": "H2 on archistar.ai: 'AI PreCheck is trusted by 30-plus cities'; 'Standardized assessment in minutes'"
+        },
+        {
+          "company": "architechtures",
+          "x": 1.5,
+          "y": 2.0,
+          "evidence": "meta on architechtures.com: 'AI Architecture Generator. Reduces architectural design time.'"
+        },
+        {
+          "company": "maket",
+          "x": 1.0,
+          "y": 1.0,
+          "evidence": "meta on maket.ai: 'generate floor plans, edit by chat, and visualize your space in minutes'"
+        },
+        {
+          "company": "zenerate",
+          "x": 5.0,
+          "y": 2.5,
+          "evidence": "meta on zenerate.ai: 'Generate site plans, floor plans, parking layouts, and pro formas'"
+        },
+        {
+          "company": "arkdesign",
+          "x": 5.0,
+          "y": 2.0,
+          "evidence": "H2 on arkdesign.ai: 'Up to code'"
+        },
+        {
+          "company": "deepblocks",
+          "x": 9.5,
+          "y": 7.0,
+          "evidence": "deepblocks.com copy uses 'zoning' six times; H3: 'a variance scenario reaching a 42% return on cost'"
+        },
+        {
+          "company": "landtech",
+          "x": 9.5,
+          "y": 7.0,
+          "evidence": "meta on land.tech: 'LandTech brings planning, constraints, data and insight into one powerful platform for UK developers.'"
+        },
+        {
+          "company": "modelur",
+          "x": 3.0,
+          "y": 3.5,
+          "evidence": "meta on modelur.com: 'calculates key urban parameters in real-time'"
+        },
+        {
+          "company": "hektar",
+          "x": 6.0,
+          "y": 3.0,
+          "evidence": "meta on hektar.ai: 'generates volume studies, density scenarios and KPIs for raw land'"
+        },
+        {
+          "company": "esri",
+          "x": 10.0,
+          "y": 9.0,
+          "evidence": "esri.com ArcGIS Urban copy uses 'GIS' 23 times; H2: 'Data-driven analysis'"
+        },
+        {
+          "company": "urbansim",
+          "x": 8.0,
+          "y": 9.5,
+          "evidence": "H2 on urbansim.com: 'PLAN COLLABORATIVELY'; meta: 'the leading AI-driven platform for sustainable urban planning'"
+        },
+        {
+          "company": "sketchup",
+          "x": 2.0,
+          "y": 3.0,
+          "evidence": "meta on sketchup.com: 'Design in 3D, from concept to construction'"
+        },
+        {
+          "company": "vectorworks",
+          "x": 3.0,
+          "y": 3.0,
+          "evidence": "meta on vectorworks.net/landmark: 'from plant selection and sustainability assessments to BIM collaboration and reporting'"
+        },
+        {
+          "company": "aprao",
+          "x": 3.0,
+          "y": 4.0,
+          "evidence": "H2 on aprao.com: 'Everything you need to run your numbers with confidence'"
+        },
+        {
+          "company": "landchecker",
+          "x": 10.0,
+          "y": 5.0,
+          "evidence": "H2 on landchecker.com.au: 'Planning Zones, Overlays and Layers'; 'Title Searches'; 'Unlimited High-Resolution Aerial Imagery'"
+        },
+        {
+          "company": "urbanfootprint",
+          "x": 9.0,
+          "y": 9.5,
+          "evidence": "H3 on urbanfootprint.com: 'Climate Risk & Sustainability'; meta: 'urban, climate, and community resilience'"
+        },
+        {
+          "company": "geopogo",
+          "x": 6.0,
+          "y": 5.0,
+          "evidence": "meta on geopogo.com: 'download real-world 3D city models in seconds'"
+        },
+        {
+          "company": "skema",
+          "x": 1.5,
+          "y": 3.0,
+          "evidence": "H2 on skema.ai: 'Put Your Proven Designs Back to Work !'"
+        },
+        {
+          "company": "civilsai",
+          "x": 3.0,
+          "y": 2.0,
+          "evidence": "meta on civils.ai: 'Measure earthworks, drainage, concrete & more.'"
+        },
+        {
+          "company": "transoft",
+          "x": 4.0,
+          "y": 6.0,
+          "evidence": "meta on transoftsolutions.com: 'plan, design, and operate safe transportation systems'"
+        },
+        {
+          "company": "rhino",
+          "x": 1.0,
+          "y": 3.0,
+          "evidence": "meta on rhino3d.com: 'Rhinoceros 3D: Design, Model, Present, Analyze, Realize...'"
+        }
+      ],
+      "reading": "This is where the anchor's real exposure shows. The bottom-right quadrant - deep context data applied to a single site - is where an early-phase site tool ought to be strongest, and it is owned by companies that do no design at all: Landchecker, Deepblocks, LandTech. Forma sits just inside it but well short of them, because its copy talks about its own tools ('Bases', 'Proposal layers') rather than about the parcel, zoning and title data a developer needs before the massing means anything. Top-right is the GIS establishment, Esri and UrbanSim and UrbanFootprint, at a scale above any single project. Bentley and cove.tool are absent from this chart: neither site would give up enough copy to place them honestly."
+    }
+  ],
+  "takeaways": [
+    "Forma's signature capability is almost uncontested in stated positioning: of 30 companies, one other mentions carbon, one mentions wind, and none mention noise, daylight or microclimate anywhere in their marketing copy. Either environmental performance is a real moat that nobody else is even claiming, or the market has decided buyers do not choose on it - and the answer to that question should drive the messaging.",
+    "The competitive set has quietly reorganised around money. TestFit, Zenerate, ArkDesign, Deepblocks, LandTech and Aprao all lead with pro forma, yield, profit or return on cost. Forma leads with design quality and analysis. These are not the same product being sold differently; they are different answers to what the early phase is for.",
+    "'AI' is dead as a differentiator here - 27 of 30 sites use it. 'Generative' is used by only four. The words that still separate companies are the specific nouns: pro forma, zoning, parcel, grading, buy-in, spatial reasoning.",
+    "Snaptrude is the most direct strategic threat in the corpus, because it attacks the seam Forma deliberately leaves open: 'From brief to BIM, in one connected model' is an argument against the Forma-to-Revit handoff, sold to Forma's exact stated buyer (architects) at $60-$100 per month against Forma's roughly $185.",
+    "Bentley owns the literal phrase. 'OpenSite+: AI-Powered Site Design Software' and 'Civil WorkSuite: Site Design Software' mean Autodesk's rename to 'Forma Site Design' walks into an SEO and category fight with a competitor already using those words for a product that produces construction documents.",
+    "The open position on the messaging chart is a named category backed by hard proof. Everyone who has coined a category noun (Giraffe, Digital Blue Foam, UrbanFootprint) argues with adjectives; everyone with named customers and percentages (Archistar, Deepblocks, Landchecker, Civils.ai) describes themselves in ordinary words. Forma has the strongest single proof point in the corpus - Architectural Record's 2025 product of the year - and the reach to use it."
+  ],
+  "sources": [
+    {
+      "url": "https://www.autodesk.com/products/forma-site-design/overview",
+      "used_for": "anchor identity; meta title only - the page returns HTTP 403 to this network"
+    },
+    {
+      "url": "https://blogs.autodesk.com/forma/",
+      "used_for": "anchor body copy (Autodesk's own Forma blog)"
+    },
+    {
+      "url": "https://blogs.autodesk.com/forma/2026/08/20/what-is-forma-site-design/",
+      "used_for": "anchor category language"
+    },
+    {
+      "url": "https://www.parametric.se/post/comparing-early-stage-feasibility-tools-2026-forma-giraffe-finch-testfit-hektar",
+      "used_for": "level-1 roster"
+    },
+    {
+      "url": "https://www.g2.com/products/autodesk-forma/competitors/alternatives",
+      "used_for": "level-1 roster (names only; construction-PM results discarded as the wrong category)"
+    },
+    {
+      "url": "https://www.cbinsights.com/company/giraffe-technology/alternatives-competitors",
+      "used_for": "level-2 roster"
+    },
+    {
+      "url": "https://www.cbinsights.com/company/spacemaker/alternatives-competitors",
+      "used_for": "level-2 roster (Spacemaker is Forma's former name)"
+    },
+    {
+      "url": "https://www.nomic.ai/compare/testfit-alternatives",
+      "used_for": "level-2 roster"
+    },
+    {
+      "url": "https://hypar.io/llms.txt",
+      "used_for": "Hypar positioning and pricing (first-party, robots-permitted)"
+    },
+    {
+      "url": "https://www.bentley.com/software/opensite-plus/",
+      "used_for": "Bentley meta title only - the site serves a sign-in gate to this network"
+    }
+  ]
+}

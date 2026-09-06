@@ -1,0 +1,336 @@
+{
+  "slug": "testfit-io",
+  "input": "testfit.io",
+  "domain": "testfit.io",
+  "name": "Testfit",
+  "final_url": "https://www.testfit.io/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:50+00:00",
+  "pages": [
+    {
+      "url": "https://testfit.io/",
+      "final_url": "https://www.testfit.io/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "TestFit: Real Estate Feasibility Platform",
+      "meta_description": "Optimize for the best site layout instantly with TestFit's site planning AI to meet both your pro forma and design intent.",
+      "og_title": "TestFit: Real Estate Feasibility Platform",
+      "og_description": "Optimize for the best site layout instantly with TestFit's site planning AI to meet both your pro forma and design intent.",
+      "canonical": "https://www.testfit.io",
+      "h1": [
+        "Automate Site Plans. Accelerate Decisions."
+      ],
+      "h2": [
+        "A New Real Estate Feasibility Workflow",
+        "Built for the Deal Team",
+        "Reinventing the Development Process",
+        "Built for Your Projects",
+        "Users Win Deals with TestFit",
+        "As seen in",
+        "Reduce Risk. Increase Potential."
+      ],
+      "h3": [
+        "Plan Sites in Hours, Not Days",
+        "Close Deals with Financial Certainty",
+        "Maximize Site Potential with 3x Iterations",
+        "Turn Feasibility into Action Faster",
+        "Developers",
+        "Architects",
+        "Contractors",
+        "Contractors"
+      ],
+      "word_count": 1260,
+      "ctas": [
+        "Talk to Sales",
+        "Contact Us"
+      ],
+      "price_signals": [
+        "$10,000",
+        "$750",
+        "$5",
+        "$200",
+        "$ 200",
+        "$ 300",
+        "talk to sales"
+      ]
+    },
+    {
+      "url": "https://www.testfit.io/pricing",
+      "final_url": "https://www.testfit.io/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "TestFit Pricing | AI-Powered Real Estate Feasibility Plans",
+      "meta_description": "Discover TestFit’s flexible pricing. Find the right plan for architects, developers, general contractors, urban planners, and more with TestFit’s real-time AI.",
+      "og_title": "TestFit Pricing | AI-Powered Real Estate Feasibility Plans",
+      "og_description": "Discover TestFit’s flexible pricing. Find the right plan for architects, developers, general contractors, urban planners, and more with TestFit’s real-time AI.",
+      "canonical": "https://www.testfit.io/pricing",
+      "h1": [
+        "Find the Right Option for You"
+      ],
+      "h2": [
+        "Reduce Risk. Increase Potential."
+      ],
+      "h3": [
+        "Parking Solver",
+        "Site Solver",
+        "Site Solver Portfolio",
+        "Frequently Asked Questions",
+        "Which subscription should I use to perform massing studies for a new urban development?",
+        "Can I use TestFit to generate detailed typology solutions for mixed-use developments?",
+        "I'm interested in generative design capabilities. Which subscription should I consider?",
+        "Does the Site Solver subscription include a dedicated account manager?",
+        "Does TestFit work for international customers?",
+        "I need to integrate with Revit and SketchUp. Which subscriptions support this?",
+        "If I want to upgrade my plan, how do I do that?",
+        "650 + Deals Evaluated per Week on TestFit"
+      ],
+      "word_count": 1271,
+      "ctas": [
+        "Talk to Sales",
+        "Buy Now",
+        "Get a Demo",
+        "Contact Us"
+      ],
+      "price_signals": [
+        "$195 /month",
+        "$0 /mo",
+        "$150/mo",
+        "$170/mo",
+        "$100/mo",
+        "$15,000 /year",
+        "$20,000 /year",
+        "$195/month",
+        "$15,000/year",
+        "$20,000/year",
+        "$15,000/yr",
+        "$20,000/yr",
+        "$4,000",
+        "talk to sales",
+        "billed annually",
+        "billed monthly",
+        "starting at"
+      ]
+    },
+    {
+      "url": "https://www.testfit.io/product/pro-forma",
+      "final_url": "https://www.testfit.io/product/pro-forma",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Real Estate Pro Forma Software | TestFit",
+      "meta_description": "TestFit Pro Forma live-links your spreadsheet to your model, so the numbers update as the design changes.",
+      "og_title": "Real Estate Pro Forma Software | TestFit",
+      "og_description": "TestFit Pro Forma live-links your spreadsheet to your model, so the numbers update as the design changes.",
+      "canonical": "https://www.testfit.io/product/pro-forma",
+      "h1": [
+        "Underwrite at the Speed of Design"
+      ],
+      "h2": [
+        "Your Spreadsheet, Inside TestFit",
+        "Financials That Update as the Design Changes",
+        "Design and Financials in One Report",
+        "Sync Your Design and Financials"
+      ],
+      "h3": [
+        "650 + Deals Evaluated per Week on TestFit"
+      ],
+      "word_count": 484,
+      "ctas": [
+        "Talk to Sales",
+        "Buy Now",
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.testfit.io/product/site-solver",
+      "final_url": "https://www.testfit.io/product/site-solver",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "TestFit Site Solver | Real Estate Feasibility Platform",
+      "meta_description": "Maximize site potential and get the right deals done fast with TestFit’s real estate feasibility platform.",
+      "og_title": "TestFit Site Solver | Real Estate Feasibility Platform",
+      "og_description": "Maximize site potential and get the right deals done fast with TestFit’s real estate feasibility platform.",
+      "canonical": "https://www.testfit.io/product/site-solver",
+      "h1": [
+        "From Parcel to Pro Forma in Minutes"
+      ],
+      "h2": [
+        "Define Your Sites with Data",
+        "Avoid Risks Early On",
+        "Set Code Parameters with Generative Design",
+        "Minimize Earthwork Cost with Automatic Cut and Fill",
+        "Find the Right Deals in Hours, not Weeks",
+        "Filter Out the Bad Deals",
+        "Get Conceptual Estimates Early On",
+        "See All Your Deals on OneMap",
+        "Generate Design Options in Seconds",
+        "Regenerate for the Best Solution",
+        "Meet Your Standards with No Fuss",
+        "No More Duplicating Work",
+        "Export to CAD & SketchUp Effortlessly",
+        "Share PDF with Real-Time Mark Up",
+        "Reduce Risk. Increase Potential."
+      ],
+      "h3": [
+        "650 + Deals Evaluated per Week on TestFit"
+      ],
+      "word_count": 1606,
+      "ctas": [
+        "Talk to Sales",
+        "Get a Demo",
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.testfit.io/product/parking-solver",
+      "final_url": "https://www.testfit.io/product/parking-solver",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Parking Layout Automation Software | TestFit",
+      "meta_description": "Automate parking layouts, compare optimized schemes, test parking ratios, and validate site feasibility in seconds with TestFit for architects and developers.",
+      "og_title": "Parking Layout Automation Software | TestFit",
+      "og_description": "Automate parking layouts, compare optimized schemes, test parking ratios, and validate site feasibility in seconds with TestFit for architects and developers.",
+      "canonical": "https://www.testfit.io/product/parking-solver",
+      "h1": [
+        "Parking Layouts in Seconds"
+      ],
+      "h2": [
+        "Validate Parking Without Counting Stalls",
+        "Put Your Parking Solves in Context",
+        "Take Full Control of Every Layout",
+        "Hand Off Plans to Design and Documentation",
+        "Never Count Parking Stalls Again"
+      ],
+      "h3": [
+        "1730 + Deals Evaluated per Week on TestFit"
+      ],
+      "word_count": 845,
+      "ctas": [
+        "Talk to Sales",
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.testfit.io/solutions/universities",
+      "final_url": "https://www.testfit.io/solutions/universities",
+      "page_type": "solutions",
+      "status": 200,
+      "error": "",
+      "title": "Site Planning Software for Universities | TestFit",
+      "meta_description": "Learn about our new real-time AI technology that’s revolutionizing the building industry. Set your students up for success with TestFit.",
+      "og_title": "Site Planning Software for Universities | TestFit",
+      "og_description": "Learn about our new real-time AI technology that’s revolutionizing the building industry. Set your students up for success with TestFit.",
+      "canonical": "https://www.testfit.io/solutions/universities",
+      "h1": [
+        "Set Your Students Up for Success"
+      ],
+      "h2": [
+        "Learn the Latest AI Technologies",
+        "Where Design and Development Work Hand in Hand",
+        "Our customers are reporting:",
+        "Built for Your Projects",
+        "Organizing a Student Competition?"
+      ],
+      "h3": [
+        "Get the AI Edge",
+        "See How Real Estate and Design Work",
+        "Export Projects Seamlessly",
+        "Plan Your Sites 4x Faster",
+        "Understand the Financial Side",
+        "Automate the Manual Work",
+        "Put Your Feasibility Study to Work",
+        "Offer TestFit as a real estate feasibility platform to all your competitors."
+      ],
+      "word_count": 935,
+      "ctas": [
+        "Talk to Sales",
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.testfit.io/solutions/municipalities",
+      "final_url": "https://www.testfit.io/solutions/municipalities",
+      "page_type": "solutions",
+      "status": 200,
+      "error": "",
+      "title": "Site Planning Software for Municipalities | TestFit",
+      "meta_description": "See how TestFit helps municipalities and government planning commissions evaluate land use, zoning, and development options quickly with site planning AI.",
+      "og_title": "Site Planning Software for Municipalities | TestFit",
+      "og_description": "See how TestFit helps municipalities and government planning commissions evaluate land use, zoning, and development options quickly with site planning AI.",
+      "canonical": "https://www.testfit.io/solutions/municipalities",
+      "h1": [
+        "Visualize Your City’s Future in Minutes"
+      ],
+      "h2": [
+        "Make Informed Land Use Decisions",
+        "Bridge the Gap Between Planning and Development",
+        "Our customers are reporting:",
+        "Built for Your Projects",
+        "Reduce Risk. Increase Potential."
+      ],
+      "h3": [
+        "Plan for Any Development",
+        "Accelerate Decision-Making",
+        "Build Consensus Faster",
+        "Plan Your Sites 4x Faster",
+        "See Economic Impacts Clearly",
+        "Explore More Options, Faster",
+        "Move from Feasibility to Action"
+      ],
+      "word_count": 675,
+      "ctas": [
+        "Talk to Sales",
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.testfit.io/about",
+      "final_url": "https://www.testfit.io/about",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "About TestFit: Our mission, vision, and team",
+      "meta_description": "We’re reinventing the development process for the betterment of the world’s future communities. More about TestFit here.",
+      "og_title": "About TestFit: Our mission, vision, and team",
+      "og_description": "We’re reinventing the development process for the betterment of the world’s future communities. More about TestFit here.",
+      "canonical": "https://www.testfit.io/about",
+      "h1": [
+        "We’re reinventing the development process for the betterment of the world’s communities."
+      ],
+      "h2": [
+        "Reduce Risk. Increase Potential.",
+        "Leadership Team"
+      ],
+      "h3": [],
+      "word_count": 1231,
+      "ctas": [
+        "Talk to Sales",
+        "Contact Us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 342,
+  "notes": [
+    "page cap bound: 16 candidates found, 8 fetched"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404
+  },
+  "candidates_found": 16,
+  "headings_found": 90
+}

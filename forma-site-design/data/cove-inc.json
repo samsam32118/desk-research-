@@ -1,0 +1,18 @@
+{
+  "slug": "cove-inc",
+  "input": "cove.inc",
+  "domain": "cove.inc",
+  "name": "",
+  "final_url": "",
+  "reachable": false,
+  "scanned_at": "2026-09-06T14:21:22+00:00",
+  "pages": [],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 0,
+  "notes": [
+    "retrying via https://www.cove.inc",
+    "homepage unreachable (202)"
+  ],
+  "headings_found": 0
+}

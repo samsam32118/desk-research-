@@ -1,0 +1,159 @@
+{
+  "slug": "urbansim-com",
+  "input": "urbansim.com",
+  "domain": "urbansim.com",
+  "name": "UrbanSim",
+  "final_url": "https://www.urbansim.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:11+00:00",
+  "pages": [
+    {
+      "url": "https://urbansim.com/",
+      "final_url": "https://www.urbansim.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "UrbanSim Artificial Intelligence For Sustainable Development with AI",
+      "meta_description": "UrbanSim is the leading AI-driven platform for sustainable urban planning and development. Our technology helps cities and developers to build smarter and more sustainable cities, and reduce costs.",
+      "og_title": "UrbanSim Artificial Intelligence For Sustainable Development with AI",
+      "og_description": "UrbanSim is the leading AI-driven platform for sustainable urban planning and development. Our technology helps cities and developers to build smarter and more sustainable cities, and reduce costs.",
+      "canonical": "https://www.urbansim.com",
+      "h1": [
+        "Smarter Urban Development with AI"
+      ],
+      "h2": [
+        "PLAN DIFFERENTLY",
+        "PLAN INTELLIGENTLY",
+        "PLAN EFFECTIVELY",
+        "PLAN COLLABORATIVELY",
+        "Case Study",
+        "Free Course",
+        "Podcast"
+      ],
+      "h3": [],
+      "word_count": 392,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.urbansim.com/software-for-map-making-developent-planning",
+      "final_url": "https://www.urbansim.com/software-for-map-making-developent-planning",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Software Tools For Scenario Planning, Model Making Maps & Zoning Editing Analysis — UrbanSim",
+      "meta_description": "Unleash Your Planning Potential! Discover Powerful Software Tools for Scenario Planning, Model Making, Maps & Zoning Editing, and Analysis. Boost Your Efficiency Today!",
+      "og_title": "Software Tools For Scenario Planning, Model Making Maps & Zoning Editing Analysis — UrbanSim",
+      "og_description": "Unleash Your Planning Potential! Discover Powerful Software Tools for Scenario Planning, Model Making, Maps & Zoning Editing, and Analysis. Boost Your Efficiency Today!",
+      "canonical": "https://www.urbansim.com/software-for-map-making-developent-planning",
+      "h1": [],
+      "h2": [],
+      "h3": [
+        "Software Tools for Makers: Enhance Your Productivity and Creativity"
+      ],
+      "word_count": 637,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.urbansim.com/solutions",
+      "final_url": "https://www.urbansim.com/scenario-modeling",
+      "page_type": "solutions",
+      "status": 200,
+      "error": "",
+      "title": "Scenario Modeling Software For Real Estate- UrbanSim — UrbanSim",
+      "meta_description": "UrbanSim is the leading scenario modeling software for real estate professionals. Our powerful tools help you to quickly analyze, plan and visualize city and regional development scenarios.",
+      "og_title": "Scenario Modeling Software For Real Estate- UrbanSim — UrbanSim",
+      "og_description": "UrbanSim is the leading scenario modeling software for real estate professionals. Our powerful tools help you to quickly analyze, plan and visualize city and regional development scenarios.",
+      "canonical": "https://www.urbansim.com/scenario-modeling",
+      "h1": [
+        "Scenario Modeling"
+      ],
+      "h2": [
+        "Modelers",
+        "Urban Planners",
+        "Academics",
+        "Policy Makers",
+        "Parcel Level Model",
+        "Census Block Level Model",
+        "Zone Level Model",
+        "Get in touch."
+      ],
+      "h3": [],
+      "word_count": 906,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.urbansim.com/industries",
+      "final_url": "https://www.urbansim.com/real-estate",
+      "page_type": "industry",
+      "status": 200,
+      "error": "",
+      "title": "Real Estate Investment Software for Market & Predictive Analytics — UrbanSim",
+      "meta_description": "Analyze the real estate market quickly and accurately with our powerful software. Get scenario modeling, predictive analytics, detailed reports, and customized solutions to help you make smart investment decisions.",
+      "og_title": "Real Estate Investment Software for Market & Predictive Analytics — UrbanSim",
+      "og_description": "Analyze the real estate market quickly and accurately with our powerful software. Get scenario modeling, predictive analytics, detailed reports, and customized solutions to help you make smart investment decisions.",
+      "canonical": "https://www.urbansim.com/real-estate",
+      "h1": [
+        "Property feasibility made faster and easier"
+      ],
+      "h2": [],
+      "h3": [
+        "Test Multiple Sites In Seconds."
+      ],
+      "word_count": 286,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.urbansim.com/about",
+      "final_url": "https://www.urbansim.com/about",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "About — UrbanSim",
+      "meta_description": "Making communities more affordable, accessible, sustainable, and resilient with decision-support tools that leverage human and artificial intelligence.",
+      "og_title": "About — UrbanSim",
+      "og_description": "Making communities more affordable, accessible, sustainable, and resilient with decision-support tools that leverage human and artificial intelligence.",
+      "canonical": "https://www.urbansim.com/about",
+      "h1": [
+        "Our Mission"
+      ],
+      "h2": [
+        "About Us",
+        "Our Users",
+        "80M",
+        "10,000"
+      ],
+      "h3": [
+        "Interested in Our Solutions?"
+      ],
+      "word_count": 265,
+      "ctas": [],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 36,
+  "notes": [
+    "no pricing page: probed /pricing=404, /plans=404, /pricing-plans=404, /price=404"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404,
+    "/pricing": 404,
+    "/plans": 404,
+    "/pricing-plans": 404,
+    "/price": 404
+  },
+  "candidates_found": 4,
+  "headings_found": 26
+}

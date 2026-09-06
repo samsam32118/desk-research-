@@ -1,0 +1,190 @@
+{
+  "slug": "archistar-ai",
+  "input": "archistar.ai",
+  "domain": "archistar.ai",
+  "name": "Archistar",
+  "final_url": "https://www.archistar.ai/aiprecheck/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:50+00:00",
+  "pages": [
+    {
+      "url": "https://archistar.ai/",
+      "final_url": "https://www.archistar.ai/aiprecheck/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "AI Plan Review & Permitting Software for Cities | Archistar",
+      "meta_description": "AI plan review and permitting software for local governments. Trusted by Los Angeles and Austin to cut permit approval times by up to 55%.",
+      "og_title": "AI Plan Review & Permitting Software for Cities | Archistar",
+      "og_description": "AI plan review and permitting software for local governments. Trusted by Los Angeles and Austin to cut permit approval times by up to 55%.",
+      "canonical": "https://www.archistar.ai/aiprecheck/",
+      "h1": [
+        "Fast-track building permits with AI plan review"
+      ],
+      "h2": [
+        "AI PreCheck is trusted by 30-plus cities and local governments worldwide",
+        "Why choose AI PreCheck for AI plan review?",
+        "How AI PreCheck works",
+        "Simple digital submission",
+        "Standardized assessment in minutes",
+        "Higher quality submissions, faster approvals",
+        "Book a meeting with us",
+        "AI PreCheck Custom Solutions",
+        "Government",
+        "Industry & certifiers",
+        "Revolutionizing real-estate research & compliance",
+        "Affiliates and partners",
+        "See Archistar in action in your area"
+      ],
+      "h3": [
+        "Accelerated permit processing",
+        "Improved submission quality",
+        "Consistent and transparent reports",
+        "Integrated solutions"
+      ],
+      "word_count": 1614,
+      "ctas": [
+        "Contact us",
+        "Book a demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.archistar.ai/pricing",
+      "final_url": "https://www.archistar.ai/pricing/",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Pricing - Archistar",
+      "meta_description": "",
+      "og_title": "Pricing - Archistar",
+      "og_description": "",
+      "canonical": "https://www.archistar.ai/pricing/",
+      "h1": [
+        "Start researching & discover the power of Archistar AI"
+      ],
+      "h2": [
+        "Basic",
+        "Professional",
+        "National",
+        "Use Archistar for Free"
+      ],
+      "h3": [
+        "79.17",
+        "287.50",
+        "495.83",
+        "Detailed tier comparison",
+        "Free",
+        "Basic",
+        "Professional"
+      ],
+      "word_count": 1590,
+      "ctas": [
+        "Contact us",
+        "Book a demo",
+        "Buy Now",
+        "request a demo",
+        "Start free today"
+      ],
+      "price_signals": [
+        "$95",
+        "$345",
+        "$595",
+        "$95/mo",
+        "$345/mo",
+        "billed monthly"
+      ]
+    },
+    {
+      "url": "https://www.archistar.ai/our-story",
+      "final_url": "https://www.archistar.ai/our-story/",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "Our Story - Archistar",
+      "meta_description": "",
+      "og_title": "Our Story - Archistar",
+      "og_description": "",
+      "canonical": "https://www.archistar.ai/our-story/",
+      "h1": [
+        "Creating a world where every building can be designed and approved with speed , transparency , and confidence"
+      ],
+      "h2": [
+        "Our journey",
+        "The missing link: Instant approval",
+        "The vision forward",
+        "A global challenge, a shared future",
+        "Global opportunities",
+        "Our core values",
+        "Affiliates and partners",
+        "Recent awards",
+        "See Archistar in action in your area"
+      ],
+      "h3": [
+        "Trust Through Integrity",
+        "Innovation with Purpose",
+        "Excellence in Execution",
+        "Collaboration for Shared Goals",
+        "Customer Empathy"
+      ],
+      "word_count": 1201,
+      "ctas": [
+        "Contact us",
+        "Book a demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.archistar.ai/echeck/industry-certifiers",
+      "final_url": "https://www.archistar.ai/aiprecheck/industry-certifiers/",
+      "page_type": "industry",
+      "status": 200,
+      "error": "",
+      "title": "AI PreCheck for Industry & Certifiers | Archistar",
+      "meta_description": "AI PreCheck for Industry & Certifiers enables fast, consistent AI-driven planning compliance checks",
+      "og_title": "AI PreCheck for Industry & Certifiers | Archistar",
+      "og_description": "AI PreCheck for Industry & Certifiers enables fast, consistent AI-driven planning compliance checks",
+      "canonical": "https://www.archistar.ai/aiprecheck/industry-certifiers/",
+      "h1": [
+        "Get compliant early in your project roadmap with AI PreCheck"
+      ],
+      "h2": [
+        "Can’t see your municipality?",
+        "Book a 1-to-1 with us",
+        "Smarter, global design capability with Archistar and Autodesk Forma",
+        "Revolutionising real estate research & compliance",
+        "Affiliates and partners",
+        "See Archistar in action in your area"
+      ],
+      "h3": [
+        "How AI PreCheck works for Industry",
+        "AI PreCheck adoption",
+        "Site drag n’ drop",
+        "Iterate",
+        "AI design",
+        "Is AI PreCheck adopted in your locality?"
+      ],
+      "word_count": 1524,
+      "ctas": [
+        "Contact us",
+        "Book a demo"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 379,
+  "notes": [
+    "found pricing page by probing: https://www.archistar.ai/pricing"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404,
+    "/pricing": 200
+  },
+  "candidates_found": 5,
+  "headings_found": 58
+}

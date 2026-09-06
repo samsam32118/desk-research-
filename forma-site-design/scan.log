@@ -1,0 +1,41 @@
+scanning 30 site(s) -> forma-site-design/data
+  !! hypar.io unreachable
+  ok giraffe.build                6 pages (compare, home, industry, pricing, use_case)
+  ok snaptrude.com                8 pages (compare, features, home, pricing, product, use_case)  competitors named: Revit, Archicad, Sketchup, Autocad, Free Revit
+  ok finch3d.com                  3 pages (home, pricing, product)
+  ok testfit.io                   8 pages (about, home, pricing, product, solutions)
+  ok digitalbluefoam.com          6 pages (about, home, industry, pricing, solutions)
+  ok maket.ai                     4 pages (about, features, home, pricing)
+  ok zenerate.ai                  3 pages (about, home, pricing)
+  ok deepblocks.com               2 pages (home, pricing)
+  ok arkdesign.ai                 2 pages (features, home)
+  !! cove.tools unreachable
+  ok hektar.ai                    3 pages (features, home, pricing)
+  ok land.tech                    8 pages (features, home, pricing, product, solutions)
+  ok bentley.com                  1 pages (home)
+  ok modelur.com                  3 pages (features, home, pricing)
+  ok urbansim.com                 5 pages (about, home, industry, product, solutions)
+  ok archistar.ai                 4 pages (about, home, industry, pricing)
+  ok esri.com                     4 pages (home, product)
+  ok sketchup.com                 4 pages (compare, home, pricing, product)
+  ok vectorworks.net              3 pages (compare, home, solutions)
+  ok landchecker.com.au           7 pages (about, features, home, pricing, product)
+  ok aprao.com                    2 pages (home, pricing)
+  ok architechtures.com           4 pages (about, home, pricing, product)
+  ok civils.ai                    5 pages (about, compare, home, pricing)  competitors named: Kreo, Stack, Beam Ai, Chatgpt, Togal Ai
+  ok skema.ai                     3 pages (about, home, pricing)
+  ok geopogo.com                  8 pages (about, compare, features, home, platform, pricing, product, solutions)
+  ok urbanfootprint.com           7 pages (about, home, platform, pricing, solutions)
+  ok parametric.se                2 pages (home, pricing)
+  ok transoftsolutions.com        5 pages (about, home, product)
+  ok mcneel.com                   3 pages (features, home, product)
+{
+  "companies": 30,
+  "reachable": 28,
+  "pages": 123,
+  "out": "/home/user/desk-research-/forma-site-design/data",
+  "unreachable": [
+    "hypar.io",
+    "cove.tools"
+  ]
+}

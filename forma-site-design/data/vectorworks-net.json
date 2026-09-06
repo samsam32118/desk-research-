@@ -1,0 +1,126 @@
+{
+  "slug": "vectorworks-net",
+  "input": "vectorworks.net/en-US/landmark",
+  "domain": "vectorworks.net",
+  "name": "Vectorworks Landmark",
+  "final_url": "https://www.vectorworks.net/en-US/landmark",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:15+00:00",
+  "pages": [
+    {
+      "url": "https://vectorworks.net/en-US/landmark",
+      "final_url": "https://www.vectorworks.net/en-US/landmark",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "3D Landscape Design Software for Professionals | Vectorworks Landmark",
+      "meta_description": "Create masterful landscape projects with the all-in-one 3D landscape software built to transform your design, presentation, irrigation, and documentation workflows.",
+      "og_title": "3D Landscape Design Software for Professionals | Vectorworks Landmark",
+      "og_description": "Create masterful landscape projects with the all-in-one 3D landscape software built to transform your design, presentation, irrigation, and documentation workflows.",
+      "canonical": "https://www.vectorworks.net/en-US/landmark",
+      "h1": [
+        "THE ULTIMATE LANDSCAPE DESIGN SOFTWARE"
+      ],
+      "h2": [
+        "Landscape design software for every project phase",
+        "Landscape design software for every project phase",
+        "Work Smarter with 3D Landscape BIM Software",
+        "Make Informed Design Decisions",
+        "Collaborate With Anyone",
+        "What's new in Landmark",
+        "Stay ahead of the curve",
+        "CREATE POWERFUL PRESENTATIONS",
+        "EXPLORE THE LATEST INSIGHTS AND INSPIRATION.",
+        "Get Up and Running Quickly",
+        "Try/Buy"
+      ],
+      "h3": [],
+      "word_count": 806,
+      "ctas": [
+        "Free Trial",
+        "Buy Now",
+        "Contact Us"
+      ],
+      "price_signals": [
+        "free trial"
+      ]
+    },
+    {
+      "url": "https://www.vectorworks.net/vs",
+      "final_url": "https://www.vectorworks.net/en-US",
+      "page_type": "compare",
+      "status": 200,
+      "error": "",
+      "title": "3D Design Software for BIM CAD & Modeling | Vectorworks",
+      "meta_description": "3D modeling and design software that delivers a flexible and collaborative CAD process to architecture, landscaping and entertainment professionals.",
+      "og_title": "3D Design Software for BIM CAD & Modeling | Vectorworks",
+      "og_description": "3D modeling and design software that delivers a flexible and collaborative CAD process to architecture, landscaping and entertainment professionals.",
+      "canonical": "https://www.vectorworks.net/en-US",
+      "h1": [
+        "One flexible 3D design software for your entire process."
+      ],
+      "h2": [
+        "No drag. Just drive.",
+        "SUPPORTING YOU EVERY STEP OF THE WAY.",
+        "News + Noteworthy",
+        "Stay in the know with the latest insights"
+      ],
+      "h3": [],
+      "word_count": 354,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.vectorworks.net/en-US/landmark/capabilities",
+      "final_url": "https://www.vectorworks.net/en-US/landmark/capabilities",
+      "page_type": "solutions",
+      "status": 200,
+      "error": "",
+      "title": "Vectorworks Landmark Capabilities",
+      "meta_description": "Discover all the ways Vectorworks Landmark can enhance your workflows, from plant selection and sustainability assessments to BIM collaboration and reporting.",
+      "og_title": "Vectorworks Landmark Capabilities",
+      "og_description": "Discover all the ways Vectorworks Landmark can enhance your workflows, from plant selection and sustainability assessments to BIM collaboration and reporting.",
+      "canonical": "https://www.vectorworks.net/en-US/landmark/capabilities",
+      "h1": [
+        "See what's possible with Vectorworks Landmark"
+      ],
+      "h2": [
+        "Try / Buy"
+      ],
+      "h3": [],
+      "word_count": 609,
+      "ctas": [
+        "Free Trial",
+        "Buy Now",
+        "Contact Us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {
+    "compare": [
+      "https://www.vectorworks.net/vs"
+    ]
+  },
+  "named_competitors": [],
+  "sitemap_urls_seen": 1731,
+  "notes": [
+    "scoped to /en-US/landmark subtree",
+    "found competitor index by probing: https://www.vectorworks.net/vs",
+    "no pricing page: probed /pricing=404, /plans=404, /pricing-plans=404, /price=404"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 200,
+    "/pricing": 404,
+    "/plans": 404,
+    "/pricing-plans": 404,
+    "/price": 404
+  },
+  "candidates_found": 2,
+  "headings_found": 19
+}

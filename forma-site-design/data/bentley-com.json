@@ -1,0 +1,117 @@
+{
+  "slug": "bentley-com",
+  "input": "bentley.com/software/opensite-plus",
+  "domain": "bentley.com",
+  "name": "Bentley",
+  "final_url": "https://www.bentley.com/account/silent-sign-in?returnUrl=%2Fsoftware%2Fopensite-plus&captureFragment=true",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:21:52+00:00",
+  "pages": [
+    {
+      "url": "https://bentley.com/software/opensite-plus",
+      "final_url": "https://www.bentley.com/account/silent-sign-in?returnUrl=%2Fsoftware%2Fopensite-plus&captureFragment=true",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Signing in",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "word_count": 2,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.bentley.com/software/opensite-plus/",
+      "final_url": "https://www.bentley.com/software/opensite-plus/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "OpenSite+: AI-Powered Site Design Software | Bentley Systems",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [
+        "OpenSite+: AI-Powered Site Design Software"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 0,
+      "ctas": [],
+      "price_signals": [],
+      "recovered_via": "search-index meta title"
+    },
+    {
+      "url": "https://blog.bentley.com/software/the-first-ai-driven-civil-engineering-software-for-site-design/",
+      "final_url": "https://blog.bentley.com/software/the-first-ai-driven-civil-engineering-software-for-site-design/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "The First AI-driven Civil Engineering Software for Site Design | Bentley Blog",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [
+        "The First AI-driven Civil Engineering Software for Site Design"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 0,
+      "ctas": [],
+      "price_signals": [],
+      "recovered_via": "search-index meta title"
+    },
+    {
+      "url": "https://www.bentley.com/software/civil-worksuite/",
+      "final_url": "https://www.bentley.com/software/civil-worksuite/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Civil WorkSuite: Site Design Software | Bentley Systems",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [
+        "Civil WorkSuite: Site Design Software"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 0,
+      "ctas": [],
+      "price_signals": [],
+      "recovered_via": "search-index meta title"
+    }
+  ],
+  "signal_urls": {
+    "compare": [
+      "https://www.bentley.com/alternatives"
+    ]
+  },
+  "named_competitors": [],
+  "sitemap_urls_seen": 0,
+  "notes": [
+    "scoped to /software/opensite-plus subtree",
+    "found competitor index by probing: https://www.bentley.com/alternatives",
+    "found pricing page by probing: https://www.bentley.com/pricing",
+    "https://www.bentley.com/software/opensite-plus/ redirects to an excluded page (https://www.bentley.com/account/silent-sign-in?returnUrl=%2Fsoftware%2Fopensite-plus%2F&captureFragment=true)",
+    "https://www.bentley.com/software/civil-worksuite/ redirects to an excluded page (https://www.bentley.com/account/silent-sign-in?returnUrl=%2Fsoftware%2Fcivil-worksuite%2F&captureFragment=true)",
+    "https://www.bentley.com/en/products/product-line/civil-design-software/siteops redirects to an excluded page (https://www.bentley.com/account/silent-sign-in?returnUrl=%2Fen%2Fproducts%2Fproduct-line%2Fcivil-design-software%2Fsiteops&captureFragment=true)",
+    "https://www.bentley.com/alternatives redirects to an excluded page (https://www.bentley.com/account/silent-sign-in?returnUrl=%2Falternatives&captureFragment=true)",
+    "https://www.bentley.com/pricing redirects to an excluded page (https://www.bentley.com/account/silent-sign-in?returnUrl=%2Fpricing&captureFragment=true)",
+    "no headings extracted: site is JS-rendered, parked, or blocking bots -- fall back to WebFetch for this domain, or treat copy as unavailable",
+    "www.bentley.com returns a JS sign-in gate to this egress; meta titles captured verbatim from the search index, no body copy available"
+  ],
+  "probes": {
+    "/alternatives": 200,
+    "/pricing": 200
+  },
+  "candidates_found": 3,
+  "headings_found": 3
+}

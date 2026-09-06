@@ -1,0 +1,240 @@
+{
+  "slug": "digitalbluefoam-com",
+  "input": "digitalbluefoam.com",
+  "domain": "digitalbluefoam.com",
+  "name": "Digital Blue Foam",
+  "final_url": "https://www.digitalbluefoam.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:50+00:00",
+  "pages": [
+    {
+      "url": "https://digitalbluefoam.com/",
+      "final_url": "https://www.digitalbluefoam.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "AI City Planning & Spatial Scenario Software | Digital Blue Foam",
+      "meta_description": "DBF is spatial reasoning AI for cities, governments and asset owners — ranked spatial scenarios scored on spatial ROI, infrastructure and liveability, traceable to source.",
+      "og_title": "AI City Planning & Spatial Scenario Software | Digital Blue Foam",
+      "og_description": "Ranked spatial scenarios with evidence chains — for cities, governments and large asset owners.",
+      "canonical": "https://www.digitalbluefoam.com",
+      "h1": [
+        "Your spatial reasoning layer for every asset decision."
+      ],
+      "h2": [
+        "One engine, every spatial decision",
+        "Ask a real spatial question Get a defensible answer",
+        "Anyone can call an LLM The spatial memory beneath it is the moat",
+        "One reasoning Any scale",
+        "One reasoning engine Three ways to put it to work",
+        "Guided by people who've shaped cities and the science behind them",
+        "See DBF reason over a real site and brief",
+        "Read the platform whitepaper"
+      ],
+      "h3": [
+        "Structured spatial memory",
+        "Reasoning over entities, not text",
+        "Every answer carries an evidence chain"
+      ],
+      "word_count": 2570,
+      "ctas": [
+        "Contact us",
+        "Get Started",
+        "Request a Demo",
+        "Talk to Sales"
+      ],
+      "price_signals": [
+        "talk to sales"
+      ]
+    },
+    {
+      "url": "https://www.digitalbluefoam.com/pricing",
+      "final_url": "https://www.digitalbluefoam.com/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Pricing of DBF, Waiting List Subscription or Contact Sales",
+      "meta_description": "DBF excels in custom digital solutions for complex building projects. From campuses to city-scale developments, trust us for innovative solutions.",
+      "og_title": "Pricing of DBF, Waiting List Subscription or Contact Sales",
+      "og_description": "DBF excels in custom digital solutions for complex building projects. From campuses to city-scale developments, trust us for innovative solutions.",
+      "canonical": "https://www.digitalbluefoam.com/pricing",
+      "h1": [
+        "Pricing"
+      ],
+      "h2": [],
+      "h3": [
+        "Tailored Solution",
+        "Why Go Custom?",
+        "What to Expect",
+        "Our Approach"
+      ],
+      "word_count": 639,
+      "ctas": [
+        "Contact us",
+        "Get Started",
+        "Contact sales"
+      ],
+      "price_signals": [
+        "contact sales"
+      ]
+    },
+    {
+      "url": "https://www.digitalbluefoam.com/capabilities/instant-bim",
+      "final_url": "https://www.digitalbluefoam.com/capabilities/instant-bim",
+      "page_type": "solutions",
+      "status": 200,
+      "error": "",
+      "title": "BIM Facility Management Software — Instant BIM | DBF",
+      "meta_description": "DBF's BIM facility management software turns designs into an instant, data-rich BIM — one-click Revit, ArchiCAD and Grasshopper sync, IFC import, and digital-twin operations for facility owners.",
+      "og_title": "BIM Facility Management Software — Instant BIM | DBF",
+      "og_description": "DBF's BIM facility management software turns designs into an instant, data-rich BIM — one-click Revit, ArchiCAD and Grasshopper sync, IFC import, and digital-twin operations for facility owners.",
+      "canonical": "https://www.digitalbluefoam.com/capabilities/instant-bim",
+      "h1": [
+        "Instant BIM for Facility Management"
+      ],
+      "h2": [
+        "What Is BIM For Facility Management?",
+        "BIM Management Software in Action",
+        "Immersion With 3D BIM Models",
+        "Features Of DBF's BIM Facility Management Platform",
+        "BIM Management Software in Action",
+        "Frequently Asked Questions"
+      ],
+      "h3": [
+        "Real-Time Collaboration",
+        "Data-Driven Decisions",
+        "Scalability",
+        "The Hub for Project Facility Management",
+        "One-Click Grasshopper Sync",
+        "One-Click Revit Sync",
+        "One-Click ArchiCAD Sync",
+        "IFC Import",
+        "Facility Management & Maintenance",
+        "Coordinating Teams & Reducing Errors",
+        "Digital Twin for Operational Efficiency"
+      ],
+      "word_count": 1227,
+      "ctas": [
+        "Contact us",
+        "Get Started"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.digitalbluefoam.com/capabilities/spatial-analytics",
+      "final_url": "https://www.digitalbluefoam.com/capabilities/spatial-analytics",
+      "page_type": "solutions",
+      "status": 200,
+      "error": "",
+      "title": "Spatial Analytics Software & Geospatial Platform | DBF",
+      "meta_description": "DBF's spatial analytics software turns multi-source geospatial data into decisions — site selection, accessibility, density, proximity and network analysis with proprietary urban KPIs in real-time 3D.",
+      "og_title": "Spatial Analytics Software & Geospatial Platform | DBF",
+      "og_description": "DBF's spatial analytics software turns multi-source geospatial data into decisions — site selection, accessibility, density, proximity and network analysis with proprietary urban KPIs in real-time 3D.",
+      "canonical": "https://www.digitalbluefoam.com/capabilities/spatial-analytics",
+      "h1": [
+        "Spatial Analytics"
+      ],
+      "h2": [
+        "What Is Spatial Analytics?",
+        "Spatial Analytics in Action",
+        "Immersion With 3D Geospatial Analytics",
+        "Features Of DBF's Sustainable Building Technology",
+        "Spatial Analytics In Action",
+        "Frequently Asked Questions"
+      ],
+      "h3": [
+        "Design Validation and Optimization",
+        "Project Lifecycle Analytics",
+        "Inclusive Stakeholder Engagement",
+        "Location-based Analytics",
+        "Network Analysis",
+        "City Analysis",
+        "Isochrone",
+        "Persona Analysis",
+        "Carbon Analysis",
+        "Proximity Analysis",
+        "Density Analysis",
+        "Diversity Analysis",
+        "Fulfillment Analysis",
+        "Minimize Energy Consumption",
+        "Optimize Project Layout",
+        "Smart Site Selection & Feasibility"
+      ],
+      "word_count": 1178,
+      "ctas": [
+        "Contact us",
+        "Get Started"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.digitalbluefoam.com/industries/airports",
+      "final_url": "https://www.digitalbluefoam.com/industries/airports",
+      "page_type": "industry",
+      "status": 200,
+      "error": "",
+      "title": "Airports | Digital Blue Foam",
+      "meta_description": "AI feasibility planning for airports and terminal expansions. Validate passenger flow, terminal capacity, and IATA/ICAO compliance before construction investment. Trusted by aviation planning teams.",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [
+        "Airports"
+      ],
+      "h2": [
+        "Airport planning errors affect millions of passengers and are extraordinarily costly to correct",
+        "How It Works",
+        "Built for the complexity of airport planning",
+        "Use Cases",
+        "Planning airports for the recovery and growth of global aviation"
+      ],
+      "h3": [],
+      "word_count": 908,
+      "ctas": [
+        "Contact us",
+        "Get Started",
+        "Request a Demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.digitalbluefoam.com/company/culture",
+      "final_url": "https://www.digitalbluefoam.com/company/culture",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "Our Culture in DBF - We Build on a Foundation of Trust",
+      "meta_description": "In DBF, we embrace global team work and build on a foundation of enormous trust and flexibility as we are already spread across 10 countries, 5 continents, and as many time zones.",
+      "og_title": "Our Culture in DBF - We Build on a Foundation of Trust",
+      "og_description": "In DBF, we embrace global team work and build on a foundation of enormous trust and flexibility as we are already spread across 10 countries, 5 continents, and as many time zones.",
+      "canonical": "https://www.digitalbluefoam.com/company/culture",
+      "h1": [
+        "Working In Our Global Team"
+      ],
+      "h2": [
+        "5 main values"
+      ],
+      "h3": [],
+      "word_count": 667,
+      "ctas": [
+        "Contact us",
+        "Get Started"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 72,
+  "notes": [
+    "page cap bound: 41 candidates found, 6 fetched"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404
+  },
+  "candidates_found": 41,
+  "headings_found": 66
+}

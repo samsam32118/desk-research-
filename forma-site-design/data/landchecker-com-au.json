@@ -1,0 +1,286 @@
+{
+  "slug": "landchecker-com-au",
+  "input": "landchecker.com.au",
+  "domain": "landchecker.com.au",
+  "name": "Landchecker",
+  "final_url": "https://landchecker.com.au/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:19+00:00",
+  "pages": [
+    {
+      "url": "https://landchecker.com.au/",
+      "final_url": "https://landchecker.com.au/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Property Data & Land Data Online Australia | Landchecker",
+      "meta_description": "Property & land data online in one place. Use Landchecker for faster, deeper insight driven decisions. Trusted by thousands of businesses every day.",
+      "og_title": "Property Data & Land Data Online Australia | Landchecker",
+      "og_description": "Property & land data online in one place. Use Landchecker for faster, deeper insight driven decisions. Trusted by thousands of businesses every day.",
+      "canonical": "https://landchecker.com.au",
+      "h1": [
+        "Australian property data in one place - for faster, insight-driven decisions"
+      ],
+      "h2": [
+        "The complete property intelligence platform",
+        "Unlimited High-Resolution Aerial Imagery",
+        "Permits and Development Applications",
+        "Planning Zones, Overlays and Layers",
+        "Title Searches",
+        "Address Search & Land Size",
+        "Property Reports",
+        "Trusted by thousands of businesses every day"
+      ],
+      "h3": [
+        "Why Landchecker for Land & Property Data",
+        "InForm Credits Landchecker for Building Approval",
+        "Herron Todd White impressed with Landchecker",
+        "Landchecker ‘seamless’ in providing property data quickly",
+        "Roulston"
+      ],
+      "word_count": 854,
+      "ctas": [
+        "Get Started",
+        "Book a demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://landchecker.com.au/pricing/subscriptions",
+      "final_url": "https://landchecker.com.au/pricing/subscriptions",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Subscriptions | Landchecker",
+      "meta_description": "An all-in-one source of property information together with data analysis tools to help professionals and homeowners make informed decisions, faster. Victoria and New South Wales.",
+      "og_title": "Subscriptions | Landchecker",
+      "og_description": "An all-in-one source of property information together with data analysis tools to help professionals and homeowners make informed decisions, faster. Victoria and New South Wales.",
+      "canonical": "https://landchecker.com.au/pricing/subscriptions",
+      "h1": [
+        "The right plan for faster property decisions"
+      ],
+      "h2": [
+        "$0",
+        "$82.50",
+        "$62.50",
+        "$240",
+        "$200",
+        "Custom Pricing",
+        "Compare all plan features",
+        "Questions? We’re glad you asked.",
+        "Want to make faster, insight-driven property decisions? Join Landchecker for free today."
+      ],
+      "h3": [
+        "InForm Credits Landchecker for Building Approval",
+        "Herron Todd White impressed with Landchecker",
+        "Landchecker ‘seamless’ in providing property data quickly",
+        "Roulston"
+      ],
+      "word_count": 1790,
+      "ctas": [
+        "Get Started",
+        "Book a demo",
+        "Contact Sales"
+      ],
+      "price_signals": [
+        "$0",
+        "$82.50",
+        "$62.50",
+        "$750/year",
+        "$240",
+        "$200",
+        "$2,400/year",
+        "contact sales",
+        "custom pricing",
+        "billed annually",
+        "per user per month",
+        "no credit card"
+      ]
+    },
+    {
+      "url": "https://landchecker.com.au/products/copy-of-plan",
+      "final_url": "https://landchecker.com.au/products/copy-of-plan",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Copy of Plan in Victoria | Landchecker",
+      "meta_description": "A copy of plan or plan of subdivision is a surveyed sketch of a land lot or parcel. Order this document on Landchecker and receive it instantly. Sign up now!",
+      "og_title": "Copy of Plan in Victoria | Landchecker",
+      "og_description": "A copy of plan or plan of subdivision is a surveyed sketch of a land lot or parcel. Order this document on Landchecker and receive it instantly. Sign up now!",
+      "canonical": "https://landchecker.com.au/products/copy-of-plan",
+      "h1": [
+        "Victorian Copy of Plan"
+      ],
+      "h2": [
+        "What Information will the Copy of Plan Provide?",
+        "Order a Copy of Plan on Landchecker and Receive it Within Five Minutes",
+        "Why Choose Landchecker for your Copy of Plan Search in Victoria?",
+        "3. Covenants",
+        "4. Caveats",
+        "Why Choose Landchecker for Instrument Search?",
+        "Trusted by thousands of businesses every day"
+      ],
+      "h3": [
+        "InForm Credits Landchecker for Building Approval",
+        "Herron Todd White impressed with Landchecker",
+        "Landchecker ‘seamless’ in providing property data quickly",
+        "Roulston"
+      ],
+      "word_count": 1009,
+      "ctas": [
+        "Get Started",
+        "Book a demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://landchecker.com.au/products/nsw-88b-search",
+      "final_url": "https://landchecker.com.au/products/nsw-88b-search",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "NSW 88B Search | Landchecker",
+      "meta_description": "A Section 88B Instrument is an important legal document in New South Wales required when registering a deposited plan.",
+      "og_title": "NSW 88B Search | Landchecker",
+      "og_description": "A Section 88B Instrument is an important legal document in New South Wales required when registering a deposited plan.",
+      "canonical": "https://landchecker.com.au/products/nsw-88b-search",
+      "h1": [
+        "NSW 88B Search"
+      ],
+      "h2": [
+        "Why Do You Need a Section 88B Instrument?",
+        "How to Order a Section 88B Instrument on Landchecker",
+        "What is the Cost of Ordering an 88B Instrument?",
+        "Trusted by thousands of businesses every day"
+      ],
+      "h3": [
+        "InForm Credits Landchecker for Building Approval",
+        "Herron Todd White impressed with Landchecker",
+        "Landchecker ‘seamless’ in providing property data quickly",
+        "Roulston"
+      ],
+      "word_count": 696,
+      "ctas": [
+        "Get Started",
+        "Book a demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://landchecker.com.au/products/property-reports",
+      "final_url": "https://landchecker.com.au/products/property-reports",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Planning Property Reports | Landchecker",
+      "meta_description": "Access essential property and land data to complete due diligence. Property reports arm you with the information you need to make decisions with confidence.",
+      "og_title": "Planning Property Reports | Landchecker",
+      "og_description": "Access essential property and land data to complete due diligence. Property reports arm you with the information you need to make decisions with confidence.",
+      "canonical": "https://landchecker.com.au/products/property-reports",
+      "h1": [
+        "Premium Property Reports Online"
+      ],
+      "h2": [
+        "“Landchecker is the most used and popular online tool for KordaMentha’s real estate team. Its intuitive platform simplifies complex property research, enabling our team to quickly retrieve essential information such as land size, zones and overlays, planning information, and sales history.\"",
+        "What does a Premium Property Report include exactly?",
+        "Customers on the Advanced plan can make the most of our customisation functionality",
+        "Why else do professionals choose Premium?",
+        "Who has access to a Premium Property Report?",
+        "How much is a Premium Property Report?",
+        "How do you access/ purchase/ download a Premium Property Report?",
+        "How can the Premium Property Report be used?",
+        "Valuers",
+        "Real Estate Agents",
+        "Architects and Planners",
+        "Legal Professionals",
+        "Professionals",
+        "Are Premium Property Reports available in every state?",
+        "What is a free property report?",
+        "How do you access a free property report?",
+        "What does a free property report include exactly?",
+        "Trusted by thousands of businesses every day"
+      ],
+      "h3": [
+        "InForm Credits Landchecker for Building Approval",
+        "Herron Todd White impressed with Landchecker",
+        "Landchecker ‘seamless’ in providing property data quickly",
+        "Roulston"
+      ],
+      "word_count": 1395,
+      "ctas": [
+        "Get Started",
+        "Book a demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://landchecker.com.au/about-us",
+      "final_url": "https://landchecker.com.au/about-us",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "About Us | Landchecker",
+      "meta_description": "An all-in-one source of property information together with data analysis tools to help property professionals make informed decisions, faster. Victoria, New South Wales, Queensland, South Australia, Tasmania, Western Australia, Australian Capital Territory and Northern Territory.",
+      "og_title": "About Us | Landchecker",
+      "og_description": "An all-in-one source of property information together with data analysis tools to help property professionals make informed decisions, faster. Victoria, New South Wales, Queensland, South Australia, Tasmania, Western Australia, Australian Capital Territory and Northern Territory.",
+      "canonical": "https://landchecker.com.au/about-us",
+      "h1": [
+        "We're an AI-enabled property data and technology business.",
+        "Get in touch"
+      ],
+      "h2": [
+        "Our extensive, proprietary data reaches members in a range of formats, including through our map-based web platform.",
+        "Want to make faster, insight-driven property decisions? Join Landchecker for free today."
+      ],
+      "h3": [],
+      "word_count": 911,
+      "ctas": [
+        "Get Started",
+        "Contact Us",
+        "Book a demo",
+        "Contact Sales"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://landchecker.com.au/articles/why-due-diligence-is-necessary-a-property-valuer-s-guide",
+      "final_url": "https://landchecker.com.au/articles/why-due-diligence-is-necessary-a-property-valuer-s-guide",
+      "page_type": "features",
+      "status": 200,
+      "error": "",
+      "title": "Why due diligence is necessary – A property valuer's guide",
+      "meta_description": "Purchasing a house will be the most important financial decision most Australians make. To avoid the risks and make a wise investment, you need to be well infor",
+      "og_title": "Why due diligence is necessary – A property valuer's guide",
+      "og_description": "Purchasing a house will be the most important financial decision most Australians make. To avoid the risks and make a wise investment, you need to be well infor",
+      "canonical": "https://landchecker.com.au/articles/why-due-diligence-is-necessary-a-property-valuer-s-guide",
+      "h1": [
+        "Why due diligence is necessary – A property valuer's guide"
+      ],
+      "h2": [
+        "Want to make faster, insight-driven property decisions? Join Landchecker for free today."
+      ],
+      "h3": [],
+      "word_count": 1755,
+      "ctas": [
+        "Get Started",
+        "Book a demo",
+        "Contact Sales"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 210,
+  "notes": [
+    "page cap bound: 25 candidates found, 7 fetched"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404
+  },
+  "candidates_found": 25,
+  "headings_found": 78
+}

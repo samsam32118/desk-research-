@@ -1,0 +1,93 @@
+{
+  "slug": "hypar-io",
+  "input": "hypar.io",
+  "domain": "hypar.io",
+  "name": "Hypar",
+  "final_url": "https://hypar.io/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:21:41+00:00",
+  "pages": [
+    {
+      "url": "https://hypar.io/",
+      "final_url": "https://hypar.io/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Hypar | Space Planning Software for Building Buy-In",
+      "meta_description": "Plan buildings your client and team can agree on faster. Import site and Revit data, edit with automatic measurement, export to Revit. Free trial.",
+      "og_title": "Hypar | Space Planning Software for Building Buy-In",
+      "og_description": "Plan buildings your client and team can agree on faster. Import site and Revit data, edit with automatic measurement, export to Revit. Free trial.",
+      "canonical": "",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "word_count": 8,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://hypar.io/pricing",
+      "final_url": "https://hypar.io/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Hypar | Space Planning Software for Building Buy-In",
+      "meta_description": "Plan buildings your client and team can agree on faster. Import site and Revit data, edit with automatic measurement, export to Revit. Free trial.",
+      "og_title": "Hypar | Space Planning Software for Building Buy-In",
+      "og_description": "Plan buildings your client and team can agree on faster. Import site and Revit data, edit with automatic measurement, export to Revit. Free trial.",
+      "canonical": "",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "word_count": 8,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://hypar.io/llms.txt",
+      "final_url": "https://hypar.io/llms.txt",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Hypar",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [
+        "Hypar is space planning software for building buy-in: early-phase architectural space planning in the browser."
+      ],
+      "h2": [
+        "what Hypar is and does",
+        "plans and pricing, $100 per user per month, Studio tier for firms standardizing on Hypar",
+        "Hypar's founders, team, experience, and product principles"
+      ],
+      "h3": [],
+      "word_count": 0,
+      "ctas": [],
+      "price_signals": [
+        "$100 per user per month"
+      ],
+      "recovered_via": "first-party llms.txt"
+    }
+  ],
+  "signal_urls": {
+    "compare": [
+      "https://hypar.io/alternatives"
+    ]
+  },
+  "named_competitors": [],
+  "sitemap_urls_seen": 3,
+  "notes": [
+    "found competitor index by probing: https://hypar.io/alternatives",
+    "page cap bound: 3 candidates found, 3 fetched",
+    "no headings extracted: site is JS-rendered, parked, or blocking bots -- fall back to WebFetch for this domain, or treat copy as unavailable",
+    "robots.txt allows only /$, /pricing, /llms.txt; dropped ['https://hypar.io/alternatives'] to comply",
+    "SPA returns no headings; copy taken from hypar.io/llms.txt, which the site's own robots.txt publishes for agents"
+  ],
+  "probes": {
+    "/alternatives": 200
+  },
+  "candidates_found": 3,
+  "headings_found": 4
+}

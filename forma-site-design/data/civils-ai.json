@@ -1,0 +1,228 @@
+{
+  "slug": "civils-ai",
+  "input": "civils.ai",
+  "domain": "civils.ai",
+  "name": "Civils.ai",
+  "final_url": "https://civils.ai/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:28+00:00",
+  "pages": [
+    {
+      "url": "https://civils.ai/",
+      "final_url": "https://civils.ai/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Civils.ai | AI Quantity Takeoffs & Checks for Contractors",
+      "meta_description": "Cut takeoff time by up to 90% with AI quantity takeoffs for groundworks contractors. Measure earthworks, drainage, concrete & more.",
+      "og_title": "Civils.ai | AI Takeoffs & Checks for Earthworks Contractors",
+      "og_description": "Cut takeoff time by up to 90% with AI quantity takeoffs built for earthworks contractors. Measure earthworks, drainage, concrete and more from PDF drawings.",
+      "canonical": "https://civils.ai/",
+      "h1": [
+        "Accurate AI Takeoffs & Checks before your project breaks ground."
+      ],
+      "h2": [
+        "Two things Civils.ai does for your project.",
+        "What our clients say.",
+        "Projects we support.",
+        "What's special about Civils.ai?",
+        "How it works.",
+        "Estimate your ROI in seconds.",
+        "Frequently asked questions.",
+        "What types of takeoff does Civils.ai currently support?",
+        "How are takeoffs consumed?",
+        "Are there any restrictions on “Unlimited AI searches & checks”?",
+        "How is extracted data handled by Civils.ai?",
+        "Where is the data stored?",
+        "Which types of files can I upload?",
+        "How accurate are the takeoffs?",
+        "How long does a workflow take to run?",
+        "Start using Civils.ai today."
+      ],
+      "h3": [
+        "Accurate takeoffs from PDF drawings.",
+        "Run checks across drawings and documents"
+      ],
+      "word_count": 1290,
+      "ctas": [
+        "Get started",
+        "Get in touch"
+      ],
+      "price_signals": [
+        "$3",
+        "$50",
+        "custom pricing"
+      ]
+    },
+    {
+      "url": "https://civils.ai/pricing",
+      "final_url": "https://civils.ai/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Civils.ai - Plans and pricing",
+      "meta_description": "Find the right plan for Civils.ai and learn about our pricing.",
+      "og_title": "Civils.ai - Pricing",
+      "og_description": "Find the right plan for Civils.ai and learn about our pricing.",
+      "canonical": "https://civils.ai/pricing",
+      "h1": [
+        "Automation that fits any project budget."
+      ],
+      "h2": [
+        "Pricing questions.",
+        "How are takeoffs counted?",
+        "Are AI searches and checks really unlimited?",
+        "What happens if I exceed my monthly takeoffs?",
+        "Who owns the data I upload?",
+        "How is my data secured?",
+        "Can I cancel anytime?",
+        "Do you offer SSO, SAML, or custom contracts?",
+        "Which payment methods do you accept?"
+      ],
+      "h3": [],
+      "word_count": 959,
+      "ctas": [
+        "Get started",
+        "Request a demo",
+        "Talk to sales"
+      ],
+      "price_signals": [
+        "$ 90 / month",
+        "$ 270 / month",
+        "$3",
+        "contact sales",
+        "talk to sales",
+        "custom pricing",
+        "billed monthly"
+      ]
+    },
+    {
+      "url": "https://civils.ai/compare",
+      "final_url": "https://civils.ai/compare",
+      "page_type": "compare",
+      "status": 200,
+      "error": "",
+      "title": "Civils.ai Comparisons: Togal.AI, Kreo, Beam AI, STACK & More",
+      "meta_description": "Independent, sourced comparisons of Civils.ai against Togal.AI, Kreo, Beam AI, Bluebeam Revu, STACK and ChatGPT for AI construction takeoffs.",
+      "og_title": "Civils.ai Comparisons: Togal.AI, Kreo, Beam AI, Bluebeam Revu, STACK & ChatGPT",
+      "og_description": "Independent, sourced comparisons of Civils.ai against Togal.AI, Kreo, Beam AI, Bluebeam Revu, STACK and ChatGPT for AI construction takeoffs.",
+      "canonical": "https://civils.ai/compare",
+      "h1": [
+        "How Civils.ai compares."
+      ],
+      "h2": [],
+      "h3": [
+        "Togal.AI",
+        "Kreo",
+        "Beam AI",
+        "Bluebeam Revu",
+        "STACK",
+        "ChatGPT"
+      ],
+      "word_count": 434,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://civils.ai/compare/kreo",
+      "final_url": "https://civils.ai/compare/kreo",
+      "page_type": "compare",
+      "status": 200,
+      "error": "",
+      "title": "Civils.ai vs Kreo: AI Takeoff Software Compared | Civils.ai",
+      "meta_description": "An independent, sourced comparison of Civils.ai and Kreo on takeoff automation, QA review, CAD support, document search and pricing — verified 28 Jul 2026.",
+      "og_title": "Civils.ai vs Kreo: AI Takeoff Software Compared | Civils.ai",
+      "og_description": "An independent, sourced comparison of Civils.ai and Kreo on takeoff automation, QA review, CAD support, document search and pricing — verified 28 Jul 2026.",
+      "canonical": "https://civils.ai/compare/kreo",
+      "h1": [
+        "Civils.ai vs Kreo"
+      ],
+      "h2": [
+        "How each one frames itself.",
+        "Feature by feature.",
+        "Who each one is for.",
+        "See a real, QA-reviewed takeoff",
+        "What our clients say",
+        "Frequently asked questions.",
+        "Is Kreo cheaper than Civils.ai?",
+        "Does Kreo review takeoffs with a human team?",
+        "Does Kreo support DWG/CAD files better than Civils.ai?",
+        "Can Kreo search across specs and contracts?",
+        "Can I type a plain-English scope into Kreo like I can with Civils.ai?",
+        "Does Kreo handle civil engineering data like boreholes, reinforcement or subsurface utilities?",
+        "Start using Civils.ai today."
+      ],
+      "h3": [
+        "Civils.ai",
+        "Kreo",
+        "Pick Civils.ai if…",
+        "Pick Kreo if…"
+      ],
+      "word_count": 1463,
+      "ctas": [
+        "Get started",
+        "Get in touch"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://civils.ai/about",
+      "final_url": "https://civils.ai/about",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "Civils.ai - About us",
+      "meta_description": "Civils.ai is on a mission to automate manual measurement and document review work in construction. Built by civil engineers and AI researchers in Singapore.",
+      "og_title": "Civils.ai - About us",
+      "og_description": "Civils.ai is on a mission to automate manual measurement and document review work in construction.",
+      "canonical": "https://civils.ai/about",
+      "h1": [
+        "We're rebuilding the most error-prone work in construction."
+      ],
+      "h2": [
+        "There had to be a better way.",
+        "Engineers building tools for engineers.",
+        "Built on three principles.",
+        "Join a global community.",
+        "Start using Civils.ai today."
+      ],
+      "h3": [
+        "Top software investors who believe in our mission.",
+        "Consistency",
+        "Trust",
+        "Growth"
+      ],
+      "word_count": 869,
+      "ctas": [
+        "Get started"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {
+    "compare": [
+      "https://civils.ai/compare",
+      "https://civils.ai/compare/kreo",
+      "https://civils.ai/compare/stack",
+      "https://civils.ai/compare/beam-ai",
+      "https://civils.ai/compare/chatgpt",
+      "https://civils.ai/compare/togal-ai",
+      "https://civils.ai/compare/bluebeam-revu"
+    ]
+  },
+  "named_competitors": [
+    "Kreo",
+    "Stack",
+    "Beam Ai",
+    "Chatgpt",
+    "Togal Ai",
+    "Bluebeam Revu"
+  ],
+  "sitemap_urls_seen": 218,
+  "notes": [
+    "page cap bound: 9 candidates found, 5 fetched"
+  ],
+  "probes": {},
+  "candidates_found": 9,
+  "headings_found": 64
+}

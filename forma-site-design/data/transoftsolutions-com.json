@@ -1,0 +1,201 @@
+{
+  "slug": "transoftsolutions-com",
+  "input": "transoftsolutions.com",
+  "domain": "transoftsolutions.com",
+  "name": "Transoft Solutions",
+  "final_url": "https://www.transoftsolutions.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:28+00:00",
+  "pages": [
+    {
+      "url": "https://transoftsolutions.com/",
+      "final_url": "https://www.transoftsolutions.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Home - Transoft Solutions",
+      "meta_description": "Transoft Solutions develops innovative and timesaving software and services to help professionals plan, design, and operate safe transportation systems.",
+      "og_title": "Home",
+      "og_description": "Transoft Solutions develops innovative and timesaving software and services to help professionals plan, design, and operate safe transportation systems.",
+      "canonical": "https://www.transoftsolutions.com/",
+      "h1": [
+        "Innovative Solutions for Transportation Professionals"
+      ],
+      "h2": [
+        "Empowering Transportation Professionals Since 1991",
+        "About Us",
+        "Latest News",
+        "Corporate Social Responsibility",
+        "Our Customers",
+        "Discover How Transoft Solutions Can Help",
+        "Get in touch with us"
+      ],
+      "h3": [
+        "Aviation",
+        "Civil & Transportation",
+        "Safety & Operations",
+        "CARSP 2027 Co-hosted by Transoft in Vancouver",
+        "AeroCENTRAL Brings Enhanced Geospatial Capabilities and Operational Insights",
+        "AQCESSRAMP 2026: Latest Version Out Now",
+        "Aviation",
+        "Civil & Transportation",
+        "Safety & Operations"
+      ],
+      "word_count": 645,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.transoftsolutions.com/aviation/software/",
+      "final_url": "https://www.transoftsolutions.com/aviation/software/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Aviation Products - Software Solutions | Transoft Solutions",
+      "meta_description": "Explore the range of aviation products from Transoft Solutions - software solutions designed to enhance airport and air traffic operational efficiency",
+      "og_title": "Aviation All Products",
+      "og_description": "Explore the range of aviation products from Transoft Solutions - software solutions designed to enhance airport and air traffic operational efficiency",
+      "canonical": "https://www.transoftsolutions.com/aviation/software/",
+      "h1": [
+        "Aviation Software"
+      ],
+      "h2": [
+        "Get in touch with us"
+      ],
+      "h3": [],
+      "word_count": 305,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.transoftsolutions.com/civil-and-transportation/software/",
+      "final_url": "https://www.transoftsolutions.com/civil-and-transportation/software/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Civil & Transportation - Software Solutions | Transoft Solutions",
+      "meta_description": "Find out more about Transoft Solutions' Civil & Transportation Software",
+      "og_title": "Civil & Transportation All Products",
+      "og_description": "Find out more about Transoft Solutions' Civil & Transportation Software",
+      "canonical": "https://www.transoftsolutions.com/civil-and-transportation/software/",
+      "h1": [
+        "Civil & Transportation Software"
+      ],
+      "h2": [
+        "Get in touch with us"
+      ],
+      "h3": [],
+      "word_count": 300,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.transoftsolutions.com/transportation-safety-operations/software/",
+      "final_url": "https://www.transoftsolutions.com/transportation-safety-operations/software/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "All Products - Transoft Solutions",
+      "meta_description": "",
+      "og_title": "All Products",
+      "og_description": "",
+      "canonical": "https://www.transoftsolutions.com/transportation-safety-operations/software/",
+      "h1": [
+        "Safety & Operations Software"
+      ],
+      "h2": [
+        "Get in touch with us"
+      ],
+      "h3": [],
+      "word_count": 222,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.transoftsolutions.com/about-us/",
+      "final_url": "https://www.transoftsolutions.com/about-us/",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "About Us - Transoft Solutions",
+      "meta_description": "Transoft Solutions develops advanced and highly specialized software solutions for aviation, civil infrastructure, transportation and operational professionals.",
+      "og_title": "About Us",
+      "og_description": "Transoft Solutions develops advanced and highly specialized software solutions for aviation, civil infrastructure, transportation and operational professionals.",
+      "canonical": "https://www.transoftsolutions.com/about-us/",
+      "h1": [
+        "About Transoft Solutions"
+      ],
+      "h2": [
+        "Our Story",
+        "Our Vision",
+        "Our Mission",
+        "Company Awards",
+        "Company Leadership",
+        "Learn More About Transoft Solutions",
+        "Get in touch with us"
+      ],
+      "h3": [
+        "Milton Carrasco",
+        "Milton Carrasco",
+        "Daniel Shihundu",
+        "Daniel Shihundu",
+        "Ben van Leest",
+        "Ben van Leest",
+        "Peter McIntyre",
+        "Peter McIntyre",
+        "Christian Milne",
+        "Christian Milne",
+        "Robyn Kruger",
+        "Robyn Kruger",
+        "Alex Brozek",
+        "Alex Brozek",
+        "Steven Chan",
+        "Steven Chan",
+        "James Renner",
+        "James Renner",
+        "Janette Stoeken",
+        "Janette Stoeken",
+        "Aviation",
+        "Civil & Transportation",
+        "Safety & Operations",
+        "Explore Our Careers",
+        "Corporate Social Responsibility",
+        "Contact Us"
+      ],
+      "word_count": 1878,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {
+    "compare": [
+      "https://www.transoftsolutions.com/landing/autopath-vs-autoturn-feature-comparison-guide/",
+      "https://www.transoftsolutions.com/au/landing/autopath-vs-autoturn-feature-comparison-guide/",
+      "https://www.transoftsolutions.com/emea/landing/autopath-vs-autoturn-feature-comparison-guide/"
+    ]
+  },
+  "named_competitors": [],
+  "sitemap_urls_seen": 1388,
+  "notes": [
+    "found pricing page by probing: https://www.transoftsolutions.com/pricing-plans",
+    "https://www.transoftsolutions.com/pricing-plans -> HTTP 404",
+    "page cap bound: 227 candidates found, 5 fetched"
+  ],
+  "probes": {
+    "/pricing": 404,
+    "/plans": 404,
+    "/pricing-plans": 200
+  },
+  "candidates_found": 227,
+  "headings_found": 57
+}

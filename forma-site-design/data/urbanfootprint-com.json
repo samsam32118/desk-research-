@@ -1,0 +1,254 @@
+{
+  "slug": "urbanfootprint-com",
+  "input": "urbanfootprint.com",
+  "domain": "urbanfootprint.com",
+  "name": "UrbanFootprint",
+  "final_url": "https://urbanfootprint.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:24+00:00",
+  "pages": [
+    {
+      "url": "https://urbanfootprint.com/",
+      "final_url": "https://urbanfootprint.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "The Resilient Decision Intelligence Platform | UrbanFootprint",
+      "meta_description": "Assess risk and make data-driven decisions with the most powerful urban, climate, and community resilience decision intelligence platform.",
+      "og_title": "UrbanFootprint | The Resilient Decision Intelligence Platform",
+      "og_description": "Assess risk, understand markets, and make data-driven decisions with the most powerful urban, climate, and community resilience platform available.",
+      "canonical": "https://urbanfootprint.com/",
+      "h1": [
+        "Resilience Insights for where to"
+      ],
+      "h2": [
+        "Find your answer at the intersection",
+        "Empower decision making with actionable insight across industries and use cases"
+      ],
+      "h3": [
+        "The Insight Engine",
+        "Resilience Insights",
+        "Delivery",
+        "The Insight Engine",
+        "Resilience Insights",
+        "Delivery",
+        "Climate Risk & Sustainability",
+        "Infrastructure & Mobility",
+        "Capital Markets & ESG",
+        "Public Service & Administration",
+        "Check out our latest findings"
+      ],
+      "word_count": 1132,
+      "ctas": [
+        "Contact Us",
+        "Book a Demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://urbanfootprint.com/pricing",
+      "final_url": "https://urbanfootprint.com/about/contact-sales/",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Contact Us | UrbanFootprint",
+      "meta_description": "Assess risk, understand markets, and make better decisions with the most powerful and comprehensive data platform available. Contact us now.",
+      "og_title": "UrbanFootprint | Contact Us",
+      "og_description": "Assess risk, understand markets, and make better decisions with the most powerful and comprehensive urban, climate, and community resilience data platform available anywhere.",
+      "canonical": "https://urbanfootprint.com/about/contact-sales/",
+      "h1": [
+        "See UrbanFootprint in action"
+      ],
+      "h2": [],
+      "h3": [
+        "Assess risk, understand markets, and make better decisions with the most powerful and comprehensive urban, climate, and community resilience data platform available anywhere.",
+        "Contact our team to learn more."
+      ],
+      "word_count": 488,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://urbanfootprint.com/platform/analyst/",
+      "final_url": "https://urbanfootprint.com/platform/analyst/",
+      "page_type": "platform",
+      "status": 200,
+      "error": "",
+      "title": "Analyst | UrbanFootprint",
+      "meta_description": "Check out this powerful mapping and data exploration platform. UrbanFootprint Analyst is a collaborative, reliable web-based application.",
+      "og_title": "Analyst | Resilience Insights Delivery Experience",
+      "og_description": "UrbanFootprint's cloud-based GIS mapping and analytics application for delivering Resilience Insights",
+      "canonical": "https://urbanfootprint.com/platform/analyst/",
+      "h1": [
+        "Embrace the power of geospatial data analytics"
+      ],
+      "h2": [
+        "Explore Resilience Insights and bring data to life with our intuitive and scalable web-based application",
+        "Harness the power of mapping, data visualization, and sophisticated geospatial analysis",
+        "Want to schedule a product demonstration?"
+      ],
+      "h3": [
+        "Resilience Insights",
+        "Amazing maps made easy for all members of your team!",
+        "Self-service analysis",
+        "GIS functionality at your fingertips"
+      ],
+      "word_count": 689,
+      "ctas": [
+        "Contact Us",
+        "Get a Demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://urbanfootprint.com/platform/explorer/",
+      "final_url": "https://urbanfootprint.com/platform/explorer/",
+      "page_type": "platform",
+      "status": 200,
+      "error": "",
+      "title": "Explorer | UrbanFootprint",
+      "meta_description": "Check out Explorer: UrbanFootprint's cloud-based map visualization and dashboard application for delivering resilience insights.",
+      "og_title": "Explorer | Resilience Insights Delivery Experience",
+      "og_description": "UrbanFootprint's cloud-based map visualization and dashboard application for delivering Resilience Insights",
+      "canonical": "https://urbanfootprint.com/platform/explorer/",
+      "h1": [
+        "Access simple, powerful, maps and data visualizations"
+      ],
+      "h2": [
+        "Access easy-to-use, interactive maps and visually rich dashboards to make informed decisions quickly",
+        "Embrace the value of comprehensive data visualization and accessible mapping across your entire team",
+        "Want to schedule a product demonstration?"
+      ],
+      "h3": [
+        "Risk and Resilience Assessment",
+        "Tactical Planning",
+        "Data-driven decision making that anyone can use",
+        "Accessible insights, curated for you"
+      ],
+      "word_count": 632,
+      "ctas": [
+        "Contact Us",
+        "Get a Demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://urbanfootprint.com/solutions/eri-gallery/",
+      "final_url": "https://urbanfootprint.com/solutions/public-service-administration/",
+      "page_type": "solutions",
+      "status": 200,
+      "error": "",
+      "title": "Public Service & Administration | UrbanFootprint",
+      "meta_description": "Target priority populations with vulnerability and poverty metrics to improve public service assistance program performance.",
+      "og_title": "Public Service & Administration Solutions | UrbanFootprint",
+      "og_description": "Target priority populations with vulnerability and poverty metrics to improve assistance program performance, aid distribution and impact",
+      "canonical": "https://urbanfootprint.com/solutions/public-service-administration/",
+      "h1": [
+        "Redefine your approach to relief and assistance programs."
+      ],
+      "h2": [
+        "A platform purpose-built to target vulnerable populations and drive more effective public assistance programs",
+        "Resilience Insights in action",
+        "Talk to our team"
+      ],
+      "h3": [
+        "PUBLIC SERVICE & ADMINISTRATION",
+        "Built Environment",
+        "People & Vulnerabilities",
+        "Climate & Hazards",
+        "Analyst",
+        "Explorer",
+        "Direct Data Delivery",
+        "Energy & water affordability programs",
+        "Food and health program targeting",
+        "Housing and rental risk",
+        "Learn more about leveraging Resilience Insights to navigate public service & administration challenges"
+      ],
+      "word_count": 823,
+      "ctas": [
+        "Contact Us",
+        "Get a Demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://urbanfootprint.com/solutions/fsi-gallery/",
+      "final_url": "https://urbanfootprint.com/solutions/fsi-gallery/",
+      "page_type": "solutions",
+      "status": 200,
+      "error": "",
+      "title": "Food Security Insights | Resources | UrbanFootprint",
+      "meta_description": "Help alleviate the hunger crisis by reaching more of them with the assistance they need. Learn how with the food security insights resources.",
+      "og_title": "UrbanFootprint Food Security Insights | Resources",
+      "og_description": "Nearly 14 million U.S. households are food insecure today. Help alleviate the hunger crisis by reaching more of them with the assistance they need.",
+      "canonical": "https://urbanfootprint.com/solutions/fsi-gallery/",
+      "h1": [
+        "Food Security Insights",
+        "Food Security Insights",
+        "Learn more about Food Security Insights"
+      ],
+      "h2": [
+        "Learn more about Food Security Insights",
+        "Talk to our team"
+      ],
+      "h3": [
+        "Check out Food Security Insights in the news"
+      ],
+      "word_count": 536,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://urbanfootprint.com/about/",
+      "final_url": "https://urbanfootprint.com/about/",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "About Us | UrbanFootprint",
+      "meta_description": "We deliver Resilient Decision Intelligence to empower those who build our world to design a more efficient, equitable, and resilient future.",
+      "og_title": "About UrbanFootprint",
+      "og_description": "We deliver Resilient Decision Intelligence to empower those who build our world to design a more efficient, equitable, and resilient future.",
+      "canonical": "https://urbanfootprint.com/about/",
+      "h1": [
+        "We deliver Resilient Decision Intelligence that empowers those who build our world to design a more efficient, equitable, and resilient future."
+      ],
+      "h2": [
+        "See UrbanFootprint in action"
+      ],
+      "h3": [
+        "Our Vision",
+        "Our Technology",
+        "Our Founders",
+        "Our Founders",
+        "Our Board Members",
+        "Our Investors",
+        "Check out the latest news on UrbanFootprint"
+      ],
+      "word_count": 983,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 157,
+  "notes": [
+    "found pricing page by probing: https://urbanfootprint.com/pricing",
+    "page cap bound: 24 candidates found, 7 fetched"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404,
+    "/pricing": 200
+  },
+  "candidates_found": 24,
+  "headings_found": 63
+}

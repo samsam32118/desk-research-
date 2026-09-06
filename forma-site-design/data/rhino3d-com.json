@@ -1,0 +1,226 @@
+{
+  "slug": "rhino3d-com",
+  "input": "rhino3d.com",
+  "domain": "rhino3d.com",
+  "name": "www.rhino3d.com",
+  "final_url": "https://www.rhino3d.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:28:44+00:00",
+  "pages": [
+    {
+      "url": "https://rhino3d.com/",
+      "final_url": "https://www.rhino3d.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Rhino - Rhinoceros 3D",
+      "meta_description": "Rhinoceros 3D: Design, Model, Present, Analyze, Realize...",
+      "og_title": "Rhinoceros 3D",
+      "og_description": "Design, Model, Present, Analyze, Realize...",
+      "canonical": "",
+      "h1": [
+        "Rhino 8",
+        "Upgrade to Rhino 8",
+        "ShrinkWrap",
+        "Modeling Simplified",
+        "SubD Creases"
+      ],
+      "h2": [
+        "Who Uses Rhino?",
+        "Fair Pricing",
+        "Flexible Licensing",
+        "Great Deals for Education",
+        "Future Friendly"
+      ],
+      "h3": [
+        "food4Rhino",
+        "Discourse",
+        "Training & Events",
+        "Latest News",
+        "Development Platform"
+      ],
+      "word_count": 798,
+      "ctas": [
+        "Buy Now",
+        "Contact Us"
+      ],
+      "price_signals": [
+        "$195",
+        "$0",
+        "$995",
+        "$95",
+        "$595",
+        "no credit card"
+      ]
+    },
+    {
+      "url": "https://www.rhino3d.com/en/for/",
+      "final_url": "https://www.rhino3d.com/en/for/",
+      "page_type": "use_case",
+      "status": 200,
+      "error": "",
+      "title": "Rhino - For",
+      "meta_description": "",
+      "og_title": "For",
+      "og_description": "",
+      "canonical": "",
+      "h1": [],
+      "h2": [],
+      "h3": [
+        "Section:",
+        "Categories:",
+        "Levels:",
+        "Platforms:",
+        "Tags:",
+        "Tasks:"
+      ],
+      "word_count": 373,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.rhino3d.com/features",
+      "final_url": "https://www.rhino3d.com/features/",
+      "page_type": "features",
+      "status": 200,
+      "error": "",
+      "title": "Rhino - Features",
+      "meta_description": "Rhinoceros 3D: An overview of all the features in Rhino",
+      "og_title": "Features",
+      "og_description": "An overview of all the features in Rhino",
+      "canonical": "",
+      "h1": [
+        "ShrinkWrap",
+        "Built for Mac: Metal",
+        "SubD",
+        "Modeling Simplified"
+      ],
+      "h2": [
+        "Overview",
+        "New in Rhino 8",
+        "Model Creation Tools",
+        "Editing",
+        "Interface",
+        "Display",
+        "Rendering and Presentation",
+        "Drafting",
+        "Digital Fabrication",
+        "Mesh Tools",
+        "3D Capture",
+        "Inspection and Analysis",
+        "Large Projects",
+        "Compatibility",
+        "Grasshopper",
+        "Developer Tools",
+        "Administration",
+        "Beyond Rhino 8"
+      ],
+      "h3": [],
+      "word_count": 3864,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.rhino3d.com/en/mcneel/services/localization/",
+      "final_url": "https://www.rhino3d.com/en/mcneel/services/localization/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Rhino - Localization and Translation Services",
+      "meta_description": "Rhinoceros 3D: Do you want to expand your business and sell your plugin to thousands of users around the world? McNeel offers translation and localization services for third-party developers.",
+      "og_title": "Localization and Translation Services",
+      "og_description": "Do you want to expand your business and sell your plugin to thousands of users around the world? McNeel offers translation and localization services for third-party developers.",
+      "canonical": "",
+      "h1": [],
+      "h2": [
+        "Multiple Languages",
+        "Get a Free Quote",
+        "Localization Resources for Developers",
+        "Request a Quote",
+        "Languages",
+        "Services",
+        "Resources for Developers",
+        "Questions"
+      ],
+      "h3": [
+        "Microsoft",
+        "Apple"
+      ],
+      "word_count": 317,
+      "ctas": [
+        "contact us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.rhino3d.com/mcneel/about",
+      "final_url": "https://www.rhino3d.com/mcneel/about/",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "Rhino - About McNeel",
+      "meta_description": "Rhinoceros 3D: About Robert McNeel & Associates (TLM, Inc.)",
+      "og_title": "About McNeel",
+      "og_description": "About Robert McNeel & Associates (TLM, Inc.)",
+      "canonical": "",
+      "h1": [
+        "About McNeel"
+      ],
+      "h2": [
+        "Background",
+        "Mission",
+        "Strategy",
+        "Guarantee",
+        "Financial Data",
+        "Contact"
+      ],
+      "h3": [
+        "Robert McNeel & Associates",
+        "McNeel Latin America",
+        "McNeel Europe",
+        "McNeel Asia",
+        "McNeel Korea",
+        "McNeel Japan"
+      ],
+      "word_count": 645,
+      "ctas": [
+        "Contact Us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {
+    "partners": [
+      "https://www.rhino3d.com/en/reseller/",
+      "https://www.rhino3d.com/en/reseller/as/",
+      "https://www.rhino3d.com/en/reseller/la/",
+      "https://www.rhino3d.com/en/reseller/na/",
+      "https://www.rhino3d.com/en/reseller/pa/",
+      "https://www.rhino3d.com/en/reseller/emea/",
+      "https://www.rhino3d.com/en/reseller/graphics/",
+      "https://www.rhino3d.com/en/reseller/stockswap/"
+    ]
+  },
+  "named_competitors": [],
+  "sitemap_urls_seen": 1288,
+  "notes": [
+    "no pricing page: probed /pricing=404, /plans=404, /pricing-plans=404, /price=404",
+    "page cap bound: 130 candidates found, 5 fetched"
+  ],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404,
+    "/pricing": 404,
+    "/plans": 404,
+    "/pricing-plans": 404,
+    "/price": 404
+  },
+  "candidates_found": 130,
+  "headings_found": 66
+}

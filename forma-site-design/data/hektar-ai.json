@@ -1,0 +1,137 @@
+{
+  "slug": "hektar-ai",
+  "input": "hektar.ai",
+  "domain": "hektar.ai",
+  "name": "Hektar",
+  "final_url": "https://www.hektar.ai/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:20:07+00:00",
+  "pages": [
+    {
+      "url": "https://hektar.ai/",
+      "final_url": "https://www.hektar.ai/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Volume Studies & Site Feasibility in Minutes | Hektar",
+      "meta_description": "Hektar generates volume studies, density scenarios and KPIs for raw land in minutes. Used by developers, architects, and municipalities across the Nordics.",
+      "og_title": "Volume Studies & Site Feasibility in Minutes | Hektar",
+      "og_description": "Hektar generates volume studies, density scenarios and KPIs for raw land in minutes. Used by developers, architects, and municipalities across the Nordics.",
+      "canonical": "https://www.hektar.ai",
+      "h1": [
+        "Explore your site. Volume studies in minutes."
+      ],
+      "h2": [
+        "Start with your site",
+        "Explore your options",
+        "Find the strongest scenario",
+        "Share and decide",
+        "The house types you need, in early phases."
+      ],
+      "h3": [
+        "1. Select your site",
+        "2. Pick typologies",
+        "3. Filter your results",
+        "4. Share your findings",
+        "Define your context area",
+        "Context in 3D",
+        "Data layers for site analysis",
+        "Many directions at once",
+        "Draw instantly",
+        "Generate and iterate",
+        "Compare on equal terms",
+        "Filter by your targets",
+        "Simulations from day one",
+        "Interactive, not a PDF",
+        "One link for everyone",
+        "Take it with you",
+        "Multi-Family Housing",
+        "Mixed-Use"
+      ],
+      "word_count": 657,
+      "ctas": [
+        "Start free",
+        "Book a demo",
+        "Get in touch",
+        "Contact us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.hektar.ai/pricing",
+      "final_url": "https://www.hektar.ai/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Pricing - Free, Pro, and Enterprise | Hektar",
+      "meta_description": "Hektar Pro plans scale with the number of generations per month. Free tier for evaluation. Enterprise plans with onboarding, support and custom rulesets available.",
+      "og_title": "Pricing - Free, Pro, and Enterprise | Hektar",
+      "og_description": "Hektar Pro plans scale with the number of generations per month. Free tier for evaluation. Enterprise plans with onboarding, support and custom rulesets available.",
+      "canonical": "https://www.hektar.ai/pricing",
+      "h1": [
+        "Start free, pay as you grow"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 230,
+      "ctas": [
+        "Get started with Hektar",
+        "Sign up",
+        "Talk to sales",
+        "Contact us"
+      ],
+      "price_signals": [
+        "talk to sales"
+      ]
+    },
+    {
+      "url": "https://www.hektar.ai/post/why-your-density-target-is-not-a-design-brief",
+      "final_url": "https://www.hektar.ai/post/why-your-density-target-is-not-a-design-brief",
+      "page_type": "features",
+      "status": 200,
+      "error": "",
+      "title": "Why Your Density Target Is Not a Design Brief - Article | Hektar",
+      "meta_description": "A density target tells you how much to build, not how to build it. On raw land, the gap between those two questions determines whether a project succeeds or fails. Treating density as an output of spatial decisions rather than an input produces better outcomes.",
+      "og_title": "Why Your Density Target Is Not a Design Brief - Article | Hektar",
+      "og_description": "A density target tells you how much to build, not how to build it. On raw land, the gap between those two questions determines whether a project succeeds or fails. Treating density as an output of spatial decisions rather than an input produces better outcomes.",
+      "canonical": "https://www.hektar.ai/post/why-your-density-target-is-not-a-design-brief",
+      "h1": [
+        "Why Your Density Target Is Not a Design Brief"
+      ],
+      "h2": [
+        "Say hello to your new planning collegue",
+        "A Number Without Context Is Just a Number",
+        "Density Is a Result, Not an Input",
+        "The Coverage and Height Trade-off",
+        "When the Target Itself Is Wrong",
+        "From Single Concept to Comparative Strategy",
+        "Density as a Conversation"
+      ],
+      "h3": [],
+      "word_count": 1337,
+      "ctas": [
+        "Get in touch",
+        "Contact us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {
+    "compare": [
+      "https://www.hektar.ai/post/hektar-vs-finch3d",
+      "https://www.hektar.ai/post/hektar-vs-giraffe",
+      "https://www.hektar.ai/post/hektar-vs-testfit",
+      "https://www.hektar.ai/post/hektar-vs-autodesk-forma",
+      "https://www.hektar.ai/post/generative-ai-vs-generative-design"
+    ],
+    "partners": [
+      "https://www.hektar.ai/partner/denmark"
+    ]
+  },
+  "named_competitors": [],
+  "sitemap_urls_seen": 74,
+  "notes": [],
+  "probes": {},
+  "candidates_found": 4,
+  "headings_found": 33
+}

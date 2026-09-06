@@ -1,0 +1,215 @@
+[
+ {
+  "domain": "autodesk.com",
+  "name": "Autodesk Forma Site Design",
+  "level": 0,
+  "discovered_via": "anchor (user-supplied URL)",
+  "parent": "",
+  "note": "www.autodesk.com returns HTTP 403 (Akamai) to this egress; copy taken from blogs.autodesk.com/forma, Autodesk's own Forma marketing blog"
+ },
+ {
+  "domain": "testfit.io",
+  "name": "TestFit",
+  "level": 1,
+  "discovered_via": "search: 'Spacemaker alternatives'; named repeatedly vs Forma",
+  "parent": "autodesk.com"
+ },
+ {
+  "domain": "giraffe.build",
+  "name": "Giraffe",
+  "level": 1,
+  "discovered_via": "search: 'Autodesk Forma alternatives'",
+  "parent": "autodesk.com"
+ },
+ {
+  "domain": "snaptrude.com",
+  "name": "Snaptrude",
+  "level": 1,
+  "discovered_via": "search: 'conceptual design software wind noise daylight'",
+  "parent": "autodesk.com"
+ },
+ {
+  "domain": "digitalbluefoam.com",
+  "name": "Digital Blue Foam",
+  "level": 1,
+  "discovered_via": "search: 'generative site planning massing feasibility'",
+  "parent": "autodesk.com"
+ },
+ {
+  "domain": "hypar.io",
+  "name": "Hypar",
+  "level": 1,
+  "discovered_via": "search: 'early stage design platform comparison'",
+  "parent": "autodesk.com"
+ },
+ {
+  "domain": "finch3d.com",
+  "name": "Finch",
+  "level": 1,
+  "discovered_via": "search: 'comparing early-stage feasibility tools 2026'",
+  "parent": "autodesk.com"
+ },
+ {
+  "domain": "bentley.com",
+  "name": "Bentley OpenSite+",
+  "level": 1,
+  "discovered_via": "search: 'site design software' — direct name-match competitor",
+  "parent": "autodesk.com",
+  "note": "www.bentley.com serves a JS sign-in gate to this egress; meta titles only"
+ },
+ {
+  "domain": "archistar.ai",
+  "name": "Archistar",
+  "level": 1,
+  "discovered_via": "search: 'Giraffe competitors'",
+  "parent": "autodesk.com"
+ },
+ {
+  "domain": "architechtures.com",
+  "name": "Architechtures",
+  "level": 2,
+  "discovered_via": "search: 'generative residential buildings'",
+  "parent": "finch3d.com"
+ },
+ {
+  "domain": "maket.ai",
+  "name": "Maket",
+  "level": 2,
+  "discovered_via": "search: 'TestFit alternatives'",
+  "parent": "testfit.io"
+ },
+ {
+  "domain": "zenerate.ai",
+  "name": "Zenerate",
+  "level": 2,
+  "discovered_via": "search: 'TestFit alternatives'",
+  "parent": "testfit.io"
+ },
+ {
+  "domain": "arkdesign.ai",
+  "name": "ArkDesign.AI",
+  "level": 2,
+  "discovered_via": "search: 'TestFit alternatives'",
+  "parent": "testfit.io"
+ },
+ {
+  "domain": "deepblocks.com",
+  "name": "Deepblocks",
+  "level": 2,
+  "discovered_via": "search: 'site feasibility land development software'",
+  "parent": "archistar.ai"
+ },
+ {
+  "domain": "land.tech",
+  "name": "LandTech",
+  "level": 2,
+  "discovered_via": "search: 'site feasibility land development software'",
+  "parent": "archistar.ai"
+ },
+ {
+  "domain": "modelur.com",
+  "name": "Modelur (AgiliCity)",
+  "level": 2,
+  "discovered_via": "search: 'urban planning platform competitors'",
+  "parent": "giraffe.build"
+ },
+ {
+  "domain": "hektar.ai",
+  "name": "Hektar",
+  "level": 2,
+  "discovered_via": "search: 'Spacemaker alternatives'",
+  "parent": "finch3d.com"
+ },
+ {
+  "domain": "cove.inc",
+  "name": "cove.tool (cove.inc)",
+  "level": 2,
+  "discovered_via": "adjacent: early-stage building performance analysis",
+  "parent": "snaptrude.com",
+  "note": "cove.tool rebranded to cove.inc; site returns HTTP 202 bot challenge — no copy"
+ },
+ {
+  "domain": "esri.com",
+  "name": "Esri ArcGIS Urban",
+  "level": 2,
+  "discovered_via": "adjacent: urban planning / GIS incumbent",
+  "parent": "giraffe.build"
+ },
+ {
+  "domain": "urbansim.com",
+  "name": "UrbanSim",
+  "level": 2,
+  "discovered_via": "search: 'Giraffe competitors'",
+  "parent": "giraffe.build"
+ },
+ {
+  "domain": "sketchup.com",
+  "name": "SketchUp (Trimble)",
+  "level": 2,
+  "discovered_via": "adjacent incumbent: named top alternative on directories",
+  "parent": "giraffe.build"
+ },
+ {
+  "domain": "vectorworks.net",
+  "name": "Vectorworks Landmark",
+  "level": 2,
+  "discovered_via": "adjacent: landscape/site design incumbent",
+  "parent": "bentley.com"
+ },
+ {
+  "domain": "aprao.com",
+  "name": "Aprao",
+  "level": 2,
+  "discovered_via": "search: 'development site finder software'",
+  "parent": "land.tech"
+ },
+ {
+  "domain": "landchecker.com.au",
+  "name": "Landchecker",
+  "level": 2,
+  "discovered_via": "search: 'development site finder software'",
+  "parent": "archistar.ai"
+ },
+ {
+  "domain": "urbanfootprint.com",
+  "name": "UrbanFootprint",
+  "level": 2,
+  "discovered_via": "adjacent: urban/land-use analytics",
+  "parent": "urbansim.com"
+ },
+ {
+  "domain": "geopogo.com",
+  "name": "Geopogo",
+  "level": 2,
+  "discovered_via": "search: 'Giraffe competitors'",
+  "parent": "giraffe.build"
+ },
+ {
+  "domain": "skema.ai",
+  "name": "Skema",
+  "level": 2,
+  "discovered_via": "adjacent: precedent-driven early design",
+  "parent": "snaptrude.com"
+ },
+ {
+  "domain": "civils.ai",
+  "name": "Civils.ai",
+  "level": 2,
+  "discovered_via": "adjacent: AI for civil/site engineering",
+  "parent": "bentley.com"
+ },
+ {
+  "domain": "transoftsolutions.com",
+  "name": "Transoft Solutions",
+  "level": 2,
+  "discovered_via": "adjacent: civil site design tooling",
+  "parent": "bentley.com"
+ },
+ {
+  "domain": "rhino3d.com",
+  "name": "Rhino (McNeel)",
+  "level": 2,
+  "discovered_via": "adjacent incumbent: Grasshopper is the parametric baseline these tools displace",
+  "parent": "hypar.io"
+ }
+]

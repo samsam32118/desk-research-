@@ -1,0 +1,330 @@
+{
+  "slug": "snaptrude-com",
+  "input": "snaptrude.com",
+  "domain": "snaptrude.com",
+  "name": "Snaptrude",
+  "final_url": "https://www.snaptrude.com/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:50+00:00",
+  "pages": [
+    {
+      "url": "https://snaptrude.com/",
+      "final_url": "https://www.snaptrude.com/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Snaptrude | The AI-Powered BIM software for Architects",
+      "meta_description": "AI BIM platform for architects. 10 AI agents for zoning, site analysis, massing, floor plans & more. Concept to BIM-ready models in your browser. Try free.",
+      "og_title": "Snaptrude | The AI-Powered BIM software for Architects",
+      "og_description": "AI BIM platform for architects. 10 AI agents for zoning, site analysis, massing, floor plans & more. Concept to BIM-ready models in your browser. Try free.",
+      "canonical": "https://www.snaptrude.com",
+      "h1": [
+        "Driven by Architects Powered by AI",
+        "From brief to BIM, in one connected model"
+      ],
+      "h2": [
+        "How it works",
+        "From prompt to proposal",
+        "Designed for",
+        "Human AI collaboration",
+        "Generate your Program",
+        "Live-linked to your model",
+        "Design with Intelligence",
+        "Down to the last ft²",
+        "One-click",
+        "Mass to BIM",
+        "Present your proposal",
+        "With your entire team",
+        "Enterprise-grade security",
+        "To keep your data safe",
+        "Frequently Asked",
+        "Questions",
+        "Design better",
+        "buildings together"
+      ],
+      "h3": [],
+      "word_count": 963,
+      "ctas": [
+        "Book a Demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.snaptrude.com/pricing",
+      "final_url": "https://www.snaptrude.com/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Pricing - Snaptrude | The AI-Powered Concept Design Platform",
+      "meta_description": "Snaptrude pricing: start 3 free projects or go unlimited from $60/mo with BIM & Revit export, AI generations, and real-time team collaboration, AI BIM for architects.",
+      "og_title": "Pricing - Snaptrude | The AI-Powered Concept Design Platform",
+      "og_description": "Snaptrude pricing: start 3 free projects or go unlimited from $60/mo with BIM & Revit export, AI generations, and real-time team collaboration, AI BIM for architects.",
+      "canonical": "https://www.snaptrude.com/pricing",
+      "h1": [
+        "Pricing"
+      ],
+      "h2": [
+        "Frequently Asked",
+        "Questions",
+        "Design better",
+        "buildings together"
+      ],
+      "h3": [],
+      "word_count": 381,
+      "ctas": [
+        "Get started",
+        "Contact sales"
+      ],
+      "price_signals": [
+        "$0",
+        "$60 /month",
+        "$100 /month",
+        "contact sales",
+        "billed annually"
+      ]
+    },
+    {
+      "url": "https://www.snaptrude.com/product-releases",
+      "final_url": "https://www.snaptrude.com/product-releases",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Product Releases | Latest BIM & Architecture Software Updates – Snaptrude",
+      "meta_description": "Explore the latest Snaptrude product updates, from bubble diagrams and BIM templates to space planning enhancements. Discover what’s new in real-time architectural design.",
+      "og_title": "Product Releases | Latest BIM & Architecture Software Updates – Snaptrude",
+      "og_description": "Explore the latest Snaptrude product updates, from bubble diagrams and BIM templates to space planning enhancements. Discover what’s new in real-time architectural design.",
+      "canonical": "https://www.snaptrude.com/product-releases",
+      "h1": [
+        "Explore the latest product releases for the Snaptrude platform."
+      ],
+      "h2": [
+        "Copy Array Controls for Unique Objects",
+        "Multi-Building Projects",
+        "Smart Templates V2",
+        "Classifier in Program Mode",
+        "Arc Walls in Revit Import",
+        "Tags: Color Mode, Filtering, and Revit Export",
+        "Direct Revit Import",
+        "Custom Templates in Program Mode + Interpret Improvements",
+        "Import Selection and Tracing",
+        "Layers",
+        "Dimensions in Present Mode",
+        "New AI Pipeline and Improved Site Analysis",
+        "Custom Space Tags",
+        "Font Settings in Present Mode",
+        "Configure Visibility Across Stories",
+        "Quick 90-Degree Rotate with Spacebar",
+        "Update Agents",
+        "Knowledge",
+        "Adjacency Diagrams in AI Panel",
+        "Site Boundary Definition",
+        "Revit Room Parameter Import",
+        "Parametric Walls",
+        "Import Rooms from Revit",
+        "Area Panel Filters",
+        "3D Edge & Vertex Editing (Press J)"
+      ],
+      "h3": [],
+      "word_count": 6175,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.snaptrude.com/product-releases/v2",
+      "final_url": "https://www.snaptrude.com/product-releases/v2",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Snaptrude Product Release V2 : Sketch to BIM",
+      "meta_description": "Sketch to BIM",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "https://www.snaptrude.com/product-releases/v2",
+      "h1": [
+        "V2 : Sketch to BIM"
+      ],
+      "h2": [
+        "An overview of Snaptrude",
+        "Here’s what’s new in V2",
+        "Parametric properties",
+        "Data management",
+        "Smart Layouts",
+        "Other notable updates:"
+      ],
+      "h3": [
+        "Draw Tab for BIM Objects",
+        "Arcs",
+        "Parametric Curtain Walls",
+        "Parametric Staircases"
+      ],
+      "word_count": 1637,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.snaptrude.com/product-releases/3-1",
+      "final_url": "https://www.snaptrude.com/product-releases/3-1",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Snaptrude Product Release 3.1",
+      "meta_description": "Program Mode",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "https://www.snaptrude.com/product-releases/3-1",
+      "h1": [
+        "3.1"
+      ],
+      "h2": [
+        "Key Capabilities"
+      ],
+      "h3": [
+        "1. Bi-directional Canvas Sync",
+        "2. Familiar Spreadsheet Experience",
+        "3. Direct Space Creation",
+        "4. Department-Level Summaries",
+        "5. Easy Data Import",
+        "6. Custom Calculations + Export",
+        "7. Compare Across Projects"
+      ],
+      "word_count": 359,
+      "ctas": [],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.snaptrude.com/features/bim",
+      "final_url": "https://www.snaptrude.com/features/bim",
+      "page_type": "features",
+      "status": 200,
+      "error": "",
+      "title": "BIM",
+      "meta_description": "Design beautiful buildings faster by collaborating with your team and clients in real-time.",
+      "og_title": "BIM",
+      "og_description": "Design beautiful buildings faster by collaborating with your team and clients in real-time.",
+      "canonical": "https://www.snaptrude.com/features/bim",
+      "h1": [
+        "Early-stage speed meets Revit-ready output",
+        "The lightning fast space planning tool",
+        "Create stunning renders in seconds",
+        "Design better buildings together"
+      ],
+      "h2": [
+        "Turn early-stage design concepts into parametric BIM models",
+        "Present FAQ"
+      ],
+      "h3": [
+        "One click Mass to BIM",
+        "Upload Families and Elements",
+        "Seamless Revit export",
+        "What is BIM Mode?",
+        "How do I get my model into Revit?",
+        "Can firm-standard object types be used in Snpatrude?"
+      ],
+      "word_count": 394,
+      "ctas": [
+        "Sign up for a 7-day free trial"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.snaptrude.com/for-firms",
+      "final_url": "https://www.snaptrude.com/for-firms",
+      "page_type": "use_case",
+      "status": 200,
+      "error": "",
+      "title": "AI for Architecture Firms | Snaptrude",
+      "meta_description": "See how Snaptrude's AI agents accelerate pre-design for architecture firms. Book a 30-minute walkthrough tailored to your practice.",
+      "og_title": "AI for Architecture Firms | Snaptrude",
+      "og_description": "See how Snaptrude's AI agents accelerate pre-design for architecture firms. Book a 30-minute walkthrough tailored to your practice.",
+      "canonical": "https://www.snaptrude.com/for-firms",
+      "h1": [
+        "AI-Powered Design for Architecture Firms"
+      ],
+      "h2": [
+        "Your Firm's AI Design Partner",
+        "Configured to your workflows, your templates, your standards",
+        "How it works",
+        "Onboarding Is Simple",
+        "Enterprise-grade security",
+        "To keep your data safe",
+        "Frequently Asked",
+        "Questions",
+        "See how Snaptrude",
+        "lets firms to do their best work"
+      ],
+      "h3": [],
+      "word_count": 532,
+      "ctas": [
+        "Book a Demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.snaptrude.com/vs/revit",
+      "final_url": "https://www.snaptrude.com/vs/revit",
+      "page_type": "compare",
+      "status": 200,
+      "error": "",
+      "title": "Snaptrude 2025",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "https://www.snaptrude.com/vs/revit",
+      "h1": [
+        "The AI-powered early-design layer your Revit workflow is missing."
+      ],
+      "h2": [
+        "Snaptrude vs.",
+        "Revit",
+        "Where each tool actually wins",
+        "What",
+        "Revit",
+        "cannot do that architects now need",
+        "Feature comparison",
+        "How Revit-native",
+        "firms actually use Snaptrude",
+        "14 AI agents",
+        "for early design",
+        "Frequently Asked",
+        "Questions"
+      ],
+      "h3": [],
+      "word_count": 1627,
+      "ctas": [],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {
+    "compare": [
+      "https://www.snaptrude.com/snaptrude-vs-sketchup",
+      "https://www.snaptrude.com/vs/revit",
+      "https://www.snaptrude.com/vs/archicad",
+      "https://www.snaptrude.com/vs/sketchup",
+      "https://www.snaptrude.com/alternatives/revit",
+      "https://www.snaptrude.com/alternatives/autocad",
+      "https://www.snaptrude.com/alternatives/archicad",
+      "https://www.snaptrude.com/alternatives/sketchup",
+      "https://www.snaptrude.com/alternatives/free-revit",
+      "https://www.snaptrude.com/alternatives/free-autocad",
+      "https://www.snaptrude.com/alternatives/free-sketchup",
+      "https://www.snaptrude.com/alternatives/revit-for-mac"
+    ]
+  },
+  "named_competitors": [
+    "Revit",
+    "Archicad",
+    "Sketchup",
+    "Autocad",
+    "Free Revit",
+    "Free Autocad",
+    "Free Sketchup",
+    "Revit For Mac"
+  ],
+  "sitemap_urls_seen": 481,
+  "notes": [
+    "page cap bound: 138 candidates found, 8 fetched"
+  ],
+  "probes": {},
+  "candidates_found": 138,
+  "headings_found": 108
+}

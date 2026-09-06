@@ -1,0 +1,201 @@
+{
+  "slug": "giraffe-build",
+  "input": "giraffe.build",
+  "domain": "giraffe.build",
+  "name": "Giraffe",
+  "final_url": "https://www.giraffe.build/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:50+00:00",
+  "pages": [
+    {
+      "url": "https://giraffe.build/",
+      "final_url": "https://www.giraffe.build/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Giraffe — The Orchestration Layer for AI-Driven Real Estate",
+      "meta_description": "Giraffe turns fragmented, consultant-based processes into seamless digital workflows across feasibility, planning, design and finance.",
+      "og_title": "Giraffe — The Orchestration Layer for AI-Driven Real Estate",
+      "og_description": "Giraffe turns fragmented, consultant-based processes into seamless digital workflows across feasibility, planning, design and finance.",
+      "canonical": "https://www.giraffe.build/",
+      "h1": [
+        "Build beautiful cities"
+      ],
+      "h2": [
+        "AI is changing the economics of doing real estate. Giraffe is the unifying platform to systematically automate tasks across your entire workflow.",
+        "Whatever your thesis, replace fragmented tools with a decision system. Combine thousands of spatial layers, workflows, and apps into a repeatable decision process — or extend it with your own logic.",
+        "Giraffe is a tool, and a platform.",
+        "Giraffe integrates fragmented workflows into a single structured decision system.",
+        "AI is changing the economics of doing real estate.",
+        "Whatever your thesis, replace fragmented tools with a decision system.",
+        "Start with a tool, scale to a system."
+      ],
+      "h3": [
+        "Platform",
+        "Configured Data & Apps",
+        "Enterprise Decision System",
+        "For Real Estate Developers",
+        "For Designers",
+        "For CRE Developers",
+        "For Local Governments & Municipalities",
+        "built for developers, planners, designers, and analysts who want to move fast",
+        "Combine thousands of spatial layers, workflows, and apps into a repeatable decision process"
+      ],
+      "word_count": 1451,
+      "ctas": [
+        "Start free",
+        "Talk to us",
+        "Start building now"
+      ],
+      "price_signals": [
+        "no credit card"
+      ],
+      "recovered_via": "scan + WebFetch (site renders client-side)"
+    },
+    {
+      "url": "https://www.giraffe.build/alternatives",
+      "final_url": "https://www.giraffe.build/alternatives",
+      "page_type": "compare",
+      "status": 200,
+      "error": "",
+      "title": "Giraffe — The Orchestration Layer for AI-Driven Real Estate",
+      "meta_description": "Giraffe turns fragmented, consultant-based processes into seamless digital workflows across feasibility, planning, design and finance.",
+      "og_title": "Giraffe — The Orchestration Layer for AI-Driven Real Estate",
+      "og_description": "Giraffe turns fragmented, consultant-based processes into seamless digital workflows across feasibility, planning, design and finance.",
+      "canonical": "https://www.giraffe.build/",
+      "h1": [
+        "Build beautiful cities"
+      ],
+      "h2": [
+        "AI is changing the economics of doing real estate. Giraffe is the unifying platform to systematically automate tasks across your entire workflow.",
+        "Whatever your thesis, replace fragmented tools with a decision system. Combine thousands of spatial layers, workflows, and apps into a repeatable decision process — or extend it with your own logic.",
+        "Giraffe is a tool, and a platform."
+      ],
+      "h3": [],
+      "word_count": 1451,
+      "ctas": [
+        "Start free",
+        "Talk to us",
+        "Start building now"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.giraffe.build/pricing",
+      "final_url": "https://www.giraffe.build/pricing/",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Pricing — Giraffe",
+      "meta_description": "Simple, transparent pricing. Start building with Giraffe today.",
+      "og_title": "Pricing — Giraffe",
+      "og_description": "Simple, transparent pricing. Start building with Giraffe today.",
+      "canonical": "https://www.giraffe.build/pricing/",
+      "h1": [
+        "Pricing"
+      ],
+      "h2": [],
+      "h3": [
+        "Self serve",
+        "Enterprise"
+      ],
+      "word_count": 365,
+      "ctas": [
+        "Start free",
+        "Talk to us",
+        "Contact sales"
+      ],
+      "price_signals": [
+        "contact sales"
+      ]
+    },
+    {
+      "url": "https://www.giraffe.build/use-cases",
+      "final_url": "https://www.giraffe.build/use-cases/",
+      "page_type": "use_case",
+      "status": 200,
+      "error": "",
+      "title": "Solutions — Giraffe",
+      "meta_description": "See how the largest organizations deploy billions in capital, plan cities, and manage portfolios with Giraffe.",
+      "og_title": "Solutions — Giraffe",
+      "og_description": "See how the largest organizations deploy billions in capital, plan cities, and manage portfolios with Giraffe.",
+      "canonical": "https://www.giraffe.build/use-cases/",
+      "h1": [
+        "Solutions"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 597,
+      "ctas": [
+        "Start free",
+        "Talk to us",
+        "Talk to us about your use case →",
+        "Start free — no credit card required"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.giraffe.build/use-cases/",
+      "final_url": "https://www.giraffe.build/use-cases/",
+      "page_type": "use_case",
+      "status": 200,
+      "error": "",
+      "title": "Solutions — Giraffe",
+      "meta_description": "See how the largest organizations deploy billions in capital, plan cities, and manage portfolios with Giraffe.",
+      "og_title": "Solutions — Giraffe",
+      "og_description": "See how the largest organizations deploy billions in capital, plan cities, and manage portfolios with Giraffe.",
+      "canonical": "https://www.giraffe.build/use-cases/",
+      "h1": [
+        "Solutions"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 597,
+      "ctas": [
+        "Start free",
+        "Talk to us",
+        "Talk to us about your use case →",
+        "Start free — no credit card required"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.giraffe.build/sector-local-government/",
+      "final_url": "https://www.giraffe.build/sector-local-government/",
+      "page_type": "industry",
+      "status": 200,
+      "error": "",
+      "title": "Urban Planning Software for Local Government | Giraffe",
+      "meta_description": "Align data, design and strategy in real time. One platform for zoning analysis, policy modeling, and cross-department planning coordination.",
+      "og_title": "Urban Planning Software for Local Government | Giraffe",
+      "og_description": "Align data, design and strategy in real time. One platform for zoning analysis, policy modeling, and cross-department planning coordination.",
+      "canonical": "https://www.giraffe.build/sector-local-government/",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "word_count": 256,
+      "ctas": [
+        "Start free",
+        "Talk to us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {
+    "compare": [
+      "https://www.giraffe.build/alternatives"
+    ]
+  },
+  "named_competitors": [],
+  "sitemap_urls_seen": 80,
+  "notes": [
+    "found competitor index by probing: https://www.giraffe.build/alternatives",
+    "page cap bound: 26 candidates found, 6 fetched",
+    "homepage renders client-side; homepage copy recovered verbatim via WebFetch"
+  ],
+  "probes": {
+    "/alternatives": 200
+  },
+  "candidates_found": 26,
+  "headings_found": 26
+}

@@ -1,0 +1,108 @@
+{
+  "slug": "arkdesign-ai",
+  "input": "arkdesign.ai",
+  "domain": "arkdesign.ai",
+  "name": "Ark",
+  "final_url": "https://arkdesign.ai/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:59+00:00",
+  "pages": [
+    {
+      "url": "https://arkdesign.ai/",
+      "final_url": "https://arkdesign.ai/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Homepage - Ark",
+      "meta_description": "AI-Powered Design & Feasibility Studies for Multi-Family & Mixed-Use Projects. A tool for architects and real estate developers.",
+      "og_title": "Homepage - Ark",
+      "og_description": "AI-Powered Design & Feasibility Studies for Multi-Family & Mixed-Use Projects. A tool for architects and real estate developers.",
+      "canonical": "https://arkdesign.ai/",
+      "h1": [
+        "AI-Powered Design & Feasibility Studies for Multi-Family & Mixed-Use Projects"
+      ],
+      "h2": [
+        "Generate More Profit",
+        "Up to code",
+        "How industry leaders are using ARK",
+        "Get Certified and be Featured in Our Gallery",
+        "Fariba Makooi, Principal",
+        "Fischer+Makooi Architects",
+        "Gavri Slasky, Associate",
+        "SBJ Group Architects & Interior Designers",
+        "Samuel Wieder, Principal",
+        "Samuel Wieder Architects",
+        "Alexander Pustylnik, Partner",
+        "ND Architecture & Design",
+        "Shay Alster, Managing Partner",
+        "GF55 Architects",
+        "Reza Rahimpour & Shin-Yau Huang",
+        "SGA Architects",
+        "Olimpia Plata",
+        "Mian Consulting Group",
+        "Ramin Ghods",
+        "RGA Atelier",
+        "Malcolm Jones, Principal",
+        "MAJ Architecture+Design",
+        "Start creating optimized floor plans fast & efficiently with ARK",
+        "Fischer+Makooi Architects",
+        "Submit a project"
+      ],
+      "h3": [],
+      "word_count": 1042,
+      "ctas": [
+        "Start for Free",
+        "Get a Demo"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://arkdesign.ai/feature-in-our-gallery/",
+      "final_url": "https://arkdesign.ai/feature-in-our-gallery/",
+      "page_type": "features",
+      "status": 200,
+      "error": "",
+      "title": "Get Certified and be featured in our Gallery - Ark",
+      "meta_description": "",
+      "og_title": "Get Certified and be featured in our Gallery - Ark",
+      "og_description": "Apply to become ArkDesign.AI Certified user. All you need to do is submit a projects that you have designed with Ark AI to our gallery.",
+      "canonical": "https://arkdesign.ai/feature-in-our-gallery/",
+      "h1": [
+        "Get Certified and be featured in our Gallery"
+      ],
+      "h2": [
+        "Submit a project",
+        "Samuel Wieder Architects",
+        "Perkins Eastman",
+        "ND Architecture & Design",
+        "Ask a Question",
+        "Become Certified",
+        "Submit an article",
+        "Submit a project",
+        "Upgrade to Pro",
+        "Get a demo"
+      ],
+      "h3": [],
+      "word_count": 678,
+      "ctas": [
+        "Start for Free"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 0,
+  "notes": [
+    "https://arkdesign.ai/pricing/ -> 202",
+    "https://arkdesign.ai/screen-by-screen/ -> 202"
+  ],
+  "probes": {
+    "/alternatives": 202,
+    "/compare": 202,
+    "/competitors": 202,
+    "/vs": 202
+  },
+  "candidates_found": 6,
+  "headings_found": 37
+}

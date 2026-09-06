@@ -1,0 +1,215 @@
+{
+  "slug": "autodesk-com",
+  "input": "autodesk.com/products/forma-site-design",
+  "domain": "autodesk.com",
+  "name": "Autodesk Forma Site Design",
+  "final_url": "",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:12:20+00:00",
+  "pages": [
+    {
+      "url": "https://www.autodesk.com/products/forma-site-design/overview",
+      "final_url": "https://www.autodesk.com/products/forma-site-design/overview",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Autodesk Forma Site Design | Forma Site Design Login",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [
+        "Autodesk Forma Site Design"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 0,
+      "ctas": [],
+      "price_signals": [],
+      "recovered_via": "search-index meta title"
+    },
+    {
+      "url": "https://www.autodesk.com/products/forma-site-design/free-trial",
+      "final_url": "https://www.autodesk.com/products/forma-site-design/free-trial",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Try Autodesk Forma Site Design | A Free 30-Day Trial",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [
+        "Try Autodesk Forma Site Design"
+      ],
+      "h2": [],
+      "h3": [],
+      "word_count": 0,
+      "ctas": [],
+      "price_signals": [],
+      "recovered_via": "search-index meta title"
+    },
+    {
+      "url": "https://www.autodesk.com/support/technical/product/forma",
+      "final_url": "https://www.autodesk.com/support/technical/product/forma",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Overview | Forma Site Design | Autodesk",
+      "meta_description": "",
+      "og_title": "",
+      "og_description": "",
+      "canonical": "",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "word_count": 0,
+      "ctas": [],
+      "price_signals": [],
+      "recovered_via": "search-index meta title"
+    },
+    {
+      "url": "https://blogs.autodesk.com/forma",
+      "final_url": "https://blogs.autodesk.com/forma/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "Design with Forma | Insights & innovations from Forma's design solutions",
+      "meta_description": "Design with Forma is Autodesk's blog for architects and designers - covering early-stage design workflows, product updates, and industry insights.",
+      "og_title": "Design with Forma",
+      "og_description": "Insights, tips, and stories for architects and designers working with Autodesk Forma.",
+      "canonical": "https://blogs.autodesk.com/forma/",
+      "h1": [
+        "Design with Forma"
+      ],
+      "h2": [
+        "Back to the Future",
+        "Schematic design in multifamily projects: when decisions–and mistakes–scale",
+        "Forma Site Design wins Architectural Record 2025 Architectural Products of the Year!",
+        "Introducing Forma Building Design: An easy-to-use detailed building design solution with automated design tools and integrated analyses",
+        "Take your architecture student projects to the next level with Autodesk Forma",
+        "Smarter Generative Design: Autodesk and Zoneomics Partner to Bring Zoning-Responsive Building Envelopes to Forma",
+        "Creating Sustainable Tropical Buildings Through Passive Design Strategies",
+        "Building Harmony: The journey behind Naviate Outdoor Area extension",
+        "Lessons in designing sustainable happy homes",
+        "Advancing AI in Autodesk’s AEC software",
+        "Overview of Forma Site Design tools and functions",
+        "What is Autodesk Forma Site Design? Uses, Revit integration, and project types",
+        "Designing with wind: what a children’s science museum taught us",
+        "Connect your design workflows with Forma Building Design",
+        "Forma Building Design: Explore more ideas before it’s time for BIM",
+        "Total Carbon Analysis in Forma Building Design: A Step-by-Step Guide",
+        "Exploring facade options faster in schematic design",
+        "Forma Board now available for Autodesk Forma Data Management users",
+        "Start your pre-design site analysis with Forma Site Design’s sun hours analysis",
+        "My Top Five Favorite Features of Forma Site Design in 2025",
+        "Designing climate-resilient coffee farms with Forma Site Design",
+        "Designing with data: Rethinking South Downtown Dallas as a 15-Minute city",
+        "Designing resilient cities: a data-driven approach to site analysis",
+        "Inside Forma Building Design: “User testing is an opportunity to help shape how the tool evolves.”",
+        "How BDP upskills its team for positive impact"
+      ],
+      "h3": [],
+      "word_count": 1240,
+      "ctas": [
+        "Free Trial",
+        "Start free trial",
+        "Buy now",
+        "Contact us"
+      ],
+      "price_signals": [
+        "free trial"
+      ]
+    },
+    {
+      "url": "https://blogs.autodesk.com/forma/2026/08/20/what-is-forma-site-design/",
+      "final_url": "https://blogs.autodesk.com/forma/2026/08/20/what-is-forma-site-design/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "What Is Autodesk Forma Site Design? Uses and Project Types",
+      "meta_description": "Forma Site Design is data-driven software for site planning, feasibility, and environmental analysis. See what it does, who uses it, and how it connects to Revit.",
+      "og_title": "What Is Autodesk Forma Site Design? Uses and Project Types",
+      "og_description": "Forma Site Design is data-driven software for site planning, feasibility, and environmental analysis. See what it does, who uses it, and how it connects to Revit.",
+      "canonical": "https://blogs.autodesk.com/forma/2026/08/20/what-is-forma-site-design/",
+      "h1": [
+        "What is Autodesk Forma Site Design? Uses, Revit integration, and project types"
+      ],
+      "h2": [
+        "What is Forma Site Design?",
+        "What is Forma Site Design used for?",
+        "How does Forma Site Design work with Revit and other tools?",
+        "What types of projects use Forma Site Design?",
+        "Who uses Forma Site Design?",
+        "How do I access Forma Site Design?",
+        "Is Forma Site Design easy to learn?",
+        "What is the difference between Forma Site Design and Autodesk Forma?",
+        "When to use Forma Site Design vs Forma Building Design",
+        "Explore similar topics",
+        "Up Next",
+        "Stay in the loop"
+      ],
+      "h3": [],
+      "word_count": 2091,
+      "ctas": [
+        "Free Trial",
+        "Start free trial",
+        "Buy now",
+        "Contact us"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://blogs.autodesk.com/forma/2026/08/28/forma-site-design-tools-overview/",
+      "final_url": "https://blogs.autodesk.com/forma/2026/08/28/forma-site-design-tools-overview/",
+      "page_type": "product",
+      "status": 200,
+      "error": "",
+      "title": "Overview of Forma Site Design tools",
+      "meta_description": "Get to know Forma Site Design's tools from the canvas and design toolbar to the analysis panel, and what each tool does at each project stage.",
+      "og_title": "Overview of Forma Site Design tools",
+      "og_description": "Get to know Forma Site Design's tools from the canvas and design toolbar to the analysis panel, and what each tool does at each project stage.",
+      "canonical": "https://blogs.autodesk.com/forma/2026/08/28/forma-site-design-tools-overview/",
+      "h1": [
+        "Overview of Forma Site Design tools and functions",
+        "Canvas",
+        "Top bar",
+        "Sidebar (left-hand side)",
+        "Navigator: Manage proposals and bases"
+      ],
+      "h2": [
+        "Get to know Autodesk Forma Site Design’s tools",
+        "Proposals",
+        "Proposal layers",
+        "Bases",
+        "Explore similar topics",
+        "Up Next",
+        "Stay in the loop"
+      ],
+      "h3": [
+        "Additional features:"
+      ],
+      "word_count": 1299,
+      "ctas": [
+        "Free Trial",
+        "Start free trial",
+        "Buy now",
+        "Contact us"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [
+    "Forma Building"
+  ],
+  "sitemap_urls_seen": 0,
+  "notes": [
+    "scoped to /products/forma-site-design subtree",
+    "retrying via https://www.autodesk.com",
+    "homepage unreachable (Error: Page.goto: net::ERR_CONNECTION_RESET at https://www.autodesk.com/)",
+    "www.autodesk.com returns HTTP 403 (Akamai) to this egress on every path incl. robots.txt; meta titles captured verbatim from the search index. Body copy for the anchor comes from blogs.autodesk.com/forma (Autodesk's own Forma blog), scanned separately.",
+    "body copy merged from blogs.autodesk.com/forma (Autodesk's own Forma marketing blog) because www.autodesk.com 403s this egress; page URLs preserved so every quote is traceable to the host it came from"
+  ],
+  "headings_found": 54
+}

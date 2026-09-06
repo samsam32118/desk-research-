@@ -1,0 +1,114 @@
+{
+  "slug": "zenerate-ai",
+  "input": "zenerate.ai",
+  "domain": "zenerate.ai",
+  "name": "Zenerate",
+  "final_url": "https://www.zenerate.ai/",
+  "reachable": true,
+  "scanned_at": "2026-09-06T14:19:59+00:00",
+  "pages": [
+    {
+      "url": "https://zenerate.ai/",
+      "final_url": "https://www.zenerate.ai/",
+      "page_type": "home",
+      "status": 200,
+      "error": "",
+      "title": "AI Feasibility Study Tool for Land Development | Zenerate",
+      "meta_description": "Accelerate feasibility studies with AI. Generate site plans, floor plans, parking layouts, and pro formas to make faster and smarter land development decisions.",
+      "og_title": "AI Feasibility Study Tool for Land Development | Zenerate",
+      "og_description": "Accelerate feasibility studies with AI. Generate site plans, floor plans, parking layouts, and pro formas to make faster and smarter land development decisions.",
+      "canonical": "https://www.zenerate.ai",
+      "h1": [
+        "AI-Powered Feasibility Studies Delivered in Minutes"
+      ],
+      "h2": [
+        "Instantly generate optimized site plans, floor plans, and parking layouts with pro forma insights for faster land development."
+      ],
+      "h3": [
+        "How It Works",
+        "Developed for AEC Professionals",
+        "Trusted by",
+        "FAQ"
+      ],
+      "word_count": 763,
+      "ctas": [
+        "Get Started"
+      ],
+      "price_signals": []
+    },
+    {
+      "url": "https://www.zenerate.ai/pricing",
+      "final_url": "https://www.zenerate.ai/pricing",
+      "page_type": "pricing",
+      "status": 200,
+      "error": "",
+      "title": "Pricing | Zenerate",
+      "meta_description": "Zenerate pricing plans for AI-powered feasibility studies and generative design.",
+      "og_title": "Pricing | Zenerate",
+      "og_description": "Zenerate pricing plans for AI-powered feasibility studies and generative design.",
+      "canonical": "https://www.zenerate.ai/pricing",
+      "h1": [
+        "From First Site Plan to Full Portfolio"
+      ],
+      "h2": [
+        "Subscription Plans",
+        "Ready to See It on Your Own Site?"
+      ],
+      "h3": [
+        "Starter",
+        "Professional",
+        "Floating Seat",
+        "Enterprise",
+        "Ready to start your 7-day trial?",
+        "FAQ"
+      ],
+      "word_count": 477,
+      "ctas": [
+        "Get Started"
+      ],
+      "price_signals": [
+        "free trial"
+      ]
+    },
+    {
+      "url": "https://www.zenerate.ai/about",
+      "final_url": "https://www.zenerate.ai/about",
+      "page_type": "about",
+      "status": 200,
+      "error": "",
+      "title": "About Zenerate | AI for Land Development Feasibility",
+      "meta_description": "Meet the team building AI-powered feasibility tools for real estate developers, architects, and land planners. Learn about Zenerate's mission and story.",
+      "og_title": "About Zenerate | AI for Land Development Feasibility",
+      "og_description": "Meet the team building AI-powered feasibility tools for real estate developers, architects, and land planners. Learn about Zenerate's mission and story.",
+      "canonical": "https://www.zenerate.ai/about",
+      "h1": [
+        "About Us"
+      ],
+      "h2": [
+        "We are a team of architects, AI developers, designers, computational designers and software engineers who are passionate for innovating the real estate development, architecture, engineering and construction industries."
+      ],
+      "h3": [
+        "Our Mission",
+        "Our Story",
+        "Our Team"
+      ],
+      "word_count": 413,
+      "ctas": [
+        "Get Started"
+      ],
+      "price_signals": []
+    }
+  ],
+  "signal_urls": {},
+  "named_competitors": [],
+  "sitemap_urls_seen": 109,
+  "notes": [],
+  "probes": {
+    "/alternatives": 404,
+    "/compare": 404,
+    "/competitors": 404,
+    "/vs": 404
+  },
+  "candidates_found": 2,
+  "headings_found": 20
+}
