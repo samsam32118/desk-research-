@@ -100,7 +100,12 @@ EXCLUDE_PATTERNS = [
     r"/(integrations?|marketplace|connectors?|apps-directory|add-ons?)(/|$|-)",
     r"/wp-(content|admin|json)/",
     r"\.(pdf|jpg|jpeg|png|gif|svg|webp|mp4|zip|xml|json|css|js|ico|woff2?)$",
-    r"/[a-z]{2}(-[a-z]{2})?/(?=.)",           # /de/, /fr-ca/ locale trees
+    # Non-English locale trees. Matching any two letters would also drop /en/,
+    # which is where large vendors keep their entire English site, and sections
+    # legitimately named /ai/ or /ml/ -- so the codes are named explicitly and
+    # English is never one of them.
+    r"/(?:de|fr|es|pt|nl|sv|no|nb|da|fi|pl|cs|ru|tr|ja|ko|zh|ar|he|hi|th|vi"
+    r"|id|ms|ro|hu|el|uk|bg|sk|sl|hr|sr|lt|lv|et|ca|is|ga|it)(?:-[a-z]{2})?/",
 ]
 
 CASE_STUDY_PATTERN = r"/(customers?|case-stud(y|ies)|success-stories|testimonials)(/|$|-)"
@@ -363,8 +368,16 @@ class Fetcher:
             return True
 
 
+LOCALE_PREFIX = re.compile(r"^/en(?:-[a-z]{2})?(?=/)", re.I)
+
+
+def strip_locale(path):
+    """/en/pricing is the pricing page; the prefix is routing, not structure."""
+    return LOCALE_PREFIX.sub("", path) or "/"
+
+
 def classify(url, anchor_text=""):
-    path = urllib.parse.urlsplit(url).path.lower() or "/"
+    path = strip_locale(urllib.parse.urlsplit(url).path.lower() or "/")
     if path in ("/", ""):
         return "home"
     probe = path if path.endswith("/") else path + "/"
@@ -379,7 +392,7 @@ def classify(url, anchor_text=""):
 
 
 def excluded(url, include_case_studies=False):
-    path = urllib.parse.urlsplit(url).path.lower() or "/"
+    path = strip_locale(urllib.parse.urlsplit(url).path.lower() or "/")
     probe = path if path.endswith("/") else path + "/"
     if not include_case_studies and re.search(CASE_STUDY_PATTERN, probe):
         return True
@@ -695,7 +708,7 @@ def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet
 
     def score(item):
         url, kind = item
-        path = urllib.parse.urlsplit(url).path.strip("/")
+        path = strip_locale(urllib.parse.urlsplit(url).path).strip("/")
         depth = path.count("/")
         base = TYPE_PRIORITY.get(kind, 10)
         first = "/" + (path.split("/")[0] if path else "") + "/"
@@ -726,6 +739,13 @@ def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet
             continue
         page.pop("_links", None)
         page.pop("_site_name", None)
+        # A clean-looking URL can redirect into the pile we filtered out:
+        # /product-tour lands on /resources/webinars-videos/... Judge the
+        # destination, not the invitation.
+        if (page["final_url"] != url and same_site(page["final_url"], domain)
+                and excluded(page["final_url"], include_case_studies)):
+            notes.append("%s redirects to an excluded page (%s)" % (url, page["final_url"]))
+            continue
         if page["status"] == 200 and (page["h1"] or page["h2"] or page["title"]):
             pages.append(page)
         elif page["status"] != 200:
