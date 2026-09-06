@@ -29,8 +29,14 @@ as history.
 `named_competitors` (parsed from `/compare/x-vs-y`, `/alternatives/x`, and
 "vs X" headings) and `signal_urls.compare`. It also probes `/alternatives`,
 `/compare`, `/competitors` and `/vs` directly, because a site with thousands of
-generated pages can bury its own competitor index. On atlas.co that probe finds
-an index naming 45 competitors before a single search is run. A company that publishes a page
+generated pages can bury its own competitor index.
+
+**When `signal_urls.compare` contains an index page, open it.** `named_competitors`
+is parsed from URLs and headings the crawl happened to reach, so it under-reports:
+on atlas.co it returned 14 names while the index itself listed 46, grouped under
+the segments Atlas uses to describe its own market. That page is the single
+richest artifact in this whole pipeline — one fetch, and the level-1 roster is
+done before you run a search. A company that publishes a page
 arguing it beats Acme has told you Acme is a competitor. Nothing beats that for
 precision — start here, and fetch one or two of those pages if the names are
 thin.

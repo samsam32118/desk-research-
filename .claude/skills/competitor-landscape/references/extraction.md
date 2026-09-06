@@ -111,9 +111,12 @@ belongs in the report rather than being silently dropped.
   "domain": "acme.com", "name": "Acme", "reachable": true, "headings_found": 63,
   "pages": [{"page_type": "home", "final_url": "...", "title": "...",
              "meta_description": "...", "h1": ["..."], "h2": ["..."],
-             "h3": ["..."], "ctas": ["Book a demo"], "word_count": 812}],
+             "h3": ["..."], "ctas": ["Book a demo"], "word_count": 812,
+             "price_signals": ["$23 per user", "free forever"]}],
   "signal_urls": {"compare": ["..."], "partners": ["..."]},
   "named_competitors": ["Globex", "Initech"],
+  "probes": {"/pricing": 404, "/plans": 404, "/alternatives": 200},
+  "candidates_found": 12,
   "notes": ["..."]
 }
 ```
@@ -123,7 +126,10 @@ Three things worth reading closely every time:
 - **The homepage H1 and meta description together.** The H1 is what they say to
   a visitor; the meta description is what they say to someone still choosing a
   tab. Where those diverge, the company is unsure who it is for.
-- **The pricing page and `price_signals`.** Prices live in divs and tables, not
+- **The pricing page and `price_signals`.** Note it is a **per-page** field —
+  `pages[].price_signals`, not a site-level key — so gather it across pages
+  before concluding a company publishes nothing.
+  Prices live in divs and tables, not
   headings, so the scanner mines the visible text of pricing pages for figures
   and phrases ("$23 per user", "contact sales", "free forever"). When no pricing
   page turns up in discovery, it probes `/pricing`, `/plans`, `/pricing-plans`

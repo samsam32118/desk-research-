@@ -29,6 +29,17 @@ try:
 except ImportError:                                       # running from elsewhere
     STOPWORDS = set()
 
+# Every marketing site ships the same furniture -- FAQ headings, nav labels,
+# cookie banners. It clusters in exactly the mid-frequency band where axes live,
+# so it drowns the real candidates unless it is filtered out.
+FURNITURE = set("""questions frequently asked answers answer faq help support contact
+about privacy terms cookies cookie policy legal careers jobs login sign signup register
+blog news press resources library documentation docs guides webinars events newsletter
+subscribe email address phone company home page site website menu navigation search
+started learn more read view see click here follow share social twitter linkedin facebook
+youtube instagram copyright rights reserved inc ltd llc gmbh team partners customers
+solutions products services platform pricing plans features overview""".split())
+
 
 def load(data_dir):
     sites = []
@@ -81,7 +92,7 @@ def main():
             seen = set()
             for text, _ in fields(site):
                 for w in re.findall(r"[a-zA-Z][a-zA-Z\-']{3,}", text.lower()):
-                    if w not in STOPWORDS:
+                    if w not in STOPWORDS and w not in FURNITURE:
                         seen.add(w)
             doc_freq.update(seen)
         n = len(sites)

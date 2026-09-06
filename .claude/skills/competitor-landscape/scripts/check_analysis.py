@@ -17,6 +17,7 @@ import argparse
 import glob
 import json
 import os
+import re
 import sys
 from itertools import combinations
 
@@ -141,6 +142,24 @@ def main():
                      % (mid, occ["tl"], occ["tr"], occ["bl"], occ["br"],
                         "  (empty: %s)" % ", ".join(k for k, v in occ.items() if v == 0)
                         if any(v == 0 for v in occ.values()) else ""))
+
+        # A run once wrote "the top-right is genuinely empty" about a quadrant
+        # holding ten companies. The reading is prose; the occupancy is not.
+        # Scope to a sentence: a reading that calls one quadrant empty while
+        # merely naming another is not making a claim about the second.
+        named = {"tl": r"top[- ]left|upper[- ]left", "tr": r"top[- ]right|upper[- ]right",
+                 "bl": r"bottom[- ]left|lower[- ]left", "br": r"bottom[- ]right|lower[- ]right"}
+        empty_word = r"\b(empty|unoccupied|nobody|no one|no company|vacant|white ?space|untaken)\b"
+        reading = str(m.get("reading", "")) + " " + str(m.get("why_it_matters", ""))
+        for sentence in re.split(r"[.;]\s+", reading):
+            if not re.search(empty_word, sentence, re.I):
+                continue
+            for key, pattern in named.items():
+                if re.search(pattern, sentence, re.I) and occ[key] > 0:
+                    warnings.append("%s: a sentence calls the %s quadrant empty while %d "
+                                    "company(ies) are plotted there. If the claim is scoped "
+                                    "(\"empty of GIS platforms\"), say what it is empty of; "
+                                    "otherwise fix the claim or the scores" % (mid, key, occ[key]))
 
         thin = [p.get("company") for p in pts if len(str(p.get("evidence", ""))) < MIN_EVIDENCE]
         if thin:
