@@ -64,8 +64,11 @@ detail — checking a pricing page's exact H2s before scoring an axis, say.
 
 Check `notes` and `headings_found` on every scan before trusting it.
 
-**`headings_found: 0`** — the site is JS-rendered, parked, or blocking. The
-scan notes which. Fall back to `WebFetch` for that one domain:
+**`headings_found: 0`** — the site is JS-rendered, parked, or blocking. Open
+the scan file before doing anything else: the meta title and description are
+often still there, because they sit in the HTML head even when the body renders
+client-side. That is real, verbatim evidence and it costs nothing. Only when
+those are empty too, fall back to `WebFetch` for that one domain:
 
 ```
 WebFetch(url="https://example.com/",
@@ -82,6 +85,20 @@ sees, so note it.
 
 **HTTP 403 or 429** — raise `--delay` and retry that domain alone. If it stays
 blocked, use `WebFetch` and record the gap.
+
+**The scan returns the wrong company.** A platform vendor scanned by root
+domain gives you corporate copy: `paloaltonetworks.com` returns "Control the
+chaos. Secure every identity.", not Cortex XSOAR. The page-scoring heuristic is
+right for a single-product company and wrong here. Rescan with the product URL —
+`scan_site.py paloaltonetworks.com/cortex/cortex-xsoar` — which scopes discovery
+to that subtree. Use `--also-urls` to add specific pages discovery missed.
+
+**A site defeats every method.** Some sites (Hexagon, Motorola Solutions, Coupa,
+JAGGAER) sit behind protection that neither the scanner nor `WebFetch` gets
+past. That is a coverage class, not a bug. Keep the company in the workbook with
+the gap flagged, keep it off the matrices, and name it when you hand over — an
+under-populated quadrant looks exactly like whitespace to a reader who does not
+know a real competitor is missing from it.
 
 **Homepage unreachable** — the scanner already retried with and without `www`.
 Check whether the company still exists; a dead domain is itself a finding, and
@@ -106,6 +123,10 @@ Three things worth reading closely every time:
 - **The homepage H1 and meta description together.** The H1 is what they say to
   a visitor; the meta description is what they say to someone still choosing a
   tab. Where those diverge, the company is unsure who it is for.
-- **The pricing page.** A published number, a "contact sales", or no pricing
-  page at all is the clearest signal of sales motion and segment in the corpus.
+- **The pricing page and `price_signals`.** Prices live in divs and tables, not
+  headings, so the scanner mines the visible text of pricing pages for figures
+  and phrases ("$23 per user", "contact sales", "free forever"). When no pricing
+  page turns up in discovery, it probes `/pricing`, `/plans`, `/pricing-plans`
+  and `/price` and records the result, so `notes` distinguishes "this company
+  publishes no price" — a finding — from "we did not look".
 - **CTA text.** "Book a demo" and "Start free" are different businesses.

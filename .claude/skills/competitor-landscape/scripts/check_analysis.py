@@ -122,6 +122,26 @@ def main():
                                 "anyone, replace it rather than stretching scores"
                                 % (mid, axis, spread))
             axes["%s.%s" % (mid, axis)] = {p.get("company"): v for p, v in zip(pts, vals)}
+        seen_xy = {}
+        for pt in pts:
+            seen_xy.setdefault((pt.get("x"), pt.get("y")), []).append(pt.get("company"))
+        for (px, py), who in seen_xy.items():
+            if len(who) >= 3:
+                warnings.append("%s: %d companies share the exact point (%s, %s) — %s. Either "
+                                "the axes are not resolving them or the scores are hedged"
+                                % (mid, len(who), px, py, ", ".join(map(str, who[:6]))))
+
+        # An empty quadrant is the most valuable claim a 2x2 makes and the
+        # easiest to get wrong, so report occupancy rather than leaving it
+        # to be asserted.
+        occ = {"tl": 0, "tr": 0, "bl": 0, "br": 0}
+        for pt in pts:
+            occ[("t" if (pt.get("y") or 0) >= 5 else "b") + ("r" if (pt.get("x") or 0) >= 5 else "l")] += 1
+        notes.append("%s occupancy — tl:%d tr:%d bl:%d br:%d%s"
+                     % (mid, occ["tl"], occ["tr"], occ["bl"], occ["br"],
+                        "  (empty: %s)" % ", ".join(k for k, v in occ.items() if v == 0)
+                        if any(v == 0 for v in occ.values()) else ""))
+
         thin = [p.get("company") for p in pts if len(str(p.get("evidence", ""))) < MIN_EVIDENCE]
         if thin:
             warnings.append("%s: no real evidence for %s — a coordinate without a quote is a guess"
@@ -134,9 +154,15 @@ def main():
         rho = spearman([va[c] for c in shared], [vb[c] for c in shared])
         if abs(rho) >= DUP_AXIS_RHO:
             if ka.split(".")[0] == kb.split(".")[0]:
+                off = [c for c in shared
+                       if abs(ranks([va[x] for x in shared])[shared.index(c)]
+                              - ranks([vb[x] for x in shared])[shared.index(c)]) > len(shared) / 3]
                 warnings.append("%s and %s rank companies almost identically (rho %.2f) — this "
-                                "chart is a diagonal line, so one of its two axes is not asking a "
-                                "separate question" % (ka, kb, rho))
+                                "chart is close to a diagonal. %s" % (ka, kb, rho,
+                                ("Keep it only if the exceptions are the point: %s break the line, "
+                                 "so name them in the reading." % ", ".join(map(str, off[:4]))) if off
+                                else "Nothing breaks the line, so one axis is not asking a separate "
+                                     "question — replace it."))
             else:
                 warnings.append("%s and %s rank companies almost identically (rho %.2f) — one axis "
                                 "drawn twice across two matrices; keep the better-evidenced one"
@@ -149,7 +175,7 @@ def main():
                 continue
             with open(path, encoding="utf-8") as fh:
                 s = json.load(fh)
-            scanned[s.get("domain", "")] = s.get("headings_found", 0)
+            scanned[s.get("domain", "")] = s.get("headings_found") or 0
         for c in companies:
             d = c.get("domain", "")
             if d not in scanned:

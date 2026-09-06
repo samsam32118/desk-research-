@@ -100,7 +100,17 @@ Before you keep an axis, check it against the ones you already have: if two
 matrices rank the companies in nearly the same order, they are one axis drawn
 twice. Keep the one with better evidence.
 
-The anchor appears on every matrix. It is the reason the map exists.
+Within a single matrix, a near-diagonal is not automatically a failure. If two
+or three companies break the line, they are usually the most interesting thing
+on the chart — a vendor with a published price and an enterprise promise, say.
+Keep the matrix and name those exceptions in the reading. Replace it only when
+nothing breaks the line, because then the second axis genuinely added nothing.
+`check_analysis.py` tells you which case you are in.
+
+The anchor appears on every matrix. It is the reason the map exists. An anchor
+that honestly lands in the middle — because it argues neither pole — stays on
+the chart, and its centrality becomes the finding rather than something to
+score around.
 
 ## Writing the reading
 
@@ -118,7 +128,9 @@ does not sell. Say which you think it is.
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| All dots on a diagonal | The two axes measure the same thing | Replace one with an independent question |
+| All dots on a diagonal, no exceptions | The two axes measure the same thing | Replace one with an independent question |
+| A diagonal with two or three companies off it | Not necessarily broken | Keep it if those outliers are the insight, and name them in the reading |
+| The anchor sits dead centre | Often honest | If it argues neither pole, that centrality *is* the finding — say so rather than nudging the score |
 | Everyone in one quadrant | Axis does not separate, or poles are badly placed | Re-anchor to the extremes, or drop the axis |
 | Axes named "High/Low" | The axis has no content | Name the poles in the market's words |
 | Anchor missing from a matrix | Scoring dodge | Score it or drop the matrix |

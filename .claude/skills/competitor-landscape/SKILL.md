@@ -124,9 +124,17 @@ python3 "$SKILL/scripts/scan_site.py" $(cat "$OUT/domains.txt") \
 ```
 
 One call, all domains — it scans sites in parallel while staying polite to each
-one (robots.txt honoured, requests spaced). Do not fetch these pages into
-context yourself: the script keeps the corpus faithful and cheap, and you need
-the context budget for thinking, not for HTML.
+one (robots.txt honoured, requests spaced). Do not pull this corpus into context
+by hand: the script keeps it faithful and cheap, and you need the context budget
+for thinking, not for HTML.
+
+Two things still need you. A **multi-product vendor** scanned by root domain
+returns corporate copy, not the product you are mapping — pass the product URL
+instead (`scan_site.py paloaltonetworks.com/cortex/cortex-xsoar`), which scopes
+discovery to that subtree. And a **site whose key page discovery missed** can be
+added with `--also-urls`. Budget a handful of `WebFetch` calls for pages the
+scanner could not serve; ask for exact quotes when you do, because a paraphrase
+cannot be used as evidence for a coordinate.
 
 Details of what it extracts, the flags that matter, and what to do about sites
 that block: **`references/extraction.md`**.
@@ -146,6 +154,21 @@ fill that in.
 The digest ends with a vocabulary table showing how many sites use each term.
 Read it carefully: words most of the market uses are table stakes and make
 terrible axes; words one or two companies own are where the differentiation is.
+
+The digest tells you what each company says. To find an axis you need to know
+who says a given thing and who stays silent, which is what `facets.py` answers:
+
+```bash
+# candidate axes: the terms that actually split this market
+python3 "$SKILL/scripts/facets.py" --data "$OUT/data"
+
+# then interrogate one: who claims it, in their words, and who says nothing
+python3 "$SKILL/scripts/facets.py" --data "$OUT/data" --terms "self-host,governance"
+```
+
+Every hit comes back with the heading it came from and a list of the companies
+silent on it, so an axis arrives with its evidence already attached. The silent
+list is usually the more interesting half.
 
 Now write `$OUT/analysis.json` — company profiles, then the matrices. How to
 choose axes that actually separate companies, how to score positions
@@ -172,18 +195,23 @@ Skeleton:
 }
 ```
 
-Before rendering anything, check it:
+### 6. Check the analysis before you draw it
 
 ```bash
 python3 "$SKILL/scripts/check_analysis.py" --analysis "$OUT/analysis.json" --data "$OUT/data"
 ```
 
-It catches what JSON hides but a chart exposes: an axis where nobody moves, two
-matrices secretly asking the same question, a coordinate with no evidence, the
-anchor missing from its own map. Errors have to be fixed. Warnings are
-judgement calls — read each one and either fix it or be able to say why not.
+This is the cheapest quality gate in the pipeline. It catches what JSON hides
+but a chart exposes: an axis where nobody moves, two matrices secretly asking
+the same question, three companies stacked on one point, a coordinate with no
+evidence, the anchor missing from its own map. It also prints quadrant
+occupancy, which is how you check an "empty quadrant" claim instead of
+asserting it.
 
-### 6. Build the deliverables
+Errors have to be fixed. Warnings are judgement calls — read each one and
+either fix it or be able to say why not.
+
+### 7. Build the deliverables
 
 ```bash
 python3 "$SKILL/scripts/build_workbook.py" --data "$OUT/data" \
@@ -198,13 +226,16 @@ renders each 2x2 as a chart with the evidence on hover. Open the report to
 check it before handing it over; overlapping labels or an axis where every dot
 sits in one corner means go back to step 5.
 
-### 7. Hand it over
+### 8. Hand it over
 
 Lead with the answer, not the file list: where the anchor sits, which quadrant
 is crowded, which is empty, and the one thing in the data that would surprise
 them. Then the two file paths. Then, plainly, what was thin — sites that
 returned no copy, companies you could not verify, axes you dropped for lack of
-evidence. A landscape that hides its gaps invites someone to over-trust it.
+evidence. Name any company you know belongs in this market but could not scan,
+because an under-populated quadrant looks exactly like whitespace and the reader
+cannot tell the difference. A landscape that hides its gaps invites someone to
+over-trust it.
 
 ## What separates a good map from a bad one
 
@@ -241,6 +272,11 @@ matter; the axis library in `references/matrices.md` is a prompt, not a menu.
 | pages scanned | ~60 | ~250 |
 | max pages per site | 8-10 | 8 |
 | matrices | 4-6 | 6-10 |
+| rough working time | ~10 min | ~20-35 min |
+
+Those times are what real runs took, so treat them as the shape of the job
+rather than a limit to race. If you are well under on a level-1 run, four or
+five good searches was probably enough.
 
 Six matrices that separate companies beat ten that do not. Add more only while
 each new one changes the picture.
@@ -255,3 +291,6 @@ each new one changes the picture.
 | A site returns 403 or an "agent version" | `scan_site.py` notes it; re-run that one domain with `--user-agent`, or `WebFetch` its key pages |
 | Level 2 explodes past 35 companies | Keep the ones named most often across level-1 comparison pages; drop the rest and say so |
 | Every company lands in one quadrant | The axis is dead — replace it, do not stretch the scores |
+| A scan returns the wrong company's copy | It is a multi-product vendor; rescan with the product URL so discovery is scoped to that subtree |
+| A site is behind Cloudflare and nothing works | Accept it, keep the company in the workbook with the gap flagged, keep it off the matrices, and say so — do not plot it from memory |
+| Search results and the site's own copy disagree | The site wins. Coverage of a young company often describes what it did before a pivot |

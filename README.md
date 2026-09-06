@@ -43,12 +43,18 @@ S=.claude/skills/competitor-landscape/scripts
 python3 $S/scan_site.py stripe.com adyen.com --out data/ --max-pages 8
 python3 $S/digest.py --data data/
 
+# who claims a thing, who stays silent — with the heading each hit came from
+python3 $S/facets.py --data data/ --terms "self-host,governance"
+
 # turn a scan (plus an analysis.json you wrote) into deliverables
+python3 $S/check_analysis.py --analysis analysis.json --data data/
 python3 $S/build_workbook.py --data data/ --analysis analysis.json --out map.xlsx
 python3 $S/render_report.py --analysis analysis.json --data data/ --out map.html
 ```
 
-`scan_site.py` honours robots.txt, spaces its requests per site, and never
+`scan_site.py` probes for the pages that matter (`/alternatives`, `/pricing`)
+rather than only following links, mines pricing pages for figures that live
+outside headings, honours robots.txt, spaces its requests per site, and never
 raises on a bad domain — sites that block or render client-side are recorded in
 `notes` with `headings_found: 0` so a gap can never be mistaken for a finding.
 

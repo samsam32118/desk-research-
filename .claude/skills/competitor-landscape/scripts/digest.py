@@ -61,20 +61,35 @@ def company_block(site, meta, budget):
     pages = site.get("pages", [])
     home = next((p for p in pages if p["page_type"] == "home"), pages[0] if pages else None)
     if home:
-        lines.append("- title: %s" % clip(home["title"] or home["og_title"], 140))
-        lines.append("- meta desc: %s" % clip(home["meta_description"] or home["og_description"], 260))
-        if home["h1"]:
+        # .get throughout: a page dict from a partial or hand-built scan is
+        # missing keys exactly when the site was degraded, which is when this
+        # brief matters most.
+        lines.append("- title: %s" % clip(home.get("title") or home.get("og_title"), 140))
+        lines.append("- meta desc: %s" % clip(
+            home.get("meta_description") or home.get("og_description"), 260))
+        if home.get("h1"):
             lines.append("- H1: %s" % clip(" / ".join(home["h1"][:2]), 200))
-        if home["h2"]:
+        if home.get("h2"):
             lines.append("- home H2s: %s" % clip(" | ".join(home["h2"][:6]), 420))
-        if home["ctas"]:
+        if home.get("ctas"):
             lines.append("- CTAs: %s" % ", ".join(home["ctas"][:4]))
 
     for page in pages:
-        if page["page_type"] in ("home",) or not (page["h1"] or page["h2"]):
+        if page.get("page_type") == "home" or not (page.get("h1") or page.get("h2")):
             continue
-        bits = clip(" | ".join(page["h1"][:1] + page["h2"][:5]), 300)
-        lines.append("- %s (%s): %s" % (page["page_type"], page["final_url"].split("//")[-1], bits))
+        bits = clip(" | ".join(page.get("h1", [])[:1] + page.get("h2", [])[:5]), 300)
+        lines.append("- %s (%s): %s" % (page.get("page_type", "?"),
+                                        page.get("final_url", "").split("//")[-1], bits))
+
+    prices = [t for page in pages for t in page.get("price_signals", [])]
+    if prices:
+        lines.append("- price signals: %s" % ", ".join(dict.fromkeys(prices))[:220])
+    elif any(p.get("page_type") == "pricing" for p in pages):
+        lines.append("- has a pricing page but published no figures")
+    else:
+        probes = site.get("probes", {})
+        if any(v != 200 for k, v in probes.items() if "pric" in k or "plan" in k):
+            lines.append("- no pricing page (probed and absent)")
 
     if site.get("named_competitors"):
         lines.append("- names as rivals on its own site: %s" % ", ".join(site["named_competitors"][:10]))

@@ -17,11 +17,19 @@ import os
 from datetime import datetime, timezone
 
 W, H = 620, 560
+DENSE_W, DENSE_H = 780, 700     # a level-2 map is 25-35 dots; give it room
+DENSE_AT = 16
 PAD = {"l": 92, "r": 34, "t": 44, "b": 92}
 
 
 def esc(text):
     return html.escape(str(text or ""))
+
+
+def ellipsis(text, n):
+    """Truncate visibly. A name cut mid-word reads as broken, not shortened."""
+    text = str(text or "")
+    return text if len(text) <= n else text[: n - 1].rstrip() + "\u2026"
 
 
 def wrap(text, width):
@@ -37,11 +45,16 @@ def wrap(text, width):
     return lines
 
 
-def place_labels(points, x0, x1):
-    """Nudge labels off each other, and inward, so a crowded corner stays readable."""
-    taken, placed = [], []
+def place_labels(points, x0, x1, blocked=(), char_w=6.6):
+    """Nudge labels off each other, off the quadrant captions, and inward.
+
+    Anything that still cannot be placed clear gets no label at all: the dot
+    keeps its hover text and the quadrant roster underneath carries the name,
+    and an unreadable label is worse than no label.
+    """
+    taken, placed = list(blocked), []
     for px, py, text in points:
-        w = 6.6 * len(text) + 10
+        w = char_w * len(text) + 10
         right = [(11, 4), (11, -11), (11, 15), (11, -22), (11, 26)]
         left = [(-w - 9, 4), (-w - 9, -11), (-w - 9, 15), (-w - 9, -22), (-w - 9, 26)]
         # A dot near the right edge gets its label on the inside, or it runs off.
@@ -56,17 +69,17 @@ def place_labels(points, x0, x1):
                 placed.append((x, y, text))
                 break
         else:
-            x = px - w - 9 if px + 11 + w > x1 else px + 11
-            taken.append((x, py - 7, x + w, py + 7))
-            placed.append((x, py + 4, text))
+            placed.append(None)
     return placed
 
 
 def matrix_svg(matrix, by_id, anchor_id):
     x_axis, y_axis = matrix.get("x", {}), matrix.get("y", {})
     quads = matrix.get("quadrants", {})
-    x0, x1 = PAD["l"], W - PAD["r"]
-    y0, y1 = PAD["t"], H - PAD["b"]
+    dense = len(matrix.get("points", [])) > DENSE_AT
+    w_, h_ = (DENSE_W, DENSE_H) if dense else (W, H)
+    x0, x1 = PAD["l"], w_ - PAD["r"]
+    y0, y1 = PAD["t"], h_ - PAD["b"]
     mx, my = (x0 + x1) / 2, (y0 + y1) / 2
 
     def sx(v):
@@ -75,8 +88,8 @@ def matrix_svg(matrix, by_id, anchor_id):
     def sy(v):
         return y1 - (max(0.0, min(10.0, float(v))) / 10.0) * (y1 - y0)
 
-    s = ['<svg viewBox="0 0 %d %d" class="matrix" role="img" aria-label="%s">'
-         % (W, H, esc(matrix.get("title", "2x2 matrix")))]
+    s = ['<svg viewBox="0 0 %d %d" class="matrix%s" role="img" aria-label="%s">'
+         % (w_, h_, " dense" if dense else "", esc(matrix.get("title", "2x2 matrix")))]
     s.append('<rect x="%g" y="%g" width="%g" height="%g" class="plot"/>' % (x0, y0, x1 - x0, y1 - y0))
     s.append('<rect x="%g" y="%g" width="%g" height="%g" class="q tr"/>' % (mx, y0, x1 - mx, my - y0))
     s.append('<rect x="%g" y="%g" width="%g" height="%g" class="q bl"/>' % (x0, my, mx - x0, y1 - my))
@@ -85,24 +98,29 @@ def matrix_svg(matrix, by_id, anchor_id):
 
     corners = [("tl", x0 + 10, y0 + 20, "start"), ("tr", x1 - 10, y0 + 20, "end"),
                ("bl", x0 + 10, y1 - 10, "start"), ("br", x1 - 10, y1 - 10, "end")]
+    blocked = []
     for key, cx, cy, anchor in corners:
         if quads.get(key):
+            label = ellipsis(quads[key], 38)
             s.append('<text x="%g" y="%g" text-anchor="%s" class="qlabel">%s</text>'
-                     % (cx, cy, anchor, esc(quads[key])[:38]))
+                     % (cx, cy, anchor, esc(label)))
+            width = 6.2 * len(label)
+            left = cx - width if anchor == "end" else cx
+            blocked.append((left, cy - 11, left + width, cy + 4))
 
     # axes: name in the middle, poles at the ends
     s.append('<text x="%g" y="%g" text-anchor="middle" class="axis-name">%s</text>'
-             % ((x0 + x1) / 2, H - 34, esc(x_axis.get("label", ""))))
+             % ((x0 + x1) / 2, h_ - 34, esc(x_axis.get("label", ""))))
     s.append('<text x="%g" y="%g" text-anchor="start" class="pole">%s</text>'
-             % (x0, y1 + 20, esc(x_axis.get("low", ""))[:34]))
+             % (x0, y1 + 20, esc(ellipsis(x_axis.get("low", ""), 42))))
     s.append('<text x="%g" y="%g" text-anchor="end" class="pole">%s</text>'
-             % (x1, y1 + 20, esc(x_axis.get("high", ""))[:34]))
+             % (x1, y1 + 20, esc(ellipsis(x_axis.get("high", ""), 42))))
     s.append('<text transform="translate(26,%g) rotate(-90)" text-anchor="middle" class="axis-name">%s</text>'
              % ((y0 + y1) / 2, esc(y_axis.get("label", ""))))
     s.append('<text transform="translate(46,%g) rotate(-90)" text-anchor="start" class="pole">%s</text>'
-             % (y1, esc(y_axis.get("low", ""))[:30]))
+             % (y1, esc(ellipsis(y_axis.get("low", ""), 36))))
     s.append('<text transform="translate(46,%g) rotate(-90)" text-anchor="end" class="pole">%s</text>'
-             % (y0, esc(y_axis.get("high", ""))[:30]))
+             % (y0, esc(ellipsis(y_axis.get("high", ""), 36))))
 
     pts, labels = [], []
     for p in matrix.get("points", []):
@@ -112,15 +130,22 @@ def matrix_svg(matrix, by_id, anchor_id):
         is_anchor = (p.get("company") == anchor_id or prof.get("domain") == anchor_id
                      or prof.get("level") == 0)
         pts.append((cx, cy, name, is_anchor, prof.get("level", 1), p.get("evidence", "")))
-        labels.append((cx, cy, name[:26]))
-    for (cx, cy, name, is_anchor, level, evidence), (lx, ly, text) in zip(
-            pts, place_labels(labels, x0, x1)):
+        labels.append((cx, cy, ellipsis(name, 22)))
+    # Anchor last so it is never buried, and always labelled.
+    order = sorted(range(len(pts)), key=lambda i: pts[i][3])
+    spots = place_labels(labels, x0, x1, blocked, 5.8 if dense else 6.6)
+    for i in order:
+        cx, cy, name, is_anchor, level, evidence = pts[i]
+        spot = spots[i]
         cls = "dot anchor" if is_anchor else "dot lvl%s" % (level if level in (1, 2) else 1)
         s.append('<g class="pt"><title>%s — %s</title>'
                  '<circle cx="%g" cy="%g" r="%g" class="%s"/>'
-                 '<text x="%g" y="%g" class="plabel%s">%s</text></g>'
-                 % (esc(name), esc(evidence)[:400], cx, cy, 8 if is_anchor else 5.5, cls,
-                    lx, ly, " anchor" if is_anchor else "", esc(text)))
+                 % (esc(name), esc(evidence)[:400], cx, cy, 8 if is_anchor else 5.5, cls))
+        if spot or is_anchor:
+            lx, ly, text = spot if spot else (cx + 11, cy + 4, ellipsis(name, 22))
+            s.append('<text x="%g" y="%g" class="plabel%s">%s</text>'
+                     % (lx, ly, " anchor" if is_anchor else "", esc(text)))
+        s.append("</g>")
     s.append("</svg>")
     return "".join(s)
 
@@ -172,6 +197,7 @@ svg.matrix{width:100%;height:auto;display:block}
 .dot{fill:var(--l1);stroke:var(--card);stroke-width:1.5}
 .dot.lvl2{fill:var(--l2)} .dot.anchor{fill:var(--accent);stroke-width:2.5}
 .plabel{fill:var(--ink);font-size:11.5px} .plabel.anchor{font-weight:700;fill:var(--accent)}
+svg.dense .plabel{font-size:10.5px} svg.dense .qlabel{font-size:10px}
 .pt:hover .dot{r:9}
 .quads{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;font-size:12.5px}
 .quad{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
@@ -232,7 +258,7 @@ def build_html(analysis, sites, title):
             if m.get("why_it_matters"):
                 out.append('<p class="why">%s</p>' % esc(m["why_it_matters"]))
             out.append(matrix_svg(m, by_id, anchor_id))
-            if len(m.get("points", [])) >= 6:
+            if len(m.get("points", [])) >= 6:   # the roster carries any name the chart could not
                 out.append(quadrant_roster(m, by_id))
             if m.get("reading"):
                 out.append('<p class="reading">%s</p>' % esc(m["reading"]))

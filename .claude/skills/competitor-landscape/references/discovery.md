@@ -17,9 +17,20 @@ who knows the market would recognise.
 Work down it and stop when you have 5-8 solid level-1 names. Precision falls as
 you descend, so spend the early steps properly.
 
+**0. Trust the site over the coverage.** When search results and a company's
+own pages disagree about what it does, the site wins. For young companies the
+normal failure is stale-but-recent press: riff.ai's own Series A coverage
+describes an enterprise vibe-coding product it has since pivoted away from, and
+building the roster from that would have produced an entirely wrong market. Read
+the anchor's copy first, and treat anything search tells you that contradicts it
+as history.
+
 **1. The anchor's own comparison pages.** `scan_site.py` surfaces these as
 `named_competitors` (parsed from `/compare/x-vs-y`, `/alternatives/x`, and
-"vs X" headings) and `signal_urls.compare`. A company that publishes a page
+"vs X" headings) and `signal_urls.compare`. It also probes `/alternatives`,
+`/compare`, `/competitors` and `/vs` directly, because a site with thousands of
+generated pages can bury its own competitor index. On atlas.co that probe finds
+an index naming 45 competitors before a single search is run. A company that publishes a page
 arguing it beats Acme has told you Acme is a competitor. Nothing beats that for
 precision — start here, and fetch one or two of those pages if the names are
 thin.

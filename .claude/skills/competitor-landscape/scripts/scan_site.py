@@ -106,12 +106,34 @@ EXCLUDE_PATTERNS = [
 CASE_STUDY_PATTERN = r"/(customers?|case-stud(y|ies)|success-stories|testimonials)(/|$|-)"
 
 # URLs that are not worth fetching but do name other companies.
+# A competitor index is a path SEGMENT (/alternatives/, /compare/) or a "-vs-"
+# infix. Substring matching turns /blog/alternative-fueling-stations/ into a
+# competitor signal, which is how the highest-confidence signal in this skill
+# ends up being noise.
 SIGNAL_PATTERNS = {
-    "compare": r"/(compare|vs|versus|alternatives?|competitors?)(/|$|-)",
+    "compare": r"(?:^|/)(?:compare|comparison|versus|vs|alternatives?|competitors?)(?:/|$)|-vs-",
     "integrations": r"/(integrations?|marketplace|apps?-directory|connectors?)(/|$|-)",
     "partners": r"/(partners?|resellers?|ecosystem)(/|$|-)",
     "customers": CASE_STUDY_PATTERN,
 }
+
+# Worth probing directly: these paths carry the two things users ask for most,
+# and a 404 is itself a finding ("this company publishes no price").
+PROBE_PATHS = {
+    "compare": ["/alternatives", "/compare", "/competitors", "/vs"],
+    "pricing": ["/pricing", "/plans", "/pricing-plans", "/price"],
+}
+
+PRICE_RE = re.compile(
+    r"(?:[$£€]\s?\d[\d,]*(?:\.\d{1,2})?|\d[\d,]*(?:\.\d{1,2})?\s?(?:USD|EUR|GBP|NOK|SEK|DKK))"
+    r"(?:\s?(?:/|per\s)\s?(?:user|seat|month|mo\b|year|yr\b|agent|licen[cs]e|employee))?", re.I)
+
+PRICE_PHRASES = [
+    "contact sales", "talk to sales", "request a quote", "get a quote",
+    "custom pricing", "contact us for pricing", "free forever", "free plan",
+    "free trial", "billed annually", "billed monthly", "per user per month",
+    "no credit card", "starts at", "starting at", "from only",
+]
 
 CTA_PHRASES = [
     "get started", "start free", "start for free", "free trial", "try free",
@@ -156,6 +178,8 @@ class PageParser(HTMLParser):
         self.headings = {"h1": [], "h2": [], "h3": []}
         self.links = []            # (href, anchor_text)
         self.words = 0
+        self.text = []
+        self._text_len = 0
         self._skip_depth = 0
         self._capture = None       # heading tag currently open
         self._buf = []
@@ -226,6 +250,26 @@ class PageParser(HTMLParser):
         if self._link_href is not None:
             self._link_buf.append(data)
         self.words += len(data.split())
+        if self._text_len < 120_000:
+            self.text.append(data)
+            self._text_len += len(data)
+
+
+def price_signals(visible_text):
+    """Prices sit in divs and tables, so headings alone never see them."""
+    text = re.sub(r"\s+", " ", visible_text)
+    out, seen = [], set()
+    for m in PRICE_RE.finditer(text):
+        token = norm_space(m.group(0))
+        if token.lower() not in seen and len(token) < 40:
+            seen.add(token.lower())
+            out.append(token)
+    low = text.lower()
+    for phrase in PRICE_PHRASES:
+        if phrase in low and phrase not in seen:
+            seen.add(phrase)
+            out.append(phrase)
+    return out[:18]
 
 
 def parse_markdown_ish(text):
@@ -360,7 +404,7 @@ def clean_url(base, href):
     return urllib.parse.urlunsplit((parts.scheme, parts.netloc, path, "", ""))
 
 
-def sitemap_urls(fetcher, root, limit=3000):
+def sitemap_urls(fetcher, root, limit=3000, scan_limit=40000):
     """Best-effort sitemap crawl: robots.txt pointers, then /sitemap.xml."""
     seeds, seen, out = [], set(), []
     _, status, text, _, _ = fetcher.get(root + "/robots.txt", tries=1)
@@ -369,7 +413,7 @@ def sitemap_urls(fetcher, root, limit=3000):
                   for u in re.findall(r"(?im)^\s*sitemap:\s*(\S+)", text)]
     seeds += [root + "/sitemap.xml", root + "/sitemap_index.xml"]
     queue, fetched = list(dict.fromkeys(seeds)), 0
-    while queue and fetched < 4 and len(out) < limit:
+    while queue and fetched < 4 and len(out) < scan_limit:
         sm = queue.pop(0)
         if sm in seen:
             continue
@@ -383,6 +427,11 @@ def sitemap_urls(fetcher, root, limit=3000):
             queue += [u for u in locs[:4] if u not in seen]
         else:
             out += locs
+    # Index pages live near the root; programmatic pages do not. Truncating in
+    # document order is how a site with 3000 generated pages hides its own
+    # /alternatives/ index.
+    out = list(dict.fromkeys(out))
+    out.sort(key=lambda u: (urllib.parse.urlsplit(u).path.strip("/").count("/"), len(u)))
     return out[:limit]
 
 
@@ -415,7 +464,7 @@ def extract_page(fetcher, url, page_type, notes, _followed=False):
         "url": url, "final_url": final_url, "page_type": page_type,
         "status": status, "error": err, "title": "", "meta_description": "",
         "og_title": "", "og_description": "", "canonical": "",
-        "h1": [], "h2": [], "h3": [], "word_count": 0, "ctas": [],
+        "h1": [], "h2": [], "h3": [], "word_count": 0, "ctas": [], "price_signals": [],
     }
     if status != 200 or not text:
         return page
@@ -446,6 +495,8 @@ def extract_page(fetcher, url, page_type, notes, _followed=False):
     page["h2"] = p.headings["h2"][:25]
     page["h3"] = p.headings["h3"][:35]
     page["word_count"] = p.words
+    if page_type in ("pricing", "home") or re.search(r"/(pricing|plans|price)", url.lower()):
+        page["price_signals"] = price_signals(" ".join(p.text))
     ctas, seen = [], set()
     for _, text_ in p.links:
         low = text_.lower().strip(" →›»·|")
@@ -459,18 +510,35 @@ def extract_page(fetcher, url, page_type, notes, _followed=False):
 
 
 def guess_name(title, site_name, domain):
-    """Pick the brand out of an SEO title by matching it against the domain."""
+    """Pick the brand out of an SEO title by matching it against the domain.
+
+    Titles are written for search engines, not for us: "EUROFUNK I Creating
+    safety by technology." and "Terrafix -" are both real. Anything that comes
+    out longer than a brand name or trailing punctuation is not a name.
+    """
     root = re.split(r"[.\-]", domain)[0].lower()
-    parts = [p.strip() for p in re.split(r"\s[|\u2013\u2014\u00b7\-:]\s|\|", title or "") if p.strip()]
-    if site_name:
-        return site_name
+
+    def tidy(text):
+        return re.sub(r"\s+", " ", str(text or "")).strip(" -\u2013\u2014|:\u00b7.,")
+
+    def acceptable(text):
+        return text and len(text) <= 32
+
+    # " I " is a common typographic stand-in for a pipe in SEO titles.
+    parts = [tidy(x) for x in re.split(r"\s[|\u2013\u2014\u00b7\-:]\s|\sI\s|\|", title or "")]
+    parts = [x for x in parts if x]
+    for candidate in ([tidy(site_name)] if site_name else []):
+        if acceptable(candidate):
+            return candidate
     for part in parts:
-        if re.sub(r"[^a-z0-9]", "", part.lower()) == root:
+        if re.sub(r"[^a-z0-9]", "", part.lower()) == root and acceptable(part):
             return part
     for part in parts:
-        if root in re.sub(r"[^a-z0-9]", "", part.lower()):
+        if root in re.sub(r"[^a-z0-9]", "", part.lower()) and acceptable(part):
             return part
-    return min(parts, key=len) if parts else domain
+    # No title fragment names the brand, so trust the domain over a slogan:
+    # "Alerting solutions - blue light organizations" is not a company name.
+    return root.capitalize()
 
 
 def named_competitors(urls, headings, own_name):
@@ -501,7 +569,22 @@ def named_competitors(urls, headings, own_name):
     return out[:25]
 
 
-def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet=False):
+def probe(fetcher, root, paths):
+    """Ask directly for the paths that matter. A 404 is a finding, not a miss."""
+    found = {}
+    for path in paths:
+        url = root + path
+        if not fetcher.allowed(url):
+            continue
+        _, status, text, _, _ = fetcher.get(url, tries=1)
+        found[path] = status
+        if status == 200 and len(text) > 500:
+            return url, found
+    return "", found
+
+
+def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet=False,
+                 also_urls=()):
     raw = target.strip()
     if not raw.startswith("http"):
         raw = "https://" + raw.lstrip("/")
@@ -519,6 +602,11 @@ def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet
         "sitemap_urls_seen": 0, "notes": notes,
     }
 
+    # A path on the target means "this product", not "this company" -- scanning
+    # paloaltonetworks.com returns corporate copy, not Cortex XSOAR.
+    scope = parts.path.rstrip("/") if parts.path.strip("/") else ""
+    if scope:
+        notes.append("scoped to %s subtree" % scope)
     home = extract_page(fetcher, root + (parts.path or "/"), "home", notes)
     if home is None or home["status"] != 200:
         # www. and the bare domain disagree surprisingly often.
@@ -527,6 +615,7 @@ def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet
         home = extract_page(fetcher, alt + "/", "home", notes)
     if home is None or home["status"] != 200:
         notes.append("homepage unreachable (%s)" % (home and (home["error"] or home["status"])))
+        result["headings_found"] = 0
         log("  !! %s unreachable" % domain, quiet)
         return result
 
@@ -538,6 +627,12 @@ def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet
 
     # Candidates: homepage nav first (curated by the company), then sitemap.
     candidates = {}
+    must_fetch = []
+    for url in also_urls:
+        url = clean_url(root, url)
+        if url and same_site(url, domain):
+            candidates[url] = classify(url) or "product"
+            must_fetch.append((url, candidates[url]))
     for url, anchor in home.pop("_links", []):
         if url and same_site(url, domain) and not excluded(url, include_case_studies):
             kind = classify(url, anchor)
@@ -562,12 +657,39 @@ def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet
                             ("/features", "features"), ("/about", "about")]:
             candidates[root + guess] = kind
 
-    signal_pool = [clean_url(root, u) for u in sm] + [u for u, _ in candidates.items()]
+    if scope:
+        candidates = {u: k for u, k in candidates.items()
+                      if urllib.parse.urlsplit(u).path.startswith(scope)}
+
+    # Signals go through the same exclusions as pages: /blog/ must never supply
+    # a competitor name.
+    signal_pool = [u for u in ([clean_url(root, x) for x in sm] + list(candidates))
+                   if u and same_site(u, domain) and not excluded(u, include_case_studies)]
     for label, pattern in SIGNAL_PATTERNS.items():
         hits = [u for u in dict.fromkeys(signal_pool)
-                if u and same_site(u, domain) and re.search(pattern, urllib.parse.urlsplit(u).path.lower() + "/")]
+                if re.search(pattern, urllib.parse.urlsplit(u).path.lower())]
         if hits:
             result["signal_urls"][label] = hits[:15]
+
+    result["probes"] = {}
+    if not result["signal_urls"].get("compare"):
+        hit, statuses = probe(fetcher, root, PROBE_PATHS["compare"])
+        result["probes"].update(statuses)
+        if hit:
+            result["signal_urls"].setdefault("compare", []).insert(0, hit)
+            candidates[hit] = "compare"
+            must_fetch.append((hit, "compare"))
+            notes.append("found competitor index by probing: %s" % hit)
+    if not any(k == "pricing" for k in candidates.values()):
+        hit, statuses = probe(fetcher, root, PROBE_PATHS["pricing"])
+        result["probes"].update(statuses)
+        if hit:
+            candidates[hit] = "pricing"
+            must_fetch.append((hit, "pricing"))
+            notes.append("found pricing page by probing: %s" % hit)
+        else:
+            notes.append("no pricing page: probed %s" % ", ".join(
+                "%s=%s" % (k, v) for k, v in statuses.items()))
 
     patterns = dict(TYPE_PATTERNS)
 
@@ -581,8 +703,15 @@ def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet
             base *= 0.55    # matched a deep slug, not a top-level section
         return base - 10 * depth - len(url) / 1000.0
 
+    # Pages we went looking for on purpose are never crowded out by discovery.
     picked, counts = [], {}
+    for url, kind in must_fetch:
+        if url not in [u for u, _ in picked]:
+            picked.append((url, kind))
+            counts[kind] = counts.get(kind, 0) + 1
     for url, kind in sorted(candidates.items(), key=score, reverse=True):
+        if url in [u for u, _ in picked]:
+            continue
         if len(picked) >= max_pages - 1:
             break
         if counts.get(kind, 0) >= TYPE_CAP.get(kind, 1):
@@ -602,6 +731,10 @@ def scan_company(target, fetcher, max_pages=8, include_case_studies=False, quiet
         elif page["status"] != 200:
             notes.append("%s -> %s" % (url, page["error"] or page["status"]))
     result["pages"] = pages
+    result["candidates_found"] = len(candidates)
+    if len(candidates) > max_pages - 1:
+        notes.append("page cap bound: %d candidates found, %d fetched"
+                     % (len(candidates), len(pages)))
 
     result["headings_found"] = sum(len(p["h1"]) + len(p["h2"]) + len(p["h3"]) for p in pages)
     if result["headings_found"] == 0:
@@ -629,6 +762,8 @@ def main():
                     help="request UA; pass %r to identify as a bot" % BOT_UA)
     ap.add_argument("--ignore-robots", action="store_true")
     ap.add_argument("--include-case-studies", action="store_true")
+    ap.add_argument("--also-urls", default="",
+                    help="comma-separated URLs to scan in addition to whatever discovery finds")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
 
@@ -638,7 +773,9 @@ def main():
     def work(target):
         fetcher = Fetcher(args.user_agent, args.timeout, args.delay, not args.ignore_robots)
         try:
-            return scan_company(target, fetcher, args.max_pages, args.include_case_studies, args.quiet)
+            extra = [u.strip() for u in args.also_urls.split(",") if u.strip()]
+            return scan_company(target, fetcher, args.max_pages, args.include_case_studies,
+                                args.quiet, extra)
         except Exception as e:                            # noqa: BLE001
             log("  !! %s crashed: %s" % (target, e), args.quiet)
             return {"slug": slugify(target), "input": target, "domain": target,
