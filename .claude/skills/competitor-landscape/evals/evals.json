@@ -1,0 +1,112 @@
+{
+  "skill_name": "competitor-landscape",
+  "evals": [
+    {
+      "id": 1,
+      "name": "known-saas-full-depth",
+      "prompt": "We've got a positioning workshop next Thursday and I need to actually know where we sit before I walk in there. Can you map the competitive landscape around cal.com — go two levels out, so their competitors and then their competitors' competitors — and give me a spreadsheet plus some 2x2s I can drop into the deck? I care most about how people are positioning and what they're charging.",
+      "expected_output": "A workbook and an HTML report. ~25-35 companies across levels 0-2, each with meta title / meta description / H1 copy captured from their own site. 6+ 2x2 matrices with named poles, every company scored with a quotable line of evidence, and a written reading per matrix naming clusters and white space.",
+      "files": [],
+      "assertions": [
+        "Delivers a spreadsheet file (.xlsx or .csv) with one row per company",
+        "Delivers 2x2 matrices as a viewable artifact (HTML, image or embedded chart), not only as prose",
+        "Produces at least 4 distinct 2x2 matrices",
+        "Covers at least 15 distinct companies",
+        "Records companies at more than one discovery level (competitors and competitors-of-competitors are distinguishable)",
+        "Includes verbatim marketing copy from the companies' own sites (meta title, meta description or H1) rather than only paraphrased descriptions",
+        "Each plotted position carries evidence traceable to a specific page or quote",
+        "Matrix axes have market-specific named poles, not generic labels like 'low/high' or 'price vs features'",
+        "The anchor company (Cal.com) appears on every matrix",
+        "Captures pricing information for a majority of the companies",
+        "Every company listed has a real, resolvable website (no fabricated competitors)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "obscure-company-fallback",
+      "prompt": "blixon.com - who are their competitors? i want the full market map. if you can't find competitor lists for them just work it out from whats on their site",
+      "expected_output": "Recognises that blixon.com yields no usable copy (parked domain / JS redirect) and says so rather than inventing a profile. Disambiguates the Blixon name via search, builds the roster from category search instead of brand search, and either delivers a map with the gap stated plainly or stops and asks which Blixon is meant.",
+      "files": [],
+      "assertions": [
+        "States explicitly that blixon.com returned no usable site copy (parked domain / client-side redirect / no headings)",
+        "Does not fabricate a Blixon product, positioning or category as if it had been read from the site",
+        "Surfaces that the Blixon/Blix name matches several different real companies",
+        "Either asks the user which company is meant, or picks one and states that assumption plainly in the answer",
+        "Any competitor set presented is derived from named evidence (search results or site copy), not invented",
+        "The final answer names its coverage gaps rather than presenting the map as complete"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "fast-single-level",
+      "prompt": "quick one — pitching a prospect tomorrow morning and I want to sound smart about the market. one level of competitors for tines.com is fine, don't go crazy. a couple of 2x2s on positioning and how they price would be perfect.",
+      "expected_output": "Respects the shallow scope: 6-9 companies, level 1 only, 4-6 matrices weighted toward positioning and commercial model. Still grounded in scraped copy with evidence per point, and delivered quickly rather than expanded into a full level-2 run.",
+      "files": [],
+      "assertions": [
+        "Stays at one level of competitors — does not expand into a competitors-of-competitors map",
+        "Covers between 5 and 12 companies",
+        "Produces at least 2 matrices, including one on positioning and one on pricing or commercial model",
+        "The pricing axis reflects real pricing evidence per company (published price vs contact sales)",
+        "Each plotted position carries evidence traceable to a specific page or quote",
+        "Delivers a usable answer without blocking on clarifying questions",
+        "Every company listed has a real, resolvable website (no fabricated competitors)"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "bliksund-nordic-vertical",
+      "prompt": "Map the competitive landscape for bliksund.com — two levels out. Who are they up against, and where do they sit on positioning and messaging versus everyone else? Spreadsheet plus the 2x2s please.",
+      "expected_output": "A landscape of the Nordic/European emergency-services software market with Bliksund placed on every matrix, built from vendors' own copy. Handles a market where pricing is quote-only and much of the corpus is non-English.",
+      "files": [],
+      "assertions": [
+        "Correctly identifies Bliksund as a Nordic emergency-services / prehospital software company from its own site copy, not from a same-sounding company",
+        "Competitor set is populated with actual emergency services, EMS, fire and rescue or prehospital software vendors — not generic SaaS or unrelated 'Blik'-named firms",
+        "Includes European/Nordic vendors rather than defaulting to a US-only roster",
+        "Covers at least 12 companies across more than one discovery level",
+        "Captures verbatim meta title / meta description / H1 copy from the companies' own sites",
+        "Every plotted position carries evidence traceable to a specific page or quote",
+        "Matrix axes have market-specific named poles rather than generic labels",
+        "Handles the fact that most vendors in this market publish no pricing — treats quote-only pricing as a signal rather than a missing field",
+        "Bliksund appears on every matrix",
+        "Every company listed has a real, resolvable website"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "riff-young-ai-company",
+      "prompt": "riff.ai — I need the market map, two levels out. They're pretty new so there might not be much written about them; work it out from what's on their site if you have to.",
+      "expected_output": "A market map for a young company with little third-party coverage: discovery falls back to category search derived from Riff's own copy, the roster reflects supply-chain/procurement AI rather than generic AI startups, and thin evidence is stated rather than padded.",
+      "files": [],
+      "assertions": [
+        "Identifies the correct Riff (AI agents for procurement / supply chain / operations inside ERPs) and does not conflate it with other companies or products named Riff",
+        "When brand-based competitor search returns little, falls back to category search derived from Riff's own site copy",
+        "Competitor set reflects the actual category (supply chain / procurement / operations AI agents or ERP-adjacent automation), not generic 'AI agent' startups",
+        "Covers at least 12 companies across more than one discovery level",
+        "Captures verbatim meta title / meta description / H1 copy from the companies' own sites",
+        "Every plotted position carries evidence traceable to a specific page or quote",
+        "States plainly where evidence was thin rather than padding the map with speculation",
+        "Riff appears on every matrix",
+        "Every company listed has a real, resolvable website"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "atlas-crowded-category",
+      "prompt": "Can you do a full competitive landscape on atlas.co? Go two levels deep and give me the spreadsheet plus the 2x2s — I want to see where the whitespace is.",
+      "expected_output": "A full two-level map of the GIS/spatial analytics category with 15+ companies, 6+ matrices, and named whitespace — an empty quadrant with a stated reason.",
+      "files": [],
+      "assertions": [
+        "Identifies the correct Atlas (AI-native GIS / mapping platform at atlas.co) and does not drift to other companies named Atlas",
+        "Competitor set covers the GIS and spatial-analytics category including both incumbents and newer entrants",
+        "Covers at least 15 companies across more than one discovery level",
+        "Captures verbatim meta title / meta description / H1 copy from the companies' own sites",
+        "Produces at least 6 matrices",
+        "Every plotted position carries evidence traceable to a specific page or quote",
+        "Names specific whitespace — an empty quadrant with a stated reason, not just 'there is a gap'",
+        "Matrix axes have market-specific named poles rather than generic labels",
+        "Atlas appears on every matrix",
+        "Every company listed has a real, resolvable website"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
 __pycache__/
 *.pyc
-*-landscape/
-evals/workspace/
+# generated run output at the repo root (not the skill dir, which ends in -landscape too)
+/*-landscape/
