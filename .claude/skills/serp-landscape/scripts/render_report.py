@@ -251,7 +251,9 @@ def build_html(analysis, metrics, title):
             weight = max(1.0, float(weight))
         except (TypeError, ValueError):
             weight = 1.0
-        return round(min(15.0, 3.4 + 2.2 * (weight ** 0.5) / 2.2), 1)
+        # Square root, so area rather than radius tracks demand and a big topic
+        # does not swallow the chart.
+        return round(min(15.0, 3.4 + weight ** 0.5), 1)
 
     out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
            '<meta name="viewport" content="width=device-width,initial-scale=1">',

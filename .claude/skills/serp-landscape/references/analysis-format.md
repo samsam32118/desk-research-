@@ -1,7 +1,9 @@
 # analysis.json
 
-The one file you write by hand. `check_analysis.py`, `build_workbook.py` and
-`render_report.py` all read it, so the field names matter.
+The one file you author. You write the matrices — the questions, the poles,
+the quadrant labels and the reading; `build_points.py` fills the coordinates
+from the data. `check_analysis.py`, `build_workbook.py` and `render_report.py`
+all read it, so the field names matter.
 
 ## Schema
 
@@ -33,9 +35,11 @@ The one file you write by hand. `check_analysis.py`, `build_workbook.py` and
                     "tr": "Big and locked", "bl": "Small and open",
                     "br": "Small and locked"},
 
+      // Leave "points" out and build_points.py fills it. Shown here so you
+      // know what it produces, and so a judged matrix can be written by hand.
       "points": [
         {"id": "espresso machine for home",   // keyword, URL or domain
-         "x": 3.2, "y": 8.6,                  // 0-10, copied from metrics.json
+         "x": 3.2, "y": 8.6,                  // 0-10, from metrics.json
          "size": 122,                         // optional; defaults to demand mass
          "evidence": "8 of 10 results are buying guides; #1 is a 5,985-word
                       listicle titled 'Top 5 Best Espresso Machines with
@@ -71,7 +75,7 @@ The one file you write by hand. `check_analysis.py`, `build_workbook.py` and
 - **A bound axis must match the data.** When `x.metric` is set, every
   `points[].x` is compared against
   `metrics.json` → `axes.<unit>.<metric>.values[<id>]` and must agree within
-  0.6. Copy the numbers; do not retype them.
+  0.6. Let `build_points.py` write them rather than typing them.
 - **`metric` names must be in the catalogue.** The error message lists what is
   available for that unit.
 - `x` and `y` are numbers on 0-10.
@@ -100,6 +104,29 @@ The workbook and report read `metrics.json` directly, so the data sheets are
 complete whether or not you have written `analysis.json` yet. If the user wants
 to see the raw table before any interpretation, build the workbook first and
 re-run it after the analysis to fill in the Matrices sheet.
+
+## Filling the points
+
+Do not type coordinates. Write the matrices with their axes, poles and quadrant
+labels, leave `points` out, and run:
+
+```bash
+python3 scripts/build_points.py --metrics metrics.json --analysis analysis.json \
+    --write --limit 60
+```
+
+It fills every matrix whose axes both name a metric, and reports each one's
+spread and quadrant occupancy so you can write the `reading` from real counts.
+Options:
+
+- `--limit N` — most points per matrix. Keywords are kept by demand mass and
+  pages by visibility, so trimming drops trivia rather than the market.
+- `--refill` — replace points that are already there.
+- `"only": ["kw1", "kw2"]` on a matrix — plot exactly these ids instead of the
+  top N.
+
+A matrix with a judged axis is skipped and stays yours to write, with a quote
+on every point.
 
 ## Validate before rendering
 

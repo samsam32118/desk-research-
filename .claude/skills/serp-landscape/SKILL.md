@@ -188,8 +188,22 @@ computed metric wherever one exists:
              "evidence": "8 of 10 are buying guides; #1 is a 5,985-word listicle"}]}
 ```
 
-Copy bound coordinates straight from `metrics.json` → `axes.<unit>.<metric>.values`.
-Do not retype them from memory; step 6 checks them and will fail.
+Then leave `points` out and let the coordinates be filled from the data:
+
+```bash
+python3 "$SKILL/scripts/build_points.py" --metrics "$OUT/metrics.json" \
+    --analysis "$OUT/analysis.json" --write --limit 60
+```
+
+Six matrices over a 100-keyword run is around six hundred coordinates; typing
+those is slow, and a number copied by hand is a number that can drift from the
+measurement it claims. This fills every matrix whose axes both name a metric,
+generates evidence from the same numbers, and prints each matrix's spread and
+quadrant occupancy — which is what you need to write the `reading`. It leaves
+judged matrices alone, because their points are yours to quote.
+
+Then write the `reading` for each matrix, the `takeaways` and the
+`content_findings` yourself. That is the part nobody can compute.
 
 An axis with no measurement is allowed when the question is genuinely
 qualitative — how a title frames its promise, say — but then every point needs

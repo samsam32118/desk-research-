@@ -83,6 +83,10 @@ does not — they measure nearly the same thing and you will get a diagonal.
 topics nobody owns are the top-left, and they are usually the reason the user
 asked.
 
+Coordinates are filled by `build_points.py`, not typed — see
+`references/analysis-format.md`. Your job is choosing the pair and writing what
+the chart means.
+
 ## Judged axes
 
 Some questions are real and not measured. How a title frames its promise
