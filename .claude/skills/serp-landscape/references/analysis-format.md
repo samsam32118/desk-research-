@@ -90,7 +90,7 @@ all read it, so the field names matter.
 
 | Field | Workbook | Report |
 |---|---|---|
-| `matrices[].points[]` | Matrices sheet, one row per point | dots |
+| `matrices[].points[]` | Matrices sheet + a scatter on 2x2 charts | dots |
 | `evidence` | Matrices sheet column | hover text on each dot |
 | `x.metric` / `y.metric` | Matrices sheet columns | "measured: …" under the axis name |
 | `market_definition`, `takeaways` | — | header and findings list |

@@ -110,6 +110,12 @@ def main():
     ap.add_argument("--write", action="store_true", help="write back into analysis.json")
     ap.add_argument("--refill", action="store_true",
                     help="replace points that are already there")
+    ap.add_argument("--drop", default="",
+                    help="comma-separated ids to leave off every map -- use it for keywords "
+                         "you have looked at and judged to be a different subject that "
+                         "happens to share a word with the seed. Nothing is dropped for you: "
+                         "an isolated SERP is just as often a geography you do not compete "
+                         "in yet, and that is a finding rather than noise")
     args = ap.parse_args()
 
     with open(args.metrics, encoding="utf-8") as fh:
@@ -149,12 +155,16 @@ def main():
         if wanted:
             ids = [i for i in wanted if i in rows]
 
-        points, dropped = [], 0
+        drop = {d.strip() for d in args.drop.split(",") if d.strip()}
+        points, dropped, strays = [], 0, 0
         for pid in ids:
             if pid not in xvals or pid not in yvals:
                 dropped += 1
                 continue
             row = rows.get(pid, {})
+            if pid in drop:
+                strays += 1
+                continue
             points.append({
                 "id": pid, "x": xvals[pid], "y": yvals[pid],
                 "evidence": evidence_for(unit, row, metrics, xa, ya,
@@ -164,6 +174,8 @@ def main():
         entry = {"matrix": mid, "action": "filled", "unit": unit, "points": len(points)}
         if dropped:
             entry["skipped_no_value"] = dropped
+        if strays:
+            entry["skipped_by_drop"] = strays
         if points:
             xs = [p["x"] for p in points]
             ys = [p["y"] for p in points]

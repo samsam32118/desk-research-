@@ -53,12 +53,92 @@ class MiniXlsx:
 
     def __init__(self):
         self.sheets = []
+        self.charts = []            # scatter charts, all hosted on one sheet
+        self.chart_host = ""
 
     def add(self, name, headers, rows, widths=None):
         clean = re.sub(r"[\[\]:*?/\\]", "-", str(name))[:31] or "Sheet"
         self.sheets.append((clean, headers, rows, widths or []))
+        return clean
 
-    def _sheet_xml(self, headers, rows, widths):
+    def add_scatter(self, host, title, x_title, y_title, x_ref, y_ref):
+        """A native Excel scatter, so the 2x2s survive leaving the report.
+
+        People paste workbook charts into decks and re-filter them; a picture
+        of a chart cannot be re-cut, and coordinates with no chart make the
+        reader build one. The ranges point at the Matrices sheet, so editing a
+        coordinate there moves the dot.
+        """
+        self.chart_host = host
+        self.charts.append({"title": title, "x_title": x_title, "y_title": y_title,
+                            "x_ref": x_ref, "y_ref": y_ref})
+
+    def _chart_xml(self, chart, idx):
+        ax_x, ax_y = 100000 + idx * 2, 100001 + idx * 2
+
+        def axis(axid, cross, pos, title):
+            return ('<c:valAx><c:axId val="%d"/><c:scaling><c:orientation val="minMax"/>'
+                    '<c:max val="10"/><c:min val="0"/></c:scaling><c:delete val="0"/>'
+                    '<c:axPos val="%s"/><c:majorGridlines/>'
+                    '<c:title><c:tx><c:rich><a:bodyPr/><a:lstStyle/><a:p><a:r>'
+                    '<a:rPr lang="en-US" sz="900"/><a:t>%s</a:t></a:r></a:p></c:rich></c:tx>'
+                    '<c:overlay val="0"/></c:title>'
+                    '<c:numFmt formatCode="General" sourceLinked="0"/>'
+                    '<c:majorTickMark val="none"/><c:minorTickMark val="none"/>'
+                    '<c:tickLblPos val="nextTo"/><c:crossAx val="%d"/>'
+                    '<c:crosses val="autoZero"/></c:valAx>'
+                    % (axid, pos, esc(title)[:120], cross))
+
+        return ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+                '<c:chartSpace xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" '
+                'xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" '
+                'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'
+                '<c:chart><c:title><c:tx><c:rich><a:bodyPr/><a:lstStyle/><a:p><a:r>'
+                '<a:rPr lang="en-US" sz="1100" b="1"/><a:t>%s</a:t></a:r></a:p></c:rich></c:tx>'
+                '<c:overlay val="0"/></c:title><c:autoTitleDeleted val="0"/>'
+                '<c:plotArea><c:layout/><c:scatterChart>'
+                '<c:scatterStyle val="lineMarker"/><c:varyColors val="0"/>'
+                '<c:ser><c:idx val="0"/><c:order val="0"/><c:tx><c:v>%s</c:v></c:tx>'
+                '<c:spPr><a:ln w="28575"><a:noFill/></a:ln></c:spPr>'
+                '<c:marker><c:symbol val="circle"/><c:size val="6"/>'
+                '<c:spPr><a:solidFill><a:srgbClr val="1F3B57"/></a:solidFill></c:spPr></c:marker>'
+                '<c:xVal><c:numRef><c:f>%s</c:f></c:numRef></c:xVal>'
+                '<c:yVal><c:numRef><c:f>%s</c:f></c:numRef></c:yVal>'
+                '<c:smooth val="0"/></c:ser>'
+                '<c:axId val="%d"/><c:axId val="%d"/></c:scatterChart>%s%s'
+                '</c:plotArea><c:plotVisOnly val="1"/>'
+                '<c:dispBlanksAs val="gap"/></c:chart></c:chartSpace>'
+                % (esc(chart["title"])[:180], esc(chart["title"])[:80],
+                   esc(chart["x_ref"]), esc(chart["y_ref"]), ax_x, ax_y,
+                   axis(ax_x, ax_y, "b", chart["x_title"]),
+                   axis(ax_y, ax_x, "l", chart["y_title"])))
+
+    def _drawing_xml(self):
+        parts = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+                 '<xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/'
+                 'spreadsheetDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/'
+                 '2006/main">']
+        for i in range(len(self.charts)):
+            col = (i % 2) * 10
+            row = 3 + (i // 2) * 22
+            parts.append(
+                '<xdr:twoCellAnchor><xdr:from><xdr:col>%d</xdr:col><xdr:colOff>0</xdr:colOff>'
+                '<xdr:row>%d</xdr:row><xdr:rowOff>0</xdr:rowOff></xdr:from>'
+                '<xdr:to><xdr:col>%d</xdr:col><xdr:colOff>0</xdr:colOff>'
+                '<xdr:row>%d</xdr:row><xdr:rowOff>0</xdr:rowOff></xdr:to>'
+                '<xdr:graphicFrame macro=""><xdr:nvGraphicFramePr>'
+                '<xdr:cNvPr id="%d" name="Chart %d"/><xdr:cNvGraphicFramePr/>'
+                '</xdr:nvGraphicFramePr><xdr:xfrm><a:off x="0" y="0"/><a:ext cx="0" cy="0"/>'
+                '</xdr:xfrm><a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/'
+                'drawingml/2006/chart"><c:chart xmlns:c="http://schemas.openxmlformats.org/'
+                'drawingml/2006/chart" xmlns:r="http://schemas.openxmlformats.org/'
+                'officeDocument/2006/relationships" r:id="rId%d"/></a:graphicData></a:graphic>'
+                '</xdr:graphicFrame><xdr:clientData/></xdr:twoCellAnchor>'
+                % (col, row, col + 9, row + 21, i + 2, i + 1, i + 1))
+        parts.append("</xdr:wsDr>")
+        return "".join(parts)
+
+    def _sheet_xml(self, headers, rows, widths, with_drawing=False):
         ncols = max([len(headers)] + [len(r) for r in rows]) if headers or rows else 1
         dim = "A1:%s%d" % (col_letter(max(1, ncols)), len(rows) + 1)
         cols = "".join(
@@ -97,8 +177,16 @@ class MiniXlsx:
         out.append("</sheetData>")
         if rows:
             out.append('<autoFilter ref="%s"/>' % dim)
+        if with_drawing:
+            out.append('<drawing r:id="rId1"/>')
         out.append("</worksheet>")
-        return "".join(out)
+        xml = "".join(out)
+        if with_drawing:
+            xml = xml.replace(
+                '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">',
+                '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" '
+                'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">')
+        return xml
 
     def save(self, path):
         n = len(self.sheets)
@@ -115,6 +203,13 @@ class MiniXlsx:
             types.append('<Override PartName="/xl/worksheets/sheet%d.xml" ContentType='
                          '"application/vnd.openxmlformats-officedocument.spreadsheetml.'
                          'worksheet+xml"/>' % i)
+        if self.charts:
+            types.append('<Override PartName="/xl/drawings/drawing1.xml" ContentType='
+                         '"application/vnd.openxmlformats-officedocument.drawing+xml"/>')
+            for i in range(1, len(self.charts) + 1):
+                types.append('<Override PartName="/xl/charts/chart%d.xml" ContentType='
+                             '"application/vnd.openxmlformats-officedocument.drawingml.'
+                             'chart+xml"/>' % i)
         types.append("</Types>")
 
         rels = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
@@ -167,9 +262,32 @@ class MiniXlsx:
             z.writestr("xl/workbook.xml", "".join(wb))
             z.writestr("xl/_rels/workbook.xml.rels", "".join(wbrels))
             z.writestr("xl/styles.xml", styles)
-            for i, (_, headers, rows, widths) in enumerate(self.sheets, start=1):
+            host_index = 0
+            for i, (name, headers, rows, widths) in enumerate(self.sheets, start=1):
+                hosts = bool(self.charts) and name == self.chart_host
+                if hosts:
+                    host_index = i
                 z.writestr("xl/worksheets/sheet%d.xml" % i,
-                           self._sheet_xml(headers, rows, widths))
+                           self._sheet_xml(headers, rows, widths, hosts))
+            if self.charts and host_index:
+                z.writestr("xl/worksheets/_rels/sheet%d.xml.rels" % host_index,
+                           '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+                           '<Relationships xmlns="http://schemas.openxmlformats.org/package/'
+                           '2006/relationships"><Relationship Id="rId1" Type="http://schemas.'
+                           'openxmlformats.org/officeDocument/2006/relationships/drawing" '
+                           'Target="../drawings/drawing1.xml"/></Relationships>')
+                z.writestr("xl/drawings/drawing1.xml", self._drawing_xml())
+                rels = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+                        '<Relationships xmlns="http://schemas.openxmlformats.org/package/'
+                        '2006/relationships">']
+                for i in range(1, len(self.charts) + 1):
+                    rels.append('<Relationship Id="rId%d" Type="http://schemas.openxmlformats.'
+                                'org/officeDocument/2006/relationships/chart" '
+                                'Target="../charts/chart%d.xml"/>' % (i, i))
+                rels.append("</Relationships>")
+                z.writestr("xl/drawings/_rels/drawing1.xml.rels", "".join(rels))
+                for i, chart in enumerate(self.charts):
+                    z.writestr("xl/charts/chart%d.xml" % (i + 1), self._chart_xml(chart, i))
         return path
 
 
@@ -307,10 +425,12 @@ def build(metrics, keywords, serp, analysis, out_path):
                "y_axis", "y_metric", "y_low", "y_high", "point", "x", "y", "quadrant",
                "quadrant_label", "evidence"]
     rows = []
+    spans = []                       # (matrix, first_row, last_row) for the charts
     for m in analysis.get("matrices", []):
         x, y = m.get("x", {}), m.get("y", {})
         quads = m.get("quadrants", {})
         key = {"top-right": "tr", "top-left": "tl", "bottom-right": "br", "bottom-left": "bl"}
+        start = len(rows) + 2        # +2: 1-based, and row 1 is the header
         for pt in m.get("points", []):
             q = quadrant(pt.get("x"), pt.get("y"))
             rows.append([m.get("id", ""), m.get("title", ""), m.get("unit", "keyword"),
@@ -318,8 +438,25 @@ def build(metrics, keywords, serp, analysis, out_path):
                          x.get("high", ""), y.get("label", ""), y.get("metric", "judged"),
                          y.get("low", ""), y.get("high", ""), pt.get("id", ""), pt.get("x"),
                          pt.get("y"), q, quads.get(key[q], ""), pt.get("evidence", "")])
-    book.add("Matrices", headers, rows,
-             [14, 38, 8, 22, 18, 22, 22, 22, 18, 22, 22, 42, 6, 6, 12, 24, 80])
+        if len(rows) + 1 >= start:
+            spans.append((m, start, len(rows) + 1))
+    matrix_sheet = book.add("Matrices", headers, rows,
+                            [14, 38, 8, 22, 18, 22, 22, 22, 18, 22, 22, 42, 6, 6, 12, 24, 80])
+
+    # -- 2x2 charts: the same coordinates, as charts you can paste and re-cut --
+    if spans:
+        host = book.add("2x2 charts",
+                        ["Each chart plots one matrix from the Matrices sheet. Dots are "
+                         "points; hover text and evidence live in that sheet and in the HTML "
+                         "report."], [], [110])
+        for m, first, last in spans:
+            x, y = m.get("x", {}), m.get("y", {})
+            book.add_scatter(
+                host, m.get("title", m.get("id", "matrix")),
+                "%s: %s -> %s" % (x.get("label", ""), x.get("low", ""), x.get("high", "")),
+                "%s: %s -> %s" % (y.get("label", ""), y.get("low", ""), y.get("high", "")),
+                "'%s'!$M$%d:$M$%d" % (matrix_sheet, first, last),
+                "'%s'!$N$%d:$N$%d" % (matrix_sheet, first, last))
 
     # -- Titles ------------------------------------------------------------
     headers = ["term", "titles_using", "share_of_ranking_titles", "times_in_keywords", "read"]

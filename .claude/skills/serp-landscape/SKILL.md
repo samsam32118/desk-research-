@@ -87,6 +87,14 @@ whether the seed meant what you thought. If `dropped_off_topic` is huge or the
 top clusters look like a different market, the seed was ambiguous: fix it now,
 because everything downstream inherits it.
 
+**Then read `serp_targets.txt` before spending a single search on it.** A seed
+word with two lives pulls in real demand for a different subject — an "espresso
+machine" run picks up a video-game item and a Mac text editor, all genuinely
+searched. Thirty seconds of eyeballing the sample is the cheapest point in the
+whole pipeline to catch that; after the searches are spent it costs a rerun.
+Strays that survive show up again in the digest as SERPs sharing nothing with
+the rest of the corpus, but by then you have paid for them.
+
 Raise `--target` and `--branch` freely for a bigger universe; add
 `--sources google,youtube` when the topic has a how-to or visual half, since
 YouTube autocomplete returns about 50% different phrasing. Full options and the
@@ -101,6 +109,15 @@ Work in batches: **issue 8-12 web searches in one turn**, then write what came
 back into a ledger file and record it. Do not search one keyword per turn — the
 searches do not depend on each other, and running them together is the
 difference between a five-minute job and an hour.
+
+**Sessions have a web-search budget, and a 100-keyword run will get close to
+it.** Both full-scale test runs ran out before finishing their sample, at 90
+and 60 keywords. So spend the allowance on the sample rather than on
+exploratory searching, work down `serp_targets.txt` in its existing order —
+biggest topics first, so an early stop still covers the demand — and if you run
+out, say how many of the planned keywords you captured instead of implying the
+sample was the plan. Falling short is a coverage gap like any other; hiding it
+is the only real failure.
 
 The ledger is forgiving. The cheapest thing to write is the results array from
 each search, under a heading:
@@ -239,8 +256,11 @@ python3 "$SKILL/scripts/render_report.py" --analysis "$OUT/analysis.json" \
 
 The workbook carries Keywords (the whole universe), SERP results (one row per
 keyword per position, with the title Google showed, the title the page carries
-and its meta description), Pages, Domains, Clusters, Matrices, Titles and
-Sources. Open the report before handing it over: overlapping labels or every
+and its meta description), Pages, Domains, Clusters, Matrices, a **2x2 charts**
+sheet holding a native Excel scatter per matrix, Titles and Sources. The charts
+read from the Matrices sheet, so someone who edits a coordinate there moves the
+dot — worth saying when you hand it over, because people re-cut workbook charts
+in a way they cannot re-cut a picture. Open the report before handing it over: overlapping labels or every
 dot in one corner means go back to step 5.
 
 ### 8. Hand it over

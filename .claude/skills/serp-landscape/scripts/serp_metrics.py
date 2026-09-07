@@ -334,6 +334,23 @@ def main():
             "page_kinds": dict(kinds.most_common()),
         }
 
+    # How much of a keyword's SERP is shared with the rest of the corpus. A
+    # keyword whose ranking domains appear nowhere else is competing in a set
+    # of its own -- which usually means a different geography ("espresso
+    # machine india" -> indiamart, kaapimachines) or a genuinely different
+    # subject wearing the same word. Those two readings need opposite
+    # responses, and nothing here can tell them apart, so this reports the
+    # isolation and leaves the call to a person looking at the names.
+    domain_users = defaultdict(set)
+    for kw, entry in serp.items():
+        for r in entry.get("results", [])[: args.top_n]:
+            domain_users[r.get("domain", "")].add(kw)
+    for kw, row in keyword_rows.items():
+        doms = {r.get("domain", "") for r in serp[kw].get("results", [])[: args.top_n]}
+        shared = [d for d in doms if len(domain_users[d]) > 1]
+        row["corpus_domain_overlap"] = round(len(shared) / float(max(1, len(doms))), 2)
+        row["serp_isolated"] = bool(len(serp) >= 10 and doms and not shared)
+
     # ------------------------------------------------- SERP-overlap clusters
     groups, pair_overlap = serp_overlap_clusters(serp, args.top_n, args.min_shared)
     serp_clusters = []
@@ -472,6 +489,8 @@ def main():
             "page_coverage_pct": coverage, "unique_domains": len(domains),
             "serp_clusters": len(serp_clusters),
             "keywords_with_thin_coverage": len(weak),
+            "serp_isolated_keywords": sum(1 for r in keyword_rows.values()
+                                          if r.get("serp_isolated")),
             "intent_mix": dict(Counter(r["serp_intent"] for r in keyword_rows.values()).most_common()),
             "median_ranking_word_count": int(median([r["word_count"] for r in readable_pages])),
             "median_title_len": int(median([r["title_len"] for r in readable_pages])),
@@ -566,6 +585,22 @@ def main():
             L.append("- **%s** — reads %s, ranks %s (%s)"
                      % (r["keyword"], r["intent_prior"], r["serp_intent"],
                         ", ".join("%s %d" % kv for kv in list(r["page_kinds"].items())[:3])))
+        L.append("")
+
+    isolated = [r for r in keyword_rows.values() if r.get("serp_isolated")]
+    if isolated:
+        L.append("## SERPs that share nothing with the rest of the corpus")
+        L.append("")
+        L.append("Not one domain in these keywords' top %d appears on any other SERP here. "
+                 "Read the names before deciding what that means: a different geography or a "
+                 "specialist niche is a real part of the topic that you are simply not "
+                 "competing in yet, while a keyword that shares only a word with the seed is a "
+                 "different subject and will invent a false empty quadrant if you map it. "
+                 "Pass the strays to build_points.py as --drop once you have decided which "
+                 "they are." % args.top_n)
+        L.append("")
+        for r in sorted(isolated, key=lambda r: -r["cluster_size"])[:15]:
+            L.append("- **%s** — ranks: %s" % (r["keyword"], ", ".join(r["top_domains"][:4])))
         L.append("")
 
     L.append("## Candidate axes, ranked by how much they separate")

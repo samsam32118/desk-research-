@@ -88,8 +88,8 @@ page fetch     every ranking URL read: real title, meta description, H1/H2s,
 
 Out comes an Excel workbook (the whole keyword universe, one row per keyword
 per ranking position with the extracted title and meta description, pages,
-domains, clusters, matrices, title vocabulary, sources) and an HTML report of
-2x2 maps — opportunity, intent, format, depth, freshness, who wins — with dots
+domains, clusters, matrices, a native Excel scatter per matrix, title
+vocabulary, sources) and an HTML report of 2x2 maps — opportunity, intent, format, depth, freshness, who wins — with dots
 sized by the demand behind them.
 
 The axes are computed, not asserted. A matrix binds an axis to a named metric,
