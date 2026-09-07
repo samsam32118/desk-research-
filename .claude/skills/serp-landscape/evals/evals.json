@@ -1,0 +1,104 @@
+{
+  "skill_name": "serp-landscape",
+  "evals": [
+    {
+      "id": 1,
+      "name": "consumer-product-full-run",
+      "prompt": "We sell espresso machines and our blog gets basically no search traffic. I want to know what's actually ranking on Google for this stuff and why those pages win — go deep on the keywords, like a hundred of them, and give me a spreadsheet with the keywords and the titles and meta descriptions of whatever's ranking, plus a couple of 2x2s I can put in front of the founder.",
+      "expected_output": "A workbook and an HTML report. A keyword universe in the thousands from autocomplete, ~100 SERPs captured, every unique ranking URL fetched with its real title, meta description, word count, freshness and page type extracted. 6+ 2x2 matrices whose axes are bound to computed metrics, each point carrying evidence, and a written reading per matrix. The closing message leads with what kind of content wins and which pages own the topic.",
+      "files": [],
+      "assertions": [
+        "Delivers a spreadsheet file (.xlsx or .csv) containing keywords alongside extracted page titles and meta descriptions",
+        "Delivers 2x2 matrices as a viewable artifact (HTML, image or embedded chart), not only as prose",
+        "Produces at least 4 distinct 2x2 matrices",
+        "Captures SERP results for at least 40 distinct keywords",
+        "The keyword set is substantially larger than the number of SERPs captured (a universe plus a sample, not one flat list)",
+        "Keywords are derived from a real data source (autocomplete or search results), not invented by the model",
+        "Meta titles and descriptions are extracted from the ranking pages themselves rather than only copied from search snippets",
+        "Records the ranking position of each result per keyword",
+        "Every plotted point carries evidence traceable to a specific number or quote from the data",
+        "Matrix axes have topic-specific named poles, not generic labels like 'low/high'",
+        "Search intent is derived from what actually ranks rather than only from keyword wording",
+        "Reports page-fetch coverage or names the pages that could not be read",
+        "Every URL cited is a real, resolvable page (no fabricated results)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "b2b-saas-why-ranking",
+      "prompt": "why is everyone outranking us for anything to do with employee onboarding software. i need to see what google is actually rewarding there — page types, how long the stuff is, whether it's vendor blogs or listicle sites — and where there's a gap we could realistically win. excel + charts please",
+      "expected_output": "A run seeded on 'employee onboarding software' that answers the why: the page-type mix that ranks, content length and freshness of winners, which domains hold share of voice, and a named gap backed by cluster demand and low incumbent share rather than asserted.",
+      "files": [],
+      "assertions": [
+        "Identifies which domains hold the most search visibility across the captured SERPs, with a computed share rather than an impression",
+        "Characterises what kind of pages rank (listicle, vendor blog, comparison, product page) from extracted page data",
+        "Reports content length of ranking pages from actual fetched word counts",
+        "Names a specific content gap and backs it with data (demand behind the keywords plus how contested the SERP is)",
+        "Produces at least 4 distinct 2x2 matrices",
+        "Delivers a spreadsheet with keywords and extracted titles and descriptions",
+        "Distinguishes keywords where the SERP intent differs from what the keyword wording suggests",
+        "Does not present keyword search volume figures as if measured, since autocomplete provides none",
+        "Every URL cited is a real, resolvable page"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "fast-shallow-scope",
+      "prompt": "quick one before a call in 20 min — for the keyword 'cold plunge tub' just show me who's ranking and what type of content it is. don't go overboard, i don't need a giant analysis",
+      "expected_output": "A deliberately shallow run: a smaller keyword sample, SERPs for a few dozen keywords at most, a couple of matrices or even just the digest tables, delivered quickly. Respects the stated scope instead of expanding to a full 100-keyword study.",
+      "files": [],
+      "assertions": [
+        "Stays shallow — does not run a full 100+ SERP capture when the user asked for something quick",
+        "Still grounds the answer in captured SERP data rather than model recall",
+        "Names the domains and page types that dominate the results",
+        "Delivers a usable answer without blocking on clarifying questions",
+        "Every URL cited is a real, resolvable page"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "non-us-locale",
+      "prompt": "Do a search landscape for 'wärmepumpe' — German market, google.de. I want the keyword universe, what ranks, and the 2x2s. Spreadsheet too.",
+      "expected_output": "A run with the locale set to de-DE for both autocomplete and search, a German keyword universe, German ranking pages fetched and extracted, and analysis that does not silently fall back to US results or English-only assumptions.",
+      "files": [],
+      "assertions": [
+        "Sets a German locale for keyword expansion rather than using US defaults",
+        "The keyword set is in German",
+        "Captured SERPs are German-market results",
+        "Notes that the English-language intent lexicon is a weak prior for a German set, or otherwise derives intent from the SERPs rather than the wording",
+        "Delivers a spreadsheet with keywords and extracted titles and descriptions",
+        "Every URL cited is a real, resolvable page"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ambiguous-seed",
+      "prompt": "run the serp analysis on 'mercury' for me, full thing with the matrices",
+      "expected_output": "Recognises that 'mercury' spans the planet, the element, the car brand, the insurance company and the fintech, sees that in the first autocomplete round, and either asks which is meant or picks one and says so plainly before building on it. Does not silently blend five unrelated markets into one map.",
+      "files": [],
+      "assertions": [
+        "Surfaces that the seed is ambiguous across several unrelated meanings",
+        "Either asks which meaning is intended, or picks one and states that assumption plainly",
+        "Does not present a single blended map of unrelated meanings as if it were one coherent topic",
+        "Any keyword set presented is derived from a real data source rather than invented",
+        "If it proceeds, the resulting analysis is internally consistent with the chosen meaning"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "content-strategy-framing",
+      "prompt": "I'm planning next quarter's content calendar for our home fitness equipment store. What should we actually be writing? I don't want gut feel, I want it backed by what's already ranking.",
+      "expected_output": "Triggers on a content-strategy framing that never says SERP or keyword research. Builds the keyword universe, captures SERPs, and turns the clusters into a prioritised set of briefs — each with the format, length and angle the data says is required — rather than a generic list of topics.",
+      "files": [],
+      "assertions": [
+        "Recognises this as a search-landscape task and captures real SERP data rather than answering from general knowledge",
+        "Groups keywords into topic clusters and uses the clusters as the unit of recommendation",
+        "Recommendations specify the content format and depth required, derived from what currently ranks",
+        "Prioritisation is justified with data (demand behind a cluster, how contested its SERP is) rather than assertion",
+        "Delivers a spreadsheet with keywords and extracted titles and descriptions",
+        "Produces at least one 2x2 matrix placing keywords or clusters against each other",
+        "Every URL cited is a real, resolvable page"
+      ]
+    }
+  ]
+}

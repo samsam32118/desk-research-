@@ -73,3 +73,75 @@ raises on a bad domain — sites that block or render client-side are recorded i
 
 Eval prompts and assertions used to test the skill are in
 `.claude/skills/competitor-landscape/evals/`.
+
+## `serp-landscape`
+
+Give it one keyword. It finds out what is ranking on Google for that topic and
+why, from three layers of evidence:
+
+```
+autocomplete   ~5,000 real queries, three levels deep, grouped into ~600 topics
+web search     the SERP for ~100 sampled keywords, one per topic
+page fetch     every ranking URL read: real title, meta description, H1/H2s,
+               word count, published/modified date, schema, page type
+```
+
+Out comes an Excel workbook (the whole keyword universe, one row per keyword
+per ranking position with the extracted title and meta description, pages,
+domains, clusters, matrices, title vocabulary, sources) and an HTML report of
+2x2 maps — opportunity, intent, format, depth, freshness, who wins — with dots
+sized by the demand behind them.
+
+The axes are computed, not asserted. A matrix binds an axis to a named metric,
+and `check_analysis.py` recomputes every bound coordinate and fails on any that
+has drifted.
+
+### Using it
+
+```
+what's ranking for "espresso machine" and why? go deep on keywords, give me
+the spreadsheet and some 2x2s
+```
+
+### The scripts stand alone
+
+Python 3.8+, standard library only — no `pip install`, no API key:
+
+```bash
+S=.claude/skills/serp-landscape/scripts
+
+# ~5,000 keywords from live autocomplete in about 35 seconds
+python3 $S/expand_keywords.py "espresso machine" --target 5000 --sample 100
+
+# paste search results in any of four shapes; it normalises and tracks progress
+python3 $S/record_serp.py --ledger batch1.md --out serp.json --targets serp_targets.txt
+
+# read every unique ranking page once
+python3 $S/fetch_pages.py --serp serp.json --out pages.jsonl
+
+# intent, clusters, share of voice, and 0-10 axis metrics
+python3 $S/serp_metrics.py --serp serp.json --pages pages.jsonl \
+    --keywords keywords.json --out metrics.json --digest digest.md
+
+python3 $S/check_analysis.py --analysis analysis.json --metrics metrics.json
+python3 $S/build_workbook.py --metrics metrics.json --keywords keywords.json \
+    --serp serp.json --analysis analysis.json --out map.xlsx
+python3 $S/render_report.py --analysis analysis.json --metrics metrics.json --out map.html
+```
+
+### Design notes
+
+- **Autocomplete is free, search is not.** So the keyword universe is thousands
+  and the SERPs are a sample — one keyword per topic, each carrying the demand
+  mass of the topic it stands for. That is also how the work is really done.
+- **Intent comes from the SERP.** "Best espresso machine" sounds commercial; if
+  Google answers it with nine guides, it is informational and a product page
+  will not rank. The disagreements between wording and SERP are the most
+  actionable output of a run.
+- **No invented volume.** Autocomplete gives shape, not volume, and the skill
+  never pretends otherwise. Where a weight is needed it counts keywords.
+- **A blocked page is recorded as blocked.** A page missing from the corpus and
+  a page that returned nothing look identical in a chart, and the second
+  silently biases every median.
+
+Eval prompts and assertions are in `.claude/skills/serp-landscape/evals/`.
