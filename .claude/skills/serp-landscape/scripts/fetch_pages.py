@@ -63,6 +63,14 @@ MARKETPLACE_HOSTS = ("amazon.", "ebay.", "walmart.com", "etsy.com", "alibaba.com
                      "aliexpress.", "target.com", "bestbuy.com", "costco.com",
                      "wayfair.com", "idealo.", "temu.com")
 WIKI_HOSTS = ("wikipedia.org", "wikihow.com", "fandom.com", "britannica.com")
+# On developer and security topics a large share of the top ten is source
+# repositories and package pages. Left unlabelled they land in "other" and the
+# format picture is wrong: a README that ranks is a different thing to write
+# than a blog post that ranks.
+CODE_HOSTS = ("github.com", "gitlab.com", "bitbucket.org", "sourceforge.net",
+              "pypi.org", "npmjs.com", "hub.docker.com", "crates.io",
+              "packagist.org", "rubygems.org", "huggingface.co")
+DOCS_HOSTS = ("readthedocs.io", "readthedocs.org", "gitbook.io", "netlify.app/docs")
 
 LIST_TITLE = re.compile(r"(?:^|\b)(\d{1,3})\s*(?:\+|)\s*(?:best|top|of the|great|ways|things|"
                         r"tips|reasons|examples|ideas|tools|steps)\b", re.I)
@@ -276,8 +284,17 @@ def classify_page(url, title, schema_types, h1, word_count):
         return "reference"
     if any(h in host for h in MARKETPLACE_HOSTS):
         return "marketplace"
-    if re.search(r"/(docs?|documentation|support|help|manual|kb)(/|$)", path):
+    if any(h in host for h in DOCS_HOSTS) or \
+            re.search(r"/(docs?|documentation|support|help|manual|kb)(/|$)", path):
         return "docs/support"
+    if any(h in host for h in CODE_HOSTS):
+        # A repo index, an advisory list and an issue thread are different
+        # things living on the same host, so read the path before the host.
+        if re.search(r"/(issues|pull|discussions)/", path):
+            return "forum/ugc"
+        if re.search(r"/(advisories|security)(/|$)", path):
+            return "reference"
+        return "repo/package"
     if "product" in types or re.search(r"/(product|dp|p|item|sku)/", path):
         return "product"
     looks_like_list = bool(LIST_TITLE.search(title or "") or LEADING_NUM.match(title or ""))

@@ -430,7 +430,11 @@ def main():
                   "word count, log scaled"),
         "freshness": (lambda r: -math.log10(max(1, r["age_days"]))
                       if r["age_days"] is not None else None, "how recently updated"),
-        "title_match": (lambda r: r["kw_in_title"],
+        # A page we could not read has no title, and scoring that as 0 parks
+        # every blocked page at the "loose title" pole -- an artefact of the
+        # fetch, plotted as if it were a finding. Same rule as the medians:
+        # unreadable stays out.
+        "title_match": (lambda r: r["kw_in_title"] if r["readable"] else None,
                         "how literally the title repeats the queries it ranks for"),
         "structure": (lambda r: r["h2_count"] + 2 * r["tables"] + r["lists"]
                       if r["readable"] else None,
