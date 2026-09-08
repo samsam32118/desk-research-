@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 # generated run output at the repo root (not the skill dir, which ends in -landscape too)
 /*-landscape/
+/*-serp/
